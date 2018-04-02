@@ -1,0 +1,9 @@
+{% extends "page.html.twig" %}
+
+{% block content_prefix %}
+    {% include "@organisms/page-header.html.twig" with {
+        plain_title: 'Announcements',
+        semantic: true,
+    } %}
+{% endblock %}
+

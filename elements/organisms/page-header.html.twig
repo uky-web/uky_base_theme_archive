@@ -1,0 +1,16 @@
+{% set classes = [
+    'page-header',
+    flatten? 'flatten',
+] %}
+<div class="{{ classes|join(' ') }}">
+    <div class="page-header-wrapper">
+        <div class="heading">
+            {% include '@atoms/heading.html.twig' with { headline: title_override? title_override : plain_title, level: 1, linked: false, semantic: semantic } %}
+        </div>
+        {% if tagline is not empty %}
+            {% include '@atoms/tagline.html.twig' with { tagline_superhead: tagline_superhead, tagline: tagline } %}
+        {% endif %}
+    </div>
+
+    <div class="image"{% if unit_page_header_banner %} style="background-image: url('{{ unit_page_header_banner }}');"{% endif %}></div>
+</div>

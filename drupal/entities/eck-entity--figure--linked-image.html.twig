@@ -1,0 +1,20 @@
+{% set has_link = eck.field_image_link|length %}
+<div{{ attributes }}>
+    {% if has_link %}
+    <a href="{{ eck.field_image_link[0].url }}">
+    {% endif %}
+    
+    <figure>
+        {{ content.field_image }}
+
+        {% if eck.field_caption|length %}
+        <figcaption>
+            {{ content.field_caption }}
+        </figcaption>
+        {% endif %}
+    </figure>
+
+    {% if has_link %}
+    </a>
+    {% endif %}
+</div>

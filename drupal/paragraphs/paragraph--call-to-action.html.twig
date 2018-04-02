@@ -1,0 +1,14 @@
+{% set classes = '' %}
+{% for f in paragraph.field_theme_options %}
+	{% set classes = classes ~ f.entity.name.value ~ ' ' %}
+{% endfor %}
+{% include '@organisms/callout.html.twig' with {
+		image: content.field_image,
+		icon_svg: paragraph.field_icon_ref.entity.field_svg.value,
+		action_link_url: paragraph.field_link[0].url,
+		action_link_label: paragraph.field_link[0].title,
+		callout_style_modifier: classes,
+		body: content.field_body,
+		title: paragraph.field_title.value,
+		superhead: paragraph.field_superheading.value,
+} %}

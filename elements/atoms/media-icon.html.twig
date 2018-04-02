@@ -1,0 +1,16 @@
+{% import '@macros/svg.macro.twig' as svg %}
+{% set media = term_lookup(media_type) %}
+{% set icon = media.field_icon_ref.entity.name.value %}
+{% set icon_svg = media.field_icon_ref.entity.field_svg.value %}
+{% if icon in ['news', 'video-camera', 'podcast', 'article', 'book-stack'] %}
+{% set media_icon_modifier = media_icon_modifier ~ ' ' ~ icon %}
+{% endif %}
+<div class="media-icon {{ media_icon_modifier }}">
+	<div class="icon-wrapper">
+		{% if icon_svg %}
+			{{ icon_svg|raw }}
+		{% else %}
+			{{ svg.ref(icon,icon,icon) }}
+		{% endif %}
+	</div>
+</div>

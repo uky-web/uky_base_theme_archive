@@ -1,0 +1,12 @@
+{% if node.field_tags_ref|length %}
+<div class="news-story-tags">
+	{% include '@atoms/heading.html.twig' with {
+		headline: 'Similar Topics',
+		level: 4
+		} %}
+
+	<div class="tags-list">
+		{{ content.field_tags_ref }}
+	</div>
+</div>
+{% endif %}

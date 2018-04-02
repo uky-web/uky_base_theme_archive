@@ -1,0 +1,6 @@
+{% set n = items|length %}
+{% for item in items %}
+    <div{{ item.attributes.addClass('media-grid-item media-grid-has-' ~ n ~ '-items')}}>
+        {{ item.content }}
+    </div>
+{% endfor %}

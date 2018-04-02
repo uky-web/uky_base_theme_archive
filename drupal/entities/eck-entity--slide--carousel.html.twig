@@ -1,0 +1,4 @@
+{% set large_url = eck.field_image[0].entity.uri.value|resize('content_width') %}
+<a class="image-thumbnail" href="{{ large_url }}" title="{{ content.field_caption|render|striptags|trim }}">
+    {{ content.field_image }}
+</a>

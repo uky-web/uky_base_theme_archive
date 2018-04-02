@@ -1,0 +1,73 @@
+{% import '@macros/svg.macro.twig' as svg %}
+
+{% if icon or icon_svg and 'large-feature' not in callout_style_modifier %}
+	{% set callout_style_modifier = callout_style_modifier ~ ' shield' %}
+{% endif %}
+
+{% if border_color %}
+	{% set callout_style_modifier = callout_style_modifier ~ ' border-' ~ border_color %}
+{% endif %}
+
+<div class="callout {{ callout_style_modifier }}">
+
+	{% if icon or icon_svg and 'large-feature' not in callout_style_modifier %}
+		<div class="shield-icon">
+			{% if icon_svg %}
+			{{ icon_svg|raw }}
+			{% else %}
+			{{ svg.ref(icon,icon,icon) }}
+			{% endif %}
+		</div>
+	{% endif %}
+
+	<div class="callout-body">
+		<div class="callout-headline-wrapper">
+			{% if icon or icon_svg and 'large-feature' in callout_style_modifier %}
+				{% if icon_svg %}
+				{{ icon_svg|raw }}
+				{% else %}
+				{{ svg.ref(icon,icon,icon) }}
+				{% endif %}
+			{% endif %}
+			{% include '@molecules/headline-group.html.twig' with { 
+				superhead : superhead, 
+				linked: false,
+				level: 3,
+				headline: title,
+			} %}
+		</div>
+	
+		<div class="callout-content">
+			{% if image['#items']|length == 1 %}
+			<div class="image">
+                {{ image }}
+			</div>
+			{% endif %}
+
+			{% block callout_content %}
+				{{ body }}
+			{% endblock %}
+		</div>
+
+		{% if action_link_url %}
+			<div class="action-link">
+				<a href="{{ action_link_url }}">
+					{% include '@atoms/icon-label.html.twig' with { 
+						icon: 'angle-double-right',
+						label: action_link_label
+						}
+					%}
+				</a>
+			</div>
+		{% endif %}
+
+		{% if image['#items']|length > 1 %}
+			<div class="callout-images">
+				{{ image }}
+			</div>
+		{% endif %}
+
+	</div>
+
+		
+</div>

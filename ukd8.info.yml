@@ -1,0 +1,42 @@
+name: UK D8 Reference Theme
+type: theme
+description: UK D8 by NewCity
+package: NewCity
+core: 8.x
+libraries:
+  - ukd8/global
+
+base theme: false
+
+regions:
+  header_logo: 'Header logo'
+  utility: 'Utility nav'
+  top_nav: 'Top nav'
+  highlighted: Highlighted
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  content_prefix: 'Content prefix'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar: Sidebar
+  content_suffix: 'Content suffix'
+  footer_social: 'Footer social links'
+  footer_address: 'Footer address'
+  footer_bottom: 'Footer bottom'
+
+component-libraries:
+  atoms:
+    paths:
+      - elements/atoms
+  molecules:
+    paths:
+      - elements/molecules
+  organisms:
+    paths:
+      - elements/organisms
+  macros:
+    paths:
+      - macros
+
+ckeditor_stylesheets:
+  - css/wysiwyg.css

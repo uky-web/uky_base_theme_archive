@@ -1,0 +1,15 @@
+<div class="news-meta {{ news_meta_modifier }}">
+	<ul>
+		{% if not hide_icon %}
+		<li class="media-type-icon">
+			{% include '@atoms/media-icon.html.twig' with {
+				'media_icon_modifier': 'small',
+				'media_type': media_type
+			} %}
+		</li>
+	{% endif %}
+		{% if media_type %}<li>{{ media_type|capitalize }}</li>{% endif %}
+		<li>{{ date }}</li>
+	</ul>
+
+</div>

@@ -1,0 +1,5 @@
+{% set background_uri = paragraph.field_background_image_ref.entity.field_image.entity.uri.value %}
+{% include '@organisms/hero.html.twig' with {
+	news_hero: content.field_featured_article_ref,
+	background_url: background_uri? background_uri|resize('hero') : null,
+} %}

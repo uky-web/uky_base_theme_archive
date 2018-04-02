@@ -1,0 +1,10 @@
+{% include '@molecules/person.html.twig' with {
+    name: content.field_name,
+    linked: true,
+    titles: node.field_job_title,
+    links: false,
+    no_photo: (node.field_image|length == 0),
+    image: content.field_image,
+    email: content.field_email,
+    phone: content.field_phone,
+} %}

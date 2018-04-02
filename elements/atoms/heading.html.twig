@@ -1,0 +1,1 @@
+{% if semantic %}<h{{ level|default(1) }}{% if style_modifier|default(false) %} class="{{ style_modifier }}"{% endif %}>{% else %}<div class="heading-level-{{ level }}">{% endif %}{% if linked and url %}{% include '@atoms/link.html.twig' with { label: headline, url: url } %}{% else %}{{- headline -}}{% endif %}{% if semantic %}</h{{ level|default(1) }}>{% else %}</div>{% endif %}

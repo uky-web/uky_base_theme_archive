@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Theme override for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ */
+#}
+{% if breadcrumb %}
+  <nav class="breadcrumbs" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <ul>
+    {% for item in breadcrumb %}
+      {% set text = (item.text == 'Home')? 'UK Research':item.text %}
+      <li>
+        {% if item.url %}
+          <a href="{{ item.url }}">{{ text }}</a>
+        {% else %}
+          {{ item.text }}
+        {% endif %}
+        {% include '@atoms/icon.html.twig' with { icon: 'angle-double-right', icon_alt: 'Next Page' } %}
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

@@ -1,0 +1,8 @@
+<ul>
+    {% for item in items %}
+        <li>
+            {% set term = item.content['#options'].entity %}
+            <a href="/news-archive?topic={{ term.id }}">{{ item.content['#title'] }}</a>
+        </li>
+    {% endfor %}
+</ul>

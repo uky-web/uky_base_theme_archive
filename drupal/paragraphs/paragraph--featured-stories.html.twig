@@ -1,0 +1,25 @@
+{% set featured = paragraph.field_featured_article_ref[0].entity %}
+{% set stories = content.field_other_articles_ref %}
+{% include '@organisms/news-collection.html.twig' with {
+    news_collection_modifier: 'feature-grid',
+    collection_headline: false,
+    feature_story: [
+        {
+            title: featured.title.value,
+            url: path('entity.node.canonical', {'node': featured.id})|drupal_escape,
+            image_url: featured.field_image? featured.field_image[0].entity.uri.value|resize('featured_teaser') : false,
+            image_alt: featured.field_image? featured.field_image[0].alt : featured.title.value,
+            show_story_meta: true,
+            summary: featured.body.summary,
+            story_media_type: featured.field_news_type_ref[0].entity.name.value,
+            date: featured.created.value|date('M d Y'),
+        }],
+    secondary_headline: paragraph.field_title.value,
+    show_story_meta: true,
+    buttons: [
+        {
+            title: 'More News',
+            url: '/news-archive',
+        }],
+    stories: stories,
+} %}

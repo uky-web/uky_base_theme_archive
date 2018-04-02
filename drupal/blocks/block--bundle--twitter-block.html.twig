@@ -1,0 +1,18 @@
+<div{{ attributes.addClass("twitter-feed") }}>
+	{% include '@molecules/headline-group.html.twig' with {
+		headline: block.field_headline.value,
+		style_modifier: 'section-title'
+	} %}
+
+	<div class="child-alignment-center">
+		<div class="social-icons">
+			{{ content.field_menu }}
+		</div>
+	</div>
+
+    {% include '@molecules/twitter.html.twig' with {
+		noscript: block.field_no_script.value,
+		limit: block.field_tweets.value,
+		url: block.field_url[0].url,
+	} %}
+</div>

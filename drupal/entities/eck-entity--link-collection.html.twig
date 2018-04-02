@@ -1,0 +1,6 @@
+{% if eck.field_header_link[0].url %}
+    <a href="{{ eck.field_header_link[0].url }}">{{ plain_title }}</a>
+{% else %}
+    <span class="link-collection__header">{{ plain_title }}</span>
+{% endif %}
+{{ content|without('field_header_link') }}

@@ -1,0 +1,22 @@
+{% if semantic is not sameas(false) %}
+{% set semantic = true %}
+{% endif %}
+{% set id = section_title_override? section_title_override|render|striptags|clean_id : headline|render|striptags|clean_id %}
+
+{% if semantic %}
+<h{{level|default(2)}} class="headline-group {{ style_modifier }}"{% if id %} id="{{ id }}"{% endif %}>
+{% else %}
+<div class="headline-group headline-group-level-{{ level }} {{ style_modifier }}"{% if id %} id="{{ id|clean_id }}"{% endif %}>
+{% endif %}
+	<span class="superhead">{{ superhead }}</span>
+	{% if linked %}
+	{% include '@atoms/link.html.twig' with {style_modifier: 'head', label: headline } %}
+	{% else %}
+	<span class="head">{{ headline }}</span>
+	{% endif %}
+	<span class="subhead">{{ subhead }}</span>
+{% if semantic %}
+</h{{ level|default(2) }}>
+{% else %}
+</div>
+{% endif %}

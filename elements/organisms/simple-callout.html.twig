@@ -1,0 +1,41 @@
+<div class="callout callout--simple">
+
+    {% if image['#items']|length == 1 %}
+    <div class="callout-image image">
+        {{ image }}
+    </div>
+    {% endif %}
+
+	<div class="callout-body">
+	
+		<div class="callout-content">
+
+            <div class="callout-headline-wrapper">
+                {% include '@molecules/headline-group.html.twig' with { 
+                    superhead : superhead, 
+                    linked: false,
+                    level: 3,
+                    headline: title,
+                } %}
+            </div>
+
+			{% block callout_content %}
+				{{ body }}
+			{% endblock %}
+		</div>
+
+		{% if button.uri %}
+			<div class="action-link">
+				<a href="{{ button.url }}">
+					{% include '@atoms/icon-label.html.twig' with { 
+						icon: 'angle-double-right',
+						label: button.title
+						}
+					%}
+				</a>
+			</div>
+		{% endif %}
+	</div>
+
+		
+</div>

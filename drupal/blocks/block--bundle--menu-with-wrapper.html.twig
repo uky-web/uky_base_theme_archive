@@ -1,0 +1,17 @@
+<div{{ attributes.addClass("social-callout") }}>
+
+	<div class="social-callout-content">
+		{% include '@molecules/headline-group.html.twig' with {
+			superhead: block.field_superhead.value,
+			headline: block.field_headline.value,
+			level: 3
+		} %}
+
+		<div class="social-icons">
+			{{ content.field_menu }}
+		</div>
+	</div>
+
+	<div class="background-image"></div>
+
+</div>

@@ -1,0 +1,15 @@
+{% if button_style is empty %}
+	{% set button_style = "link" %}
+{% endif %}
+
+{% if button_style == "link"  %}
+	<a href="{{ url|default('http://www.example.com/') }}" role="button" class="button {{ style_modifier }}">{% block content_button_link %}{{ label }}{% endblock %}</a>
+{% elseif button_style == "button" %}
+	<button class="{{ style_modifier }}">{% block content_button_button %}{{ label }}{% endblock %}</button>
+{% elseif button_style == "input" %}
+	<input type="button" value="{{ label }}" class="button {{ style_modifier }}" />
+{% elseif button_style == "submit" %}
+	<input type="submit" value="{{ label }}" class="button {{ style_modifier }}" />
+{% elseif button_style == "reset" %}
+	<input type="reset" value="{{ label }}" class="button {{ style_modifier }}" />
+{% endif %}

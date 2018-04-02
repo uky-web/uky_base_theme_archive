@@ -1,0 +1,14 @@
+{% set month = node.field_time[0].value|date('M') %}
+{% set day = node.field_time[0].value|date('j') %}
+<div{{ attributes.addClass('event') }}>
+	<div class="datebox">
+		<div class="month">{{ month }}</div>
+		<div class="date">{{ day }}</div>
+	</div>
+	<div class="event-details">
+		<div class="event-category">{{ content.field_sponsor }}</div>
+		<div class="event-name"><a href="{{ url }}">{{ plain_title }}</a></div>
+		<div class="event-location">{{ content.field_location }}</div>
+		<div class="event-time">{{ content.field_time }}</div>
+	</div>
+</div>

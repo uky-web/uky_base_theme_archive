@@ -1,0 +1,55 @@
+{% if heading_level is null %}
+	{% set heading_level = 4 %}
+{% endif %}
+
+<div class="news-teaser {{ news_teaser_modifier }}">
+	{% if show_large_media_icon %}
+		<div class="large-media-icon">
+			{% include '@atoms/media-icon.html.twig' with {
+				media_type: media_type,
+				media_icon_modifier: 'invert'
+			} %}
+		</div>
+	{% endif %}
+
+	{% if image_url %}
+	<div class="story-thumbnail">
+		<a href="{{ url }}">
+            <img src="{{ image_url }}" alt="{{ image_alt }}">
+		</a>
+
+		{% if type_on_thumbnail %}
+			{% include '@atoms/media-icon.html.twig' with {
+				media_type: media_type
+			} %}
+		{% endif %}
+	</div>
+	{% endif %}
+
+	<div class="teaser-body">
+		{% if show_meta %}
+			{% include '@molecules/news-meta.html.twig' with {
+				media_type: meta_hide_media_type? false : media_type,
+				hide_icon: meta_hide_icon,
+                date: date,
+			} %}
+		{% endif %}
+
+		{% include '@atoms/heading.html.twig' with {
+			linked: true,
+            url: url,
+			level: heading_level,
+			headline: title,
+			style_modifier: 'story-title'
+		} %}
+
+		<p>{{ summary }}</p>
+
+		{% if button_link %}
+		{% include '@atoms/button.html.twig' with {
+			label: button_title|default('All News'),
+			url: button_link,
+		} %}
+		{% endif %}
+	</div>
+</div>

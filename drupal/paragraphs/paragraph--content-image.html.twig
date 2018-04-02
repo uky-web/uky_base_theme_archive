@@ -1,0 +1,9 @@
+{% set background_uri = paragraph.field_background_image_ref.entity.field_image.entity.uri.value %}
+{% include '@organisms/hero.html.twig' with {
+	headline: paragraph.field_title.value,
+	image: content.field_image,
+    body: content.field_body,
+	background_url: background_uri? background_uri|resize('hero') : null,
+	button_title: paragraph.field_link[0].title,
+	button_link: paragraph.field_link[0].url
+} %}

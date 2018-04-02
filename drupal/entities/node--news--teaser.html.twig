@@ -1,0 +1,11 @@
+<div{{ attributes }}>
+    {% include '@molecules/news-teaser.html.twig' with { 
+        image_url: false,
+        show_meta: true,
+        media_type: node.field_news_type_ref[0].entity.name.value,
+        url: path('entity.node.canonical', {'node': node.id})|drupal_escape,
+        title: node.title.value,
+        summary: node.body.summary,
+        date: node.created.value|date('M j Y'),
+    } %}
+</div>

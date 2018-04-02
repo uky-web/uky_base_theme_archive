@@ -1,0 +1,12 @@
+<?php
+
+require_once('lib/theme.inc');
+
+require_once('lib/html.inc');
+require_once('lib/page.inc');
+require_once('lib/eck.inc');
+require_once('lib/node.inc');
+require_once('lib/views.inc');
+require_once('lib/block.inc');
+require_once('lib/paragraph.inc');
+require_once('lib/breadcrumb.inc');

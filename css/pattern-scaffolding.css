@@ -1,0 +1,144 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+/* Colors
+/* remember to turn off any unused swatches in atoms>global>colors.twig
+/* _______________________________________________________________ */
+@import url("https://cloud.typography.com/6863274/6747792/css/fonts.css");
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/35E586_1_0.eot");
+  src: url("/fonts/35E586_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/35E586_1_0.woff2") format("woff2"), url("/fonts/35E586_1_0.woff") format("woff"), url("/fonts/35E586_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: normal;
+  font-style: italic;
+  src: url("/fonts/35E586_3_0.eot");
+  src: url("/fonts/35E586_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/35E586_3_0.woff2") format("woff2"), url("/fonts/35E586_3_0.woff") format("woff"), url("/fonts/35E586_3_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/35E586_0_0.eot");
+  src: url("/fonts/35E586_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/35E586_0_0.woff2") format("woff2"), url("/fonts/35E586_0_0.woff") format("woff"), url("/fonts/35E586_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: 500;
+  font-style: italic;
+  src: url("/fonts/35E586_5_0.eot");
+  src: url("/fonts/35E586_5_0.eot?#iefix") format("embedded-opentype"), url("/fonts/35E586_5_0.woff2") format("woff2"), url("/fonts/35E586_5_0.woff") format("woff"), url("/fonts/35E586_5_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/35E586_4_0.eot");
+  src: url("/fonts/35E586_4_0.eot?#iefix") format("embedded-opentype"), url("/fonts/35E586_4_0.woff2") format("woff2"), url("/fonts/35E586_4_0.woff") format("woff"), url("/fonts/35E586_4_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: bold;
+  font-style: italic;
+  src: url("/fonts/35E586_2_0.eot");
+  src: url("/fonts/35E586_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/35E586_2_0.woff2") format("woff2"), url("/fonts/35E586_2_0.woff") format("woff"), url("/fonts/35E586_2_0.ttf") format("truetype"); }
+
+body {
+  font-family: "AvenirNextLTPro", sans-serif; }
+
+.font-mercury {
+  font-family: "Mercury Display A", "Mercury Display B", serif; }
+
+.font-avenirnext {
+  font-family: "AvenirNextLTPro", sans-serif; }
+
+#sg-patterns {
+  max-width: 100%; }
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer; }
+
+.sg-colors {
+  margin-left: 0;
+  list-style: none; }
+  @supports (grid-template-columns: 1px) {
+    .sg-colors {
+      display: grid;
+      /* Base Breakpoint */
+      grid-gap: 0.5rem;
+      /* End base breakpoint */ }
+      @media screen and (min-width: 35rem) {
+        .sg-colors {
+          grid-gap: 1rem;
+          grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+      @media screen and (min-width: 48rem) {
+        .sg-colors {
+          grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+      @media screen and (min-width: 76rem) {
+        .sg-colors {
+          grid-gap: 2rem;
+          grid-template-columns: repeat(6, minmax(0, 1fr)); } } }
+
+.sg-colors__column {
+  border: 2px solid #c8c8c7;
+  border-radius: 8px;
+  padding: calc(0.5rem - 2px);
+  overflow: hidden;
+  /* Base Breakpoint */
+  font-size: 1rem;
+  line-height: 1rem;
+  /* End base breakpoint */ }
+  .sg-colors__column margin {
+    top: 1rem;
+    bottom: 1rem; }
+
+.sg-colors pre {
+  /* Base Breakpoint */
+  font-size: 0.75rem;
+  line-height: 1rem;
+  /* End base breakpoint */
+  margin-bottom: 0.5rem; }
+
+.sg-swatch {
+  display: block;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  padding: calc(0.5rem - 5px); }
+
+.sg-pattern-example {
+  overflow: hidden; }
+
+.sg-pattern {
+  margin-bottom: 2rem; }
+
+.sg-pattern-head {
+  /* Base Breakpoint */
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* End base breakpoint */
+  padding: 0.5rem; }
+
+.sg-pattern-title padding {
+  top: 1rem;
+  bottom: 1rem; }
+
+.sg-pattern-title a {
+  padding: 0;
+  border-bottom-width: 0; }
+
+.sg-pattern-extra {
+  display: none; }
+
+/*# sourceMappingURL=pattern-scaffolding.css.map */

@@ -1,0 +1,57 @@
+{% import '@macros/svg.macro.twig' as svg %}
+
+<footer class="main-footer">
+
+	<div class="footer-main">
+		{% include '@atoms/logo-university.html.twig' %}
+
+		<div class="footer-content">
+			{% if unit_name %}
+			<h4 class="office">{% if unit_url %}<a href="{{ unit_url }}">{% endif %}{% if unit_footer_override %}{{ unit_footer_override }}{% else %}{{ unit_name }}{% endif %}{% if unit_url %}</a>{% endif %}</h4>
+			{% endif %}
+
+			<div class="address">
+				<ul>
+					{% for line in unit_address %}
+						<li>{{ line }}</li>
+					{% endfor %}
+				</ul>
+
+				{% if unit_email or unit_phone %}
+				<ul>
+					{% if unit_phone %}
+					<li>{{ unit_phone }}</li>
+					{% endif %}
+					{% if unit_email %}
+					<li><a href="mailto:{{ unit_email }}">{{ unit_email }}</a></li>
+					{% endif %}
+					<li>
+						<div class="social">
+							{% if unit_social_menu|length %}
+								<ul>
+									{% for item in unit_social_menu %}
+									<li>
+										{{ svg.icon_link(item.url, item.title) }}
+									</li>
+									{% endfor %}
+								</ul>
+							{% else %}
+								{{ page.footer_social }}
+							{% endif %}
+						</div>
+					</li>
+				</ul>
+				{% endif %}
+			</div>
+		</div>
+
+		<div class="footer-map">
+			{{ unit_map }}
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		{{ page.footer_bottom }}
+	</div>
+
+</footer>

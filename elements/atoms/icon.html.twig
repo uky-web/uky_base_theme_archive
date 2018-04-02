@@ -1,0 +1,10 @@
+{% import '@macros/svg.macro.twig' as svg %}
+
+<div class="cell icon-wrapper">
+	{% if icon_svg %}
+		{{ icon_svg|raw }}
+	{% else %}
+		{% import '@macros/svg.macro.twig' as svg %}
+		{{ svg.ref(icon|default('book'), icon_alt|default(icon), "large-icon") }}
+	{% endif %}
+</div>

@@ -3,6 +3,6 @@
     "description": "Base theme.",
     "type": "drupal-theme",
     "require": {
-        "uk-d8/ukd8-customizations": "dev-master"
+        "uk-d8/ukd8_customizations": "dev-master"
     }
 }

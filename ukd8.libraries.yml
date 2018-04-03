@@ -5,7 +5,6 @@ global:
       css/base.css: {}
   js:
     js/activate-current-links.js: {}
-    js/global.js: {}
   dependencies:
     - core/drupal
     - core/jquery
@@ -16,18 +15,18 @@ addtoany:
     js/addtoany.js: {}
     'https://static.addtoany.com/menu/page.js': {'type': 'external', 'minified': true, 'async': 'async'}
 
-sticky:
-  version: VERSION
-  js:
-    js/sticky.js: {}
+# sticky:
+#   version: VERSION
+#   js:
+#     js/sticky.js: {}
 
-gallery:
-  version: VERSION
-  js:
-    js/jquery.magnific-popup.js: {}
-    js/gallery.js: {}
+# gallery:
+#   version: VERSION
+#   js:
+#     js/jquery.magnific-popup.js: {}
+#     js/gallery.js: {}
 
-accordion:
-  version: VERSION
-  js:
-    js/accordion.js: {}
+# accordion:
+#   version: VERSION
+#   js:
+#     js/accordion.js: {}

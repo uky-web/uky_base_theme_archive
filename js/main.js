@@ -2,26 +2,29 @@
   var prepNiceVideo;
 
   prepNiceVideo = function() {
-    $('iframe[src*="youtube"]').parent().fitVids();
-    $('.nice-video button').on('click', function() {
-      var $iframe, $wrapper, closure;
-      $wrapper = $(this).parents('.nice-video');
-      $wrapper.toggleClass('nice-video--playing');
-      $iframe = $wrapper.find('iframe');
-      closure = function() {
-        return $iframe.attr({
-          'src': $iframe.attr('src').replace("autoplay=0", "autoplay=1")
-        });
-      };
-      setTimeout(closure, 300);
+    return $('.nice-video--control').magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
     });
-    return $('.nice-video').addClass('nice-video--ready');
   };
 
   $(document).ready(function() {
     // Grid toggle behavior, dev only
     $('.gridToggle').on('click', function() {
       return $('body').toggleClass('layout-grid--on');
+    });
+    // Include labels
+    $('.includeToggle').on('click', function() {
+      return $('body').toggleClass('twig-includes--on');
+    });
+    $('img').baseline(function() {
+      var size;
+      size = parseFloat(getComputedStyle(document.documentElement, null).getPropertyValue('font-size'));
+      return size / 2;
     });
     return prepNiceVideo();
   });

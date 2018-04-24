@@ -99,6 +99,10 @@ body {
   font-size: 1rem;
   line-height: 1rem;
   /* End base breakpoint */ }
+  @media screen and (min-width: 48rem) {
+    .sg-colors__column {
+      font-size: 1rem;
+      line-height: 1rem; } }
   .sg-colors__column margin {
     top: 1rem;
     bottom: 1rem; }
@@ -109,6 +113,10 @@ body {
   line-height: 1rem;
   /* End base breakpoint */
   margin-bottom: 0.5rem; }
+  @media screen and (min-width: 48rem) {
+    .sg-colors pre {
+      font-size: 0.75rem;
+      line-height: 1rem; } }
 
 .sg-swatch {
   display: block;
@@ -129,6 +137,10 @@ body {
   line-height: 1.5rem;
   /* End base breakpoint */
   padding: 0.5rem; }
+  @media screen and (min-width: 48rem) {
+    .sg-pattern-head {
+      font-size: 1rem;
+      line-height: 1.5rem; } }
 
 .sg-pattern-title padding {
   top: 1rem;
@@ -140,5 +152,113 @@ body {
 
 .sg-pattern-extra {
   display: none; }
+
+.sg-image-grid .sg-image-grid-tile {
+  margin-bottom: 2rem; }
+
+@media screen and (min-width: 44rem) {
+  .sg-image-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem; }
+    .sg-image-grid .sg-image-grid-tile {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 0; } }
+
+body.layout-grid--on::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 72rem;
+  min-height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  /* Base Breakpoint */
+  width: calc(100% - (2 * 1rem));
+  background-image: repeating-linear-gradient(to left, transparent 0, transparent 0.5rem, rgba(200, 200, 255, 0.2) 0.5rem, rgba(200, 200, 255, 0.2) 25%);
+  background-size: calc(100% + 0.5rem);
+  /* End base breakpoint */ }
+  @media screen and (min-width: 35rem) {
+    body.layout-grid--on::before {
+      width: calc(100% - (2 * 2rem));
+      background-image: repeating-linear-gradient(to left, transparent 0, transparent 1rem, rgba(255, 200, 200, 0.2) 1rem, rgba(255, 200, 200, 0.2) 12.5%);
+      background-size: calc(100% + 1rem); } }
+  @media screen and (min-width: 48rem) {
+    body.layout-grid--on::before {
+      width: calc(100% - (2 * 2rem));
+      background-image: repeating-linear-gradient(to left, transparent 0, transparent 1rem, rgba(128, 255, 200, 0.2) 1rem, rgba(128, 255, 200, 0.2) 8.33333%);
+      background-size: calc(100% + 1rem); } }
+  @media screen and (min-width: 76rem) {
+    body.layout-grid--on::before {
+      width: 100%;
+      background-image: repeating-linear-gradient(to left, transparent 0, transparent 2rem, rgba(200, 128, 255, 0.2) 2rem, rgba(200, 128, 255, 0.2) 8.33333%);
+      background-size: calc(100% + 2rem); } }
+
+body.layout-grid--on::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  /* Base Breakpoint */
+  background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem;
+  /* End base breakpoint */ }
+  @media screen and (min-width: 35rem) {
+    body.layout-grid--on::after {
+      background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }
+  @media screen and (min-width: 48rem) {
+    body.layout-grid--on::after {
+      background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }
+  @media screen and (min-width: 76rem) {
+    body.layout-grid--on::after {
+      background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }
+
+.toggleGroup {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 999; }
+  .toggleGroup button {
+    display: inline-block;
+    background-color: black;
+    border-color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 8px;
+    line-height: 1;
+    border-radius: 8px; }
+
+.twig-include {
+  position: relative; }
+
+.twig-include__label {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 0rem;
+  color: red;
+  z-index: 998; }
+
+body.twig-includes--on .twig-include {
+  border: 2px solid red; }
+
+body.twig-includes--on .twig-include__label {
+  display: block; }
 
 /*# sourceMappingURL=pattern-scaffolding.css.map */

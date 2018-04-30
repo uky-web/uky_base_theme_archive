@@ -75,9 +75,13 @@ body {
   @supports (grid-template-columns: 1px) {
     .sg-colors {
       display: grid;
+      grid-auto-rows: auto;
       /* Base Breakpoint */
       grid-gap: 0.5rem;
-      /* End base breakpoint */ }
+      /* End base breakpoint */
+      grid-auto-rows: auto;
+      grid-auto-rows: auto;
+      grid-auto-rows: auto; }
       @media screen and (min-width: 35rem) {
         .sg-colors {
           grid-gap: 1rem;
@@ -99,7 +103,7 @@ body {
   font-size: 1rem;
   line-height: 1rem;
   /* End base breakpoint */ }
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 76rem) {
     .sg-colors__column {
       font-size: 1rem;
       line-height: 1rem; } }
@@ -113,7 +117,7 @@ body {
   line-height: 1rem;
   /* End base breakpoint */
   margin-bottom: 0.5rem; }
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 76rem) {
     .sg-colors pre {
       font-size: 0.75rem;
       line-height: 1rem; } }
@@ -137,7 +141,7 @@ body {
   line-height: 1.5rem;
   /* End base breakpoint */
   padding: 0.5rem; }
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 76rem) {
     .sg-pattern-head {
       font-size: 1rem;
       line-height: 1.5rem; } }

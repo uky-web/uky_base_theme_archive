@@ -1,16 +1,8 @@
-{% import '@macros/svg.macro.twig' as svg %}
-
-{% if url|default(false) %}
-<a href="{{ url }}" class="icon-label {{ label_modifier|default('') }}">
-{% else %}
-<div class="icon-label {{ label_modifier|default('') }}">
-{% endif %}
-
-	<div class="icon-wrapper">{{ svg.ref(icon|default('angle-double-right'), title_text, "icon") }}</div>
-	<div class="label {% if hide_label|default(false) %}show-for-sr{% endif %}">{{ label }}</div>
-
-{% if url|default(false) %}
-</a>
-{% else %}
-</div>
-{% endif %}
+{% spaceless %}
+<span class="icon-label {{ icon_label_variant }}">
+	{% if icon is not null %}
+	<span class="ic ic--{{ icon }}" aria-hidden="true"></span>
+	{% endif %}
+	<span class="label {% if hide_label %}show-for-sr{% endif %}">{{ label }}</span>
+</span>
+{% endspaceless %}

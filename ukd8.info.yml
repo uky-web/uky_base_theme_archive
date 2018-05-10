@@ -31,9 +31,9 @@ component-libraries:
   molecules:
     paths:
       - elements/molecules
-  organisms:
+  components:
     paths:
-      - elements/organisms
+      - elements/components
   macros:
     paths:
       - macros

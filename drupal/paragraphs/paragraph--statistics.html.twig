@@ -1,0 +1,6 @@
+{% set n = paragraph.field_collection_items|length %}
+{% include 'molecules-grid' with { 
+  head : content.field_headline_group,
+  grid_type: "grid--" ~ n ~ "-up",
+  grid_columns: content.field_collection_items|children
+} %}

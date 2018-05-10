@@ -1,0 +1,16 @@
+{% embed 'molecules-slab' with { slab_variant: slab_variant } %}
+    {% block slab_outer %}
+        {% if head %}
+        <div class="slab__wrapper">
+            {{ head }}
+        </div>
+        {% endif %}
+        <div class="grid {{ grid_type|default('grid--2-up') }} {{ grid_style }}">          
+            {% for col in grid_columns %}
+            <div class="grid__column">
+                {{ col }}
+            </div>
+            {% endfor %}
+        </div>
+    {% endblock %}
+{% endembed %}

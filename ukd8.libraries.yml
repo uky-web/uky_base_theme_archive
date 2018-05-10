@@ -2,7 +2,7 @@ global:
   version: VERSION
   css:
     base:
-      css/base.css: {}
+      css/style.css: {}
   js:
     js/activate-current-links.js: {}
   dependencies:

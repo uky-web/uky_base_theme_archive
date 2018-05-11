@@ -10,3 +10,5 @@ require_once('lib/views.inc');
 require_once('lib/block.inc');
 require_once('lib/paragraph.inc');
 require_once('lib/breadcrumb.inc');
+
+require_once('lib/media.inc');

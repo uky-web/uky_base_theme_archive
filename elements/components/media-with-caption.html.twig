@@ -1,0 +1,12 @@
+<figure role="group" class="image-with-caption {{ classes }}">
+  {{ media }}
+  {% if head or caption or citation %}
+  <figcaption>
+    {{ head }}
+    {{ caption }}
+    {% if citation %}
+    {% include 'molecules-cite-media' with { icon: icon, label: citation } %}
+    {% endif %}
+  </figcaption>
+  {% endif %}
+</figure> 

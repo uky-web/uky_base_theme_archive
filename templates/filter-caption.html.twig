@@ -12,9 +12,9 @@
  * - string classes: The classes of the captioned HTML tag.
  */
 #}
-<figure role="group" class="image-with-caption {{ classes }}">
-  {{ node }}
-  <figcaption>
-    {{ caption }}
-  </figcaption>
-</figure> 
+{% include 'components-media-with-caption' with {
+  classes: classes,
+  media: node,
+  caption: caption,
+} %}
+

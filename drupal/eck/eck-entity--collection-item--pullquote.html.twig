@@ -1,0 +1,6 @@
+{% include 'components-pullquote' with {
+  quote: content.field_description|children,
+  first_line: content.field_attribution_1,
+  second_line: content.field_attribution_2,
+  image: content.field_media
+} %}

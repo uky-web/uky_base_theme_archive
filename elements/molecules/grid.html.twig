@@ -5,7 +5,7 @@
             {{ head }}
         </div>
         {% endif %}
-        <div class="grid {{ grid_type|default('grid--2-up') }} {{ grid_style }}">          
+        <div class="grid {{ grid_type|default('grid--3-up') }} {{ grid_style }}">          
             {% for col in grid_columns %}
             <div class="grid__column">
                 {{ col }}

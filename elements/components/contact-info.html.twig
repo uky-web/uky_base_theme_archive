@@ -12,9 +12,14 @@
                 <span class="contact-info__title">{{ job_title }}</span>
             </p>
         </div>
-
+        
         <dl class="invisible-labels">
-          {{ info }}
+          {% for item in info %}
+            {% if item|children|length %}
+            <dt>{{ item['#title'] }}</dt>
+            <dd>{{ item|children }}</dd>
+            {% endif %}
+          {% endfor %}
         </dl>
     </div>
 </div>

@@ -1,0 +1,22 @@
+{% embed 'components-teaser' with {
+  teaser_variant: 'teaser--custom'
+} %}
+  
+  {% block teaser_media %}
+    {{ content.field_media }}
+  {% endblock %}
+
+  {% block teaser_content %}
+    {% include 'atoms-headline-group' with {
+      level: 3,
+      head: eck.field_headline_group.headline,
+      super: eck.field_headline_group.super,
+      sub: eck.field_headline_group.sub,
+      linked: true,
+      url: eck.field_link[0].url
+    } %}
+
+    {{ content.field_description }}
+
+  {% endblock %}
+{% endembed %}

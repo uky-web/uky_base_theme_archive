@@ -1,0 +1,13 @@
+{% if teaser_date or teaser_taxonomy or teaser_byline %}
+<div class="teaser__meta">
+    {% if teaser_byline %}
+        <span class="byline">{{ teaser_byline }}</span>
+    {% endif %}
+    {% if teaser_date %}
+        <span class="date">{{ teaser_date|date(teaser_date_format|default("M d, Y - g:i a")) }}</span>
+    {% endif %}
+    {% if teaser_taxonomy %}
+        <span class="taxonomy-list">{% for w in teaser_taxonomy %}{{ w }}{% if not loop.last %}, {% endif %}{% endfor %}</span> 
+    {% endif %}       
+</div>
+{% endif %}

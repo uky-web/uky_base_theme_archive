@@ -1,0 +1,8 @@
+{% set byline = '' %}
+{% if content.field_byline|children|length %}
+  {% set byline = node.field_byline.value %}
+{% endif %}
+{% include 'components-content-teaser' with {
+  teaser_byline: byline,
+  teaser_date_format: "M d, Y"
+} %}

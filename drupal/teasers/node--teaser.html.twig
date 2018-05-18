@@ -1,0 +1,4 @@
+{% include 'components-content-teaser' with {
+  teaser_date: node.getCreatedTime(),
+  teaser_taxonomy: content.field_categories|children,
+} %}

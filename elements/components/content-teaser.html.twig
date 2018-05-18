@@ -70,38 +70,43 @@
  *   in different view modes.
  */
 #}
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  ]
-%}
-<article{{ attributes.addClass(classes) }}>
+{% embed 'components-teaser' with {
+  teaser_variant: 'teaser--' ~ node.bundle|clean_class
+} %}
+  
+  {% block teaser_media %}
+    {{ content.field_media }}
+  {% endblock %}
 
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+  {% block teaser_content %}
+    {% if content.field_headline_group|children|length %}
+      {% include 'atoms-headline-group' with {
+        level: 3,
+        head: node.field_headline_group.headline,
+        super: node.field_headline_group.super,
+        sub: node.field_headline_group.sub,
+        linked: true,
+        url: url
+      } %}
+    {% else %}
+      {% include 'atoms-heading' with {
+        level: 3,
+        headline: plain_title,
+        linked: true,
+        url: url
+      } %}
+    {% endif %}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+    {% include 'molecules-teaser-meta' with {
+      teaser_byline: teaser_byline|default(false),
+      teaser_date: teaser_date|default(false),
+      teaser_taxonomy: teaser_taxonomy|default(false),
+      teaser_date_format: teaser_date_format|default("M d, Y - g:i a")
+    } %}
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
-  </div>
+    <p>
+      {{ content.body }}
+    </p>
 
-</article>
+  {% endblock %}
+{% endembed %}

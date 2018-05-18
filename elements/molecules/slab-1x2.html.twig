@@ -5,6 +5,11 @@
 {% endif %}
 {% embed 'molecules-slab' with { slab_variant: slab_variant } %}
     {% block slab_outer %}
+        {% if headline|children|length %}
+        <div class="slab__wrapper">
+            {{ headline }}
+        </div>
+        {% endif %}
         <div class="grid {{ gridlayout }}">
             <div class="grid__column grid__column--major">
                 {% block main %}

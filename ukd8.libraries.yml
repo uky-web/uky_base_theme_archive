@@ -3,6 +3,7 @@ global:
   css:
     base:
       css/style.css: {}
+      overrides/drupal.css: {}
   js:
     js/activate-current-links.js: {}
   dependencies:
@@ -20,11 +21,13 @@ addtoany:
 #   js:
 #     js/sticky.js: {}
 
-# gallery:
-#   version: VERSION
-#   js:
-#     js/jquery.magnific-popup.js: {}
-#     js/gallery.js: {}
+image-gallery:
+  version: VERSION
+  js:
+    js/image-gallery.js: {}
+  dependencies:
+    - ukd8/magnific
+    - ukd8/masonry
 
 # accordion:
 #   version: VERSION

@@ -1,0 +1,9 @@
+{# default implementation is a grid #}
+{% if paragraph.field_collection_items|length %}
+{% include 'molecules-grid' with {
+  head: content.field_headline_group,
+  grid_columns: content.field_collection_items|children,
+} %}
+{% else %}
+{{ content }}
+{% endif %}

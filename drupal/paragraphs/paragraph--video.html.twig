@@ -1,7 +1,0 @@
-{% if paragraph.field_grid_display.value %}
-<div class="media-grid has-grid row">
-{% else %}
-<div class="media-grid row">
-{% endif %}
-    {{ content|without('field_grid_display') }}
-</div>

@@ -1,9 +1,0 @@
-<div class="button-group">
-	{% for button in buttons %}
-		{% include '@atoms/button.html.twig' with {
-			label: button.title,
-            url: button.url,
-			style_modifier: button.button_style
-		} %}
-	{% endfor %}
-</div>

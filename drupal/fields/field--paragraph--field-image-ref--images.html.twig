@@ -1,6 +1,0 @@
-{% set n = items|length %}
-{% for item in items %}
-    <div{{ item.attributes.addClass('image-grid-item image-grid-has-' ~ n ~ '-items')}}>
-        {{ item.content }}
-    </div>
-{% endfor %}

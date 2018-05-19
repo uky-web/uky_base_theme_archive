@@ -64,8 +64,4 @@ var image_gallery = function image_gallery() {
         }
     });
 };
-
-$(document).ready(function () {
-    image_gallery();
-});
 //# sourceMappingURL=image-gallery.js.map

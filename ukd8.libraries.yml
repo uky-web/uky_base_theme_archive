@@ -3,12 +3,31 @@ global:
   css:
     base:
       css/style.css: {}
-      overrides/drupal.css: {}
+      #helpers/drupal.css: {}
   js:
+    helpers/jquery.js: {}
     js/activate-current-links.js: {}
   dependencies:
     - core/drupal
     - core/jquery
+
+imagesloaded:
+  version: VERSION
+  js:
+    js/lib/imagesloaded.pkgd.min.js: {}
+
+masonry:
+  version: VERSION
+  js:
+    js/lib/masonry.pkgd.min.js: {}
+
+magnific:
+  version: VERSION
+  js:
+    js/lib/jquery.magnific-popup.min.js: {}
+  dependencies:
+    - core/jquery
+    
 
 addtoany:
   version: VERSION
@@ -25,7 +44,10 @@ image-gallery:
   version: VERSION
   js:
     js/image-gallery.js: {}
+    helpers/image-gallery.js: {}
   dependencies:
+    - core/jquery
+    - ukd8/imagesloaded
     - ukd8/magnific
     - ukd8/masonry
 

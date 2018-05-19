@@ -12,8 +12,4 @@ var modals = function modals() {
         fixedContentPos: false
     });
 };
-
-$(document).ready(function () {
-    modals();
-});
 //# sourceMappingURL=modals.js.map

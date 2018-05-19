@@ -33,8 +33,4 @@ var ambient_video = function ambient_video() {
     $av[0].stop();
   }
 };
-
-$(document).ready(function () {
-  ambient_video();
-});
 //# sourceMappingURL=ambient-video.js.map

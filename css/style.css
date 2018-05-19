@@ -18,6 +18,208 @@
       line-height: 1rem; } }
 
 /* Slick */
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/35E586_1_0.eot");
+  src: url("../fonts/35E586_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_1_0.woff2") format("woff2"), url("../fonts/35E586_1_0.woff") format("woff"), url("../fonts/35E586_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/35E586_3_0.eot");
+  src: url("../fonts/35E586_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_3_0.woff2") format("woff2"), url("../fonts/35E586_3_0.woff") format("woff"), url("../fonts/35E586_3_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/35E586_0_0.eot");
+  src: url("../fonts/35E586_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_0_0.woff2") format("woff2"), url("../fonts/35E586_0_0.woff") format("woff"), url("../fonts/35E586_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: 500;
+  font-style: italic;
+  src: url("../fonts/35E586_5_0.eot");
+  src: url("../fonts/35E586_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_5_0.woff2") format("woff2"), url("../fonts/35E586_5_0.woff") format("woff"), url("../fonts/35E586_5_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/35E586_4_0.eot");
+  src: url("../fonts/35E586_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_4_0.woff2") format("woff2"), url("../fonts/35E586_4_0.woff") format("woff"), url("../fonts/35E586_4_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/35E586_2_0.eot");
+  src: url("../fonts/35E586_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_2_0.woff2") format("woff2"), url("../fonts/35E586_2_0.woff") format("woff"), url("../fonts/35E586_2_0.ttf") format("truetype"); }
+
+body {
+  font-family: "AvenirNextLTPro", sans-serif; }
+
+.font-mercury {
+  font-family: "Mercury Display A", "Mercury Display B", serif; }
+
+.font-avenirnext {
+  font-family: "AvenirNextLTPro", sans-serif; }
+
+/* This file has been generated from a template. Do not edit it directly, your edits will 
+   be ignored like a ten-year-old's dad. Instead, edit the source template in 
+   /assets/font-svg/_iconfont.scss. 
+
+   This is a lodash template.
+*/
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/icons-769298492.eot");
+  src: url("../fonts/icons-769298492.eot?#iefix") format("eot"), url("../fonts/icons-769298492.woff2") format("woff2"), url("../fonts/icons-769298492.woff") format("woff"), url("../fonts/icons-769298492.ttf") format("truetype"), url("../fonts/icons-769298492.svg#icons-769298492") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.ic:before {
+  display: inline-block;
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.ic--lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.ic--2x {
+  font-size: 2em; }
+
+.ic--3x {
+  font-size: 3em; }
+
+.ic--4x {
+  font-size: 4em; }
+
+.ic--5x {
+  font-size: 5em; }
+
+.ic--fw {
+  width: 1.2857142857142858em;
+  text-align: center; }
+
+.ic--alert:before {
+  content: ""; }
+
+.ic--angle-left:before {
+  content: ""; }
+
+.ic--angle-right:before {
+  content: ""; }
+
+.ic--audio:before {
+  content: ""; }
+
+.ic--bolt:before {
+  content: ""; }
+
+.ic--camera:before {
+  content: ""; }
+
+.ic--clock:before {
+  content: ""; }
+
+.ic--close:before {
+  content: ""; }
+
+.ic--cog-box:before {
+  content: ""; }
+
+.ic--event:before {
+  content: ""; }
+
+.ic--facebook-block:before {
+  content: ""; }
+
+.ic--facebook:before {
+  content: ""; }
+
+.ic--hamburger:before {
+  content: ""; }
+
+.ic--home:before {
+  content: ""; }
+
+.ic--info:before {
+  content: ""; }
+
+.ic--instagram-block:before {
+  content: ""; }
+
+.ic--instagram:before {
+  content: ""; }
+
+.ic--linkedin-block:before {
+  content: ""; }
+
+.ic--linkedin:before {
+  content: ""; }
+
+.ic--magnify:before {
+  content: ""; }
+
+.ic--pause:before {
+  content: ""; }
+
+.ic--pinterest-block:before {
+  content: ""; }
+
+.ic--pinterest:before {
+  content: ""; }
+
+.ic--play-triangle:before {
+  content: ""; }
+
+.ic--popup:before {
+  content: ""; }
+
+.ic--quote-close:before {
+  content: ""; }
+
+.ic--quote-open:before {
+  content: ""; }
+
+.ic--rss:before {
+  content: ""; }
+
+.ic--snapchat-block:before {
+  content: ""; }
+
+.ic--snapchat:before {
+  content: ""; }
+
+.ic--twitter-block:before {
+  content: ""; }
+
+.ic--twitter:before {
+  content: ""; }
+
+.ic--video:before {
+  content: ""; }
+
+.ic--youtube-block:before {
+  content: ""; }
+
+.ic--youtube:before {
+  content: ""; }
+
+.slick-loading .slick-list {
+  background: #fff url("./js/libs/slick/ajax-loader.gif") center center no-repeat; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -90,153 +292,137 @@
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+  background: #fff url("../images/ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 @font-face {
-  font-family: 'slick';
+  font-family: "slick";
+  src: url("//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/fonts/slick.eot");
+  src: url("//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/fonts/slick.eot?#iefix") format("embedded-opentype"), url("//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/fonts/slick.woff") format("woff"), url("//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/fonts/slick.ttf") format("truetype"), url("//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/fonts/slick.svg#slick") format("svg");
   font-weight: normal;
-  font-style: normal;
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); }
+  font-style: normal; }
 
 /* Arrows */
 .slick-prev,
 .slick-next {
-  font-size: 0;
-  line-height: 0;
+  background-color: #2c2a29;
   position: absolute;
-  top: 50%;
   display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  margin-top: -10px\9;
-  /*lte IE 8*/
+  cursor: pointer;
+  top: 50%;
+  width: 4rem;
+  height: 4rem;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
+  padding: 0;
   border: none;
   outline: none;
-  background: transparent; }
-
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  color: transparent;
-  outline: none;
-  background: transparent; }
-
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-  opacity: 1; }
-
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: .25; }
-
-.slick-prev:before,
-.slick-next:before {
-  font-family: 'slick';
-  font-size: 20px;
-  line-height: 1;
-  opacity: .75;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  font-size: 0;
+  color: transparent; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    background-color: #2c2a29;
+    outline: none;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: .5e; }
+  .slick-prev:before,
+  .slick-next:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    font-family: 'iconfont';
+    font-size: 26px;
+    line-height: 1;
+    color: #fff;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: -25px; }
-
-[dir='rtl'] .slick-prev {
-  right: -25px;
-  left: auto; }
-
-.slick-prev:before {
-  content: '←'; }
-
-[dir='rtl'] .slick-prev:before {
-  content: '→'; }
+  left: 0;
+  z-index: 1000; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -60px; }
+  .slick-prev:before {
+    content: ""; }
+    [dir="rtl"] .slick-prev:before {
+      content: ""; }
 
 .slick-next {
-  right: -25px; }
-
-[dir='rtl'] .slick-next {
-  right: auto;
-  left: -25px; }
-
-.slick-next:before {
-  content: '→'; }
-
-[dir='rtl'] .slick-next:before {
-  content: '←'; }
+  right: 0; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: ""; }
+    [dir="rtl"] .slick-next:before {
+      content: ""; }
 
 /* Dots */
-.slick-slider {
+.slick-dotted.slick-slider {
   margin-bottom: 30px; }
 
 .slick-dots {
   position: absolute;
-  bottom: -45px;
-  display: block;
-  width: 100%;
-  padding: 0;
+  bottom: -25px;
   list-style: none;
-  text-align: center; }
-
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer; }
-
-.slick-dots li button {
-  font-size: 0;
-  line-height: 0;
   display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  color: transparent;
-  border: 0;
-  outline: none;
-  background: transparent; }
-
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-  outline: none; }
-
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-  opacity: 1; }
-
-.slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: '•';
   text-align: center;
-  opacity: .25;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.slick-dots li.slick-active button:before {
-  opacity: .75;
-  color: black; }
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 0.5rem;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
 
 /* Magnific Popup CSS */
 .mfp-bg {
@@ -590,202 +776,6 @@ img.mfp-img {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px; } }
-
-@font-face {
-  font-family: 'AvenirNextLTPro';
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/35E586_1_0.eot");
-  src: url("../fonts/35E586_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_1_0.woff2") format("woff2"), url("../fonts/35E586_1_0.woff") format("woff"), url("../fonts/35E586_1_0.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'AvenirNextLTPro';
-  font-weight: normal;
-  font-style: italic;
-  src: url("../fonts/35E586_3_0.eot");
-  src: url("../fonts/35E586_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_3_0.woff2") format("woff2"), url("../fonts/35E586_3_0.woff") format("woff"), url("../fonts/35E586_3_0.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'AvenirNextLTPro';
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/35E586_0_0.eot");
-  src: url("../fonts/35E586_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_0_0.woff2") format("woff2"), url("../fonts/35E586_0_0.woff") format("woff"), url("../fonts/35E586_0_0.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'AvenirNextLTPro';
-  font-weight: 500;
-  font-style: italic;
-  src: url("../fonts/35E586_5_0.eot");
-  src: url("../fonts/35E586_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_5_0.woff2") format("woff2"), url("../fonts/35E586_5_0.woff") format("woff"), url("../fonts/35E586_5_0.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'AvenirNextLTPro';
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/35E586_4_0.eot");
-  src: url("../fonts/35E586_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_4_0.woff2") format("woff2"), url("../fonts/35E586_4_0.woff") format("woff"), url("../fonts/35E586_4_0.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'AvenirNextLTPro';
-  font-weight: bold;
-  font-style: italic;
-  src: url("../fonts/35E586_2_0.eot");
-  src: url("../fonts/35E586_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/35E586_2_0.woff2") format("woff2"), url("../fonts/35E586_2_0.woff") format("woff"), url("../fonts/35E586_2_0.ttf") format("truetype"); }
-
-body {
-  font-family: "AvenirNextLTPro", sans-serif; }
-
-.font-mercury {
-  font-family: "Mercury Display A", "Mercury Display B", serif; }
-
-.font-avenirnext {
-  font-family: "AvenirNextLTPro", sans-serif; }
-
-/* This file has been generated from a template. Do not edit it directly, your edits will 
-   be ignored like a ten-year-old's dad. Instead, edit the source template in 
-   /assets/font-svg/_iconfont.scss. 
-
-   This is a lodash template.
-*/
-@font-face {
-  font-family: "iconfont";
-  src: url("../fonts/icons-969618623.eot");
-  src: url("../fonts/icons-969618623.eot?#iefix") format("eot"), url("../fonts/icons-969618623.woff2") format("woff2"), url("../fonts/icons-969618623.woff") format("woff"), url("../fonts/icons-969618623.ttf") format("truetype"), url("../fonts/icons-969618623.svg#icons-969618623") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-.ic:before {
-  display: inline-block;
-  font-family: "iconfont";
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.ic--lg {
-  font-size: 1.3333333333333333em;
-  line-height: 0.75em;
-  vertical-align: -15%; }
-
-.ic--2x {
-  font-size: 2em; }
-
-.ic--3x {
-  font-size: 3em; }
-
-.ic--4x {
-  font-size: 4em; }
-
-.ic--5x {
-  font-size: 5em; }
-
-.ic--fw {
-  width: 1.2857142857142858em;
-  text-align: center; }
-
-.ic--alert:before {
-  content: ""; }
-
-.ic--angle-right:before {
-  content: ""; }
-
-.ic--audio:before {
-  content: ""; }
-
-.ic--bolt:before {
-  content: ""; }
-
-.ic--camera:before {
-  content: ""; }
-
-.ic--clock:before {
-  content: ""; }
-
-.ic--close:before {
-  content: ""; }
-
-.ic--cog-box:before {
-  content: ""; }
-
-.ic--event:before {
-  content: ""; }
-
-.ic--facebook-block:before {
-  content: ""; }
-
-.ic--facebook:before {
-  content: ""; }
-
-.ic--hamburger:before {
-  content: ""; }
-
-.ic--home:before {
-  content: ""; }
-
-.ic--info:before {
-  content: ""; }
-
-.ic--instagram-block:before {
-  content: ""; }
-
-.ic--instagram:before {
-  content: ""; }
-
-.ic--linkedin-block:before {
-  content: ""; }
-
-.ic--linkedin:before {
-  content: ""; }
-
-.ic--magnify:before {
-  content: ""; }
-
-.ic--pause:before {
-  content: ""; }
-
-.ic--pinterest-block:before {
-  content: ""; }
-
-.ic--pinterest:before {
-  content: ""; }
-
-.ic--play-triangle:before {
-  content: ""; }
-
-.ic--popup:before {
-  content: ""; }
-
-.ic--quote-close:before {
-  content: ""; }
-
-.ic--quote-open:before {
-  content: ""; }
-
-.ic--rss:before {
-  content: ""; }
-
-.ic--snapchat-block:before {
-  content: ""; }
-
-.ic--snapchat:before {
-  content: ""; }
-
-.ic--twitter-block:before {
-  content: ""; }
-
-.ic--twitter:before {
-  content: ""; }
-
-.ic--video:before {
-  content: ""; }
-
-.ic--youtube-block:before {
-  content: ""; }
-
-.ic--youtube:before {
-  content: ""; }
 
 /*
  * Patterlab styles
@@ -3913,7 +3903,7 @@ button.accordion__header {
   border: 0;
   padding: 0; }
   .modal-close::after {
-    content: "";
+    content: "";
     font-family: 'iconfont';
     font-size: 2em;
     margin-left: .3em;
@@ -3942,7 +3932,7 @@ button.accordion__header {
       transition: transform .6s ease-in-out;
       transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out; }
     .image-gallery__block a figure::after {
-      content: "";
+      content: "";
       opacity: 0;
       -webkit-transition: opacity .3s ease-in-out;
       transition: opacity .3s ease-in-out;
@@ -3953,15 +3943,13 @@ button.accordion__header {
       left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
               transform: translateX(-50%) translateY(-50%);
-      padding: .5rem .7rem;
       line-height: 1.2;
       color: #fff;
-      background-color: #0033a0;
       z-index: 10; }
     .image-gallery__block a figure::before {
       content: '';
       opacity: 0;
-      background-color: rgba(0, 51, 160, 0.5);
+      background-color: rgba(0, 51, 160, 0.7);
       -webkit-transition: opacity .3s ease-in-out;
       transition: opacity .3s ease-in-out;
       -webkit-box-shadow: inset 0 0 0 0.5rem #0033a0;
@@ -4906,10 +4894,10 @@ figure {
     display: inline-block;
     vertical-align: top; }
   .pullquote__quote p::before {
-    content: "";
+    content: "";
     margin-right: .5em; }
   .pullquote__quote p::after {
-    content: "";
+    content: "";
     position: relative;
     margin-left: -1.6em;
     right: -2.1em;

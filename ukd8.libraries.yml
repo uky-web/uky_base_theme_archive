@@ -28,6 +28,17 @@ magnific:
   dependencies:
     - core/jquery
     
+accessible-accordion:
+  version: VERSION
+  js:
+    js/lib/jquery-accessible-accordion.js: {}
+  dependencies:
+    - core/jquery
+
+slick:
+  version: VERSION
+  js:
+    js/lib/slick/slick.js: {}
 
 addtoany:
   version: VERSION
@@ -50,6 +61,25 @@ image-gallery:
     - ukd8/imagesloaded
     - ukd8/magnific
     - ukd8/masonry
+
+zipper:
+  version: VERSION
+  js:
+    js/accordion.js: {}
+    helpers/accordion.js: {}
+  dependencies:
+    - core/jquery
+    - ukd8/accessible-accordion
+
+carousel:
+  version: VERSION
+  js:
+    js/carousel.js: {}
+    helpers/carousel.js: {}
+  dependencies:
+    - core/jquery
+    - ukd8/slick
+
 
 # accordion:
 #   version: VERSION

@@ -101,7 +101,9 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
+    {% block content %}
     {{ content }}
+    {% endblock %}
   </div>
 
 </article>

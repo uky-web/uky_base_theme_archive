@@ -1,0 +1,29 @@
+{% extends 'node.html.twig' %}
+
+{% block content %}
+  {% set header_style = node.field_header_style.entity.type %}
+  {% if header_style == 'split_header' %}
+    {% include 'components-split-page-header' with {
+      headline: content.field_headline_group,
+      media: content.field_media
+    } %}
+  {% elseif header_style == 'full_width' %}
+    {% include 'components-hero-page-header' with {
+      headline: content.field_headline_group,
+      media: content.field_media
+    } %}
+  {% else %}
+    {% include 'components-text-page-header' with {
+      headline: content.field_headline_group
+    } %}
+  {% endif %}
+
+  {% embed 'molecules-slab' %}
+    {% block slab_content %}
+      {{ content|without('field_headline_group', 'field_media', 'field_paragraphs') }}
+    {% endblock %}
+  {% endembed %}
+
+  {{ content.field_paragraphs }}
+
+{% endblock %}

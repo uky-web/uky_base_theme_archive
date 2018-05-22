@@ -20,7 +20,18 @@
 
   {% embed 'molecules-slab' %}
     {% block slab_content %}
-      {{ content|without('field_headline_group', 'field_media', 'field_paragraphs') }}
+      {% include 'molecules-teaser-meta' with {
+        teaser_date: node.field_dates.value,
+        teaser_date_end: node.field_dates.end_value,
+        teaser_taxonomy: content.field_categories|children,
+      } %}
+    {% endblock %}
+  {% endembed %}
+
+  {% embed 'molecules-slab' %}
+    {% block slab_content %}
+      {{ content.body }}
+      {{ content.field_location }}
     {% endblock %}
   {% endembed %}
 

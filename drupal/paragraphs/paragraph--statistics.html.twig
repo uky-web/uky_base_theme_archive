@@ -3,5 +3,6 @@
   head : content.field_headline_group,
   grid_type: "grid--" ~ n ~ "-up",
   grid_columns: content.field_collection_items|children,
-  slab_variant: {'default': '', 'light': 'slab--subtle-gray', 'dark': 'slab--dark-blue', 'wildcat': 'slab--wildcat-blue'}[theme_settings.statistic]
+  slab_variant: {'default': '', 'light': 'slab--subtle-gray', 'dark': 'slab--dark-blue', 'wildcat': 'slab--wildcat-blue'}[theme_settings.statistic_schema],
+  grid_style: theme_settings.divide_statistics? 'grid--divided',
 } %}

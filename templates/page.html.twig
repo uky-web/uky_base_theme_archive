@@ -2,8 +2,23 @@
 {% include 'components-universal-header' %}
 {% include 'components-global-header' %}
 <main class="main">
+	{% block content_prefix %}
+		{{ page.content_prefix }}
+	{% endblock %}
+
 	{% block main_content %}
-    {{ page.content }}
+		{% if page.sidebar %}
+			{% include 'molecules-slab-1x2' with {
+				main: page.content,
+				aside: page.sidebar
+			} %}
+		{% else %}
+			{{ page.content }}
+		{% endif %}
+	{% endblock %}
+
+	{% block content_suffix %}
+		{{ page.content_suffix }}
 	{% endblock %}
 </main>
 {% include 'components-global-footer' %}

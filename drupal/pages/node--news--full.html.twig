@@ -20,11 +20,11 @@
 
   {% embed 'molecules-slab' %}
     {% block slab_content %}
-      {% include 'molecules-teaser-meta' with {
-        teaser_byline: content.field_byline,
-        teaser_date: node.getCreatedTime(),
-        teaser_date_format: 'M d, Y',
-        teaser_taxonomy: content.field_categories|children,
+      {% include 'molecules-content-meta' with {
+        content_byline: content.field_byline,
+        content_date: node.getCreatedTime(),
+        content_date_format: 'M d, Y',
+        content_taxonomy: content.field_categories|children,
       } %}
     {% endblock %}
   {% endembed %}

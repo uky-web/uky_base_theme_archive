@@ -20,10 +20,10 @@
 
   {% embed 'molecules-slab' %}
     {% block slab_content %}
-      {% include 'molecules-teaser-meta' with {
-        teaser_date: node.field_dates.value,
-        teaser_date_end: node.field_dates.end_value,
-        teaser_taxonomy: content.field_categories|children,
+      {% include 'molecules-content-meta' with {
+        content_date: node.field_dates.value,
+        content_date_end: node.field_dates.end_value,
+        content_taxonomy: content.field_categories|children,
       } %}
     {% endblock %}
   {% endembed %}

@@ -20,4 +20,8 @@ function ukd8_preprocess_eck_entity(&$variables) {
        strip_tags($variables['eck']->title[0]->value) :
        '';
   }
+
+  // load up the theme settings
+  // see theme.inc
+  _ukd8_add_theme_settings($variables);
 }

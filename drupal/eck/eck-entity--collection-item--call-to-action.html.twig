@@ -1,5 +1,6 @@
 {% include 'components-call-to-action' with {
   title: content.title,
   body: content.field_description,
-  button: content.field_button
+  button: content.field_button,
+  cta_variant: {'default': '', 'light': 'cta--light', 'dark': 'cta--dark', 'wildcat': 'cta--wildcat'}[theme_settings.call_to_action]
 } %}

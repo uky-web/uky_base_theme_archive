@@ -97,11 +97,11 @@
       } %}
     {% endif %}
 
-    {% include 'molecules-teaser-meta' with {
-      teaser_byline: teaser_byline|default(false),
-      teaser_date: teaser_date|default(false),
-      teaser_taxonomy: teaser_taxonomy|default(false),
-      teaser_date_format: teaser_date_format|default("M d, Y - g:i a")
+    {% include 'molecules-content-meta' with {
+      content_byline: content_byline|default(false),
+      content_date: content_date|default(false),
+      content_taxonomy: content_taxonomy|default(false),
+      content_date_format: content_date_format|default("M d, Y - g:i a")
     } %}
 
     <p>

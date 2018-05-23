@@ -1,6 +1,7 @@
+{% set schema = eck.field_theme_color_scheme|length? eck.field_theme_color_scheme.value : theme_settings.call_to_action_schema %}
 {% include 'components-call-to-action' with {
   title: content.title,
   body: content.field_description,
   button: content.field_button,
-  cta_variant: {'default': '', 'light': 'cta--light', 'dark': 'cta--dark', 'wildcat': 'cta--wildcat'}[theme_settings.call_to_action_schema]
+  cta_variant: {'default': '', 'light': 'cta--light', 'dark': 'cta--dark', 'wildcat': 'cta--wildcat'}[schema]
 } %}

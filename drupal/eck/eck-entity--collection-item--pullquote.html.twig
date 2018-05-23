@@ -1,8 +1,9 @@
+{% set schema = eck.field_theme_color_scheme|length? eck.field_theme_color_scheme.value : theme_settings.pullquote_schema %}
 {% include 'components-pullquote' with {
   quote: content.field_description|children,
   first_line: content.field_attribution_1,
   second_line: content.field_attribution_2,
   image: content.field_media,
-  pullquote_variant: {'default': '', 'light': 'pullquote--light', 'dark': 'pullquote--dark', 'wildcat': 'pullquote--wildcat'}[theme_settings.pullquote_schema]
+  pullquote_variant: {'default': '', 'light': 'pullquote--light', 'dark': 'pullquote--dark', 'wildcat': 'pullquote--wildcat'}[schema]
 
 } %}

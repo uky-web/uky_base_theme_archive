@@ -77,8 +77,8 @@ body {
 */
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-508532583.eot");
-  src: url("../fonts/icons-508532583.eot?#iefix") format("eot"), url("../fonts/icons-508532583.woff2") format("woff2"), url("../fonts/icons-508532583.woff") format("woff"), url("../fonts/icons-508532583.ttf") format("truetype"), url("../fonts/icons-508532583.svg#icons-508532583") format("svg");
+  src: url("../fonts/icons-668100521.eot");
+  src: url("../fonts/icons-668100521.eot?#iefix") format("eot"), url("../fonts/icons-668100521.woff2") format("woff2"), url("../fonts/icons-668100521.woff") format("woff"), url("../fonts/icons-668100521.ttf") format("truetype"), url("../fonts/icons-668100521.svg#icons-668100521") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2520,7 +2520,7 @@ dl.invisible-labels dd {
   .content-meta .taxonomy-list {
     font-style: italic;
     display: block; }
-  .content-meta .byline + .date::before {
+  .content-meta span + span::before {
     content: ' | '; }
 
 .slab {
@@ -4873,8 +4873,7 @@ figure {
   border: 3px #aaaaaa solid;
   padding: calc(1rem - 3px);
   margin-left: -1rem;
-  margin-right: -1rem;
-  overflow: hidden; }
+  margin-right: -1rem; }
   @media screen and (min-width: 35rem) {
     .pullquote {
       margin-left: 0;
@@ -5065,8 +5064,7 @@ figure {
   border: 3px #aaaaaa solid;
   padding: calc(1rem - 3px);
   margin-left: -1rem;
-  margin-right: -1rem;
-  overflow: hidden; }
+  margin-right: -1rem; }
   @media screen and (min-width: 35rem) {
     .pulltext {
       margin-left: 0;
@@ -5164,8 +5162,7 @@ figure {
   border: 3px #0033a0 solid;
   padding: calc(1rem - 3px);
   margin-left: -1rem;
-  margin-right: -1rem;
-  overflow: hidden; }
+  margin-right: -1rem; }
   .cta h2, .cta h3, .cta h4 {
     /* Base Breakpoint */
     font-size: 1.775rem;
@@ -5258,7 +5255,6 @@ figure {
   padding: calc(1rem - 3px);
   margin-left: -1rem;
   margin-right: -1rem;
-  overflow: hidden;
   background-color: #ebebeb; }
   @media screen and (min-width: 35rem) {
     .contact-info {

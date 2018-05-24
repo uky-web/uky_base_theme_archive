@@ -77,8 +77,8 @@ body {
 */
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-268891380.eot");
-  src: url("../fonts/icons-268891380.eot?#iefix") format("eot"), url("../fonts/icons-268891380.woff2") format("woff2"), url("../fonts/icons-268891380.woff") format("woff"), url("../fonts/icons-268891380.ttf") format("truetype"), url("../fonts/icons-268891380.svg#icons-268891380") format("svg");
+  src: url("../fonts/icons-347780559.eot");
+  src: url("../fonts/icons-347780559.eot?#iefix") format("eot"), url("../fonts/icons-347780559.woff2") format("woff2"), url("../fonts/icons-347780559.woff") format("woff"), url("../fonts/icons-347780559.ttf") format("truetype"), url("../fonts/icons-347780559.svg#icons-347780559") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -348,7 +348,7 @@ body {
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: 0;
+  left: -60px;
   z-index: 1000; }
   [dir="rtl"] .slick-prev {
     left: auto;
@@ -359,9 +359,9 @@ body {
       content: ""; }
 
 .slick-next {
-  right: 0; }
+  right: -60px; }
   [dir="rtl"] .slick-next {
-    left: -25px;
+    left: -60px;
     right: auto; }
   .slick-next:before {
     content: ""; }
@@ -2233,7 +2233,6 @@ button, a.button {
   font-family: "AvenirNextLTPro", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  background-clip: padding-box;
   margin: 0;
   padding-top: calc(1rem - 2px);
   padding-bottom: calc(1rem - 4px);
@@ -3782,7 +3781,8 @@ dl.invisible-labels dd {
   .accordion__header:active {
     background-color: #c8c8c7; }
   .accordion__header:hover {
-    background-color: #c8c8c7; }
+    background-color: #c8c8c7;
+    color: #2c2a29; }
 
 .accordion__title {
   position: absolute;
@@ -3855,6 +3855,77 @@ button.accordion__header {
     float: right;
 }
 */
+.carousel.carousel--single .slick-next {
+  right: 0;
+  left: auto; }
+
+.carousel.carousel--single .slick-prev {
+  left: 0;
+  right: auto; }
+
+.carousel.carousel--center figure {
+  background-color: #0033a0;
+  margin: 0 auto; }
+
+.carousel.carousel--center figcaption {
+  margin-top: 0;
+  background-color: #fff;
+  -webkit-transition: .3s max-height ease-in-out;
+  transition: .3s max-height ease-in-out;
+  overflow: hidden;
+  z-index: -1;
+  max-height: 0; }
+
+.carousel.carousel--center .slick-slide {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease; }
+  .carousel.carousel--center .slick-slide img {
+    -webkit-transition: 300ms all ease;
+    transition: 300ms all ease;
+    opacity: .46; }
+
+.carousel.carousel--center .slick-current {
+  -webkit-transform: scale(1.105);
+          transform: scale(1.105);
+  padding-bottom: 3rem; }
+  .carousel.carousel--center .slick-current img {
+    opacity: 1; }
+  .carousel.carousel--center .slick-current figcaption {
+    max-height: 500px; }
+
+.carousel.carousel--center__list {
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out; }
+  .carousel.carousel--center__list.slick-initialized {
+    opacity: 1; }
+
+.carousel.carousel--center__advance {
+  position: absolute;
+  height: rem-calc(60);
+  width: rem-calc(60);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  color: white;
+  z-index: 99; }
+  .carousel.carousel--center__advance svg {
+    width: rem-calc(40);
+    height: auto; }
+  .carousel.carousel--center__advance span {
+    font-size: 0; }
+
+.carousel.carousel--center__prev {
+  left: rem-calc(75); }
+
+.carousel.carousel--center__next {
+  right: rem-calc(75); }
+
+.carousel.carousel--center__wrapper {
+  position: relative; }
+
 .search-bar .search-bar__toggle {
   display: none; }
 

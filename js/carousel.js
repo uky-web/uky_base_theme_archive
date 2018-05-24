@@ -11,7 +11,7 @@ var carousel_center = {
     dots: true,
     lazyLoad: 'progressive',
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '100px',
     sidesToShow: 3,
     responsive: [{
         breakpoint: 768,
@@ -36,21 +36,24 @@ var carousel = function carousel() {
     var config = carousel_single; // default configuration
     if ($carousels.length < 1) return;
 
-    var positionArrows = function positionArrows(slick, slide) {
+    var positionArrows = function positionArrows(slick) {
+        var buttonTop = slick.slideWidth * .4;
+        var buttons = slick.$nextArrow.add(slick.$prevArrow);
+        buttons.css({ top: buttonTop });
         //arrows should be positioned at 40% of the width of the slide track
     };
 
     $carousels.on('init', function (e, slick) {
-        slick.$slides.find('img').wrap('<div class="carousel__image-wrapper"></div>');
-        console.log(slick);
-        var buttonTop = slick.$slider.width();
-        console.log(buttonTop);
+        if ($(e.currentTarget).has('.carousel--single')) {
+            positionArrows(slick);
+        }
     });
-    $carousels.on('lazyLoaded', function (e, slick, image, imageSource) {
-        //console.log(image,imageSource);
-    });
-    $carousels.on('afterChange', function (e, slick, currentSlide) {
-        console.log('after change', slick, currentSlide);
+    $carousels.on('lazyLoaded', function (e, slick, image, imageSource) {});
+    $carousels.on('afterChange', function (e, slick, currentSlide) {});
+    $carousels.on('setPosition', function (e, slick) {
+        if ($(e.currentTarget).has('.carousel--single')) {
+            positionArrows(slick);
+        }
     });
     $carousels.map(function (index, elem) {
         // override configuration based on class name

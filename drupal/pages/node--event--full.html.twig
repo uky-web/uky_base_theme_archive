@@ -1,51 +1,11 @@
 {% extends 'node.html.twig' %}
 
 {% block content %}
-  {% set header_style = node.field_header_style.entity.type %}
-  {% if header_style == 'split_header' %}
-    {% include 'components-split-page-header' with {
-      headline: content.field_headline_group,
-      media: content.field_media
-    } %}
-  {% elseif header_style == 'full_width' %}
-    {% include 'components-hero-page-header' with {
-      headline: content.field_headline_group,
-      media: content.field_media
-    } %}
-  {% else %}
-    {% include 'components-text-page-header' with {
-      headline: content.field_headline_group
-    } %}
-  {% endif %}
-
-  {% set location = false %}
-  {% if node.field_location|length %}
-    {% set location = {
-      title: node.field_location.entity.title.value,
-      url: node.field_location.entity.field_link[0].url.toString(),
-      address: node.field_location.entity.field_address.value,
-    } %}
-  {% endif %}
-
   {% embed 'molecules-slab' %}
     {% block slab_content %}
-      {% include 'molecules-content-meta' with {
-        content_location: location,
-        content_date: node.field_dates.value,
-        content_date_end: node.field_dates.end_value,
-        content_taxonomy: content.field_categories|children,
-      } %}
+      {{ content.body }}
     {% endblock %}
   {% endembed %}
-
-  {% embed 'molecules-slab-2x1'  %}
-    {% block slab_content %}
-        {{ content.body }}
-        {{ content.field_paragraphs }}
-    {% endblock %}
-    {% block slab_sidebar %}
-        <h2>Sidebar</h2>
-    {% endblock %}
-  {% endembed %} 
-
+  
+  {{ content.field_paragraphs }}
 {% endblock %}

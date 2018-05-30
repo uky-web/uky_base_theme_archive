@@ -9,7 +9,7 @@
 	{% endblock %}
 
 	{% block main_content %}
-		{% if page.sidebar %}
+		{% if page.sidebar|trim %}
 			{% include 'molecules-slab-1x2' with {
 				main: page.content,
 				aside: page.sidebar

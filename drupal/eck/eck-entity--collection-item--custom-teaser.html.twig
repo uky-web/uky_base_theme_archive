@@ -9,9 +9,9 @@
   {% block teaser_content %}
     {% include 'atoms-headline-group' with {
       level: 3,
-      head: eck.field_headline_group.headline,
-      super: eck.field_headline_group.super,
-      sub: eck.field_headline_group.sub,
+      head: eck.field_headline_group[0].headline,
+      super: eck.field_headline_group[0].superhead,
+      sub: eck.field_headline_group[0].subhead,
       linked: true,
       url: eck.field_link[0].url
     } %}

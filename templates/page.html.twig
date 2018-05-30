@@ -2,6 +2,8 @@
 {% include 'components-universal-header' %}
 {% include 'components-global-header' %}
 <main class="main">
+	{{ page.breadcrumb }}
+
 	{% block content_prefix %}
 		{{ page.content_prefix }}
 	{% endblock %}

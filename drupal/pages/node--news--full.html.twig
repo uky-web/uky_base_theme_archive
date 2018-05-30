@@ -29,12 +29,14 @@
     {% endblock %}
   {% endembed %}
 
-  {% embed 'molecules-slab' %}
+  {% embed 'molecules-slab-2x1' %}
     {% block slab_content %}
-      {{ content.body }}
+        {{ content.body }}
+        {{ content.field_paragraphs }}
     {% endblock %}
-  {% endembed %}
-
-  {{ content.field_paragraphs }}
+    {% block slab_sidebar %}
+        <h2>Sidebar</h2>
+    {% endblock %}
+  {% endembed %} 
 
 {% endblock %}

@@ -1,8 +1,12 @@
-{% if content_date or content_taxonomy or content_byline %}
+{% if content_date or content_location or content_taxonomy or content_byline %}
 <div class="content-meta">
     <div class="content-meta__who-when">
         {% if content_byline %}
             <span class="byline">{{ content_byline }}</span>
+        {% endif %}
+        {% if content_location %}
+            {{ attach_library('ukd8/modals') }}
+            <span class="location">{{ content_location.title }}{% if content_location.address or content_location.url %}{% if content_location.address %}: <a class="modal-control mfp-iframe" href="https://maps.google.com/maps?q={{ content_location.address|url_encode }}">Map</a>{% endif %}{% if content_location.url %} - <a href="{{ content_location.url }}">Details</a>{% endif %}{% endif %}</span>
         {% endif %}
         {% if content_date %}
             {% spaceless %}

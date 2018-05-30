@@ -80,6 +80,14 @@ carousel:
     - core/jquery
     - ukd8/slick
 
+modals:
+  version: VERSION
+  js:
+    js/modals.js: {}
+    helpers/modals.js: {}
+  dependencies:
+    - ukd8/magnific
+
 
 # accordion:
 #   version: VERSION

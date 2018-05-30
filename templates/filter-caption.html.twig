@@ -12,9 +12,9 @@
  * - string classes: The classes of the captioned HTML tag.
  */
 #}
+<aside class="editorial__aside {{ classes }}">
 {% include 'components-media-with-caption' with {
-  classes: classes,
   media: node,
   caption: caption,
-} %}
-
+} only %}
+</aside>

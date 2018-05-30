@@ -81,6 +81,7 @@ body {
       /* End base breakpoint */
       grid-auto-rows: auto;
       grid-auto-rows: auto;
+      grid-auto-rows: auto;
       grid-auto-rows: auto; }
       @media screen and (min-width: 35rem) {
         .sg-colors {
@@ -206,6 +207,11 @@ body.layout-grid--on::before {
       width: 100%;
       background-image: repeating-linear-gradient(to left, transparent 0, transparent 2rem, rgba(200, 128, 255, 0.2) 2rem, rgba(200, 128, 255, 0.2) 8.33333%);
       background-size: calc(100% + 2rem); } }
+  @media screen and (min-width: 80rem) {
+    body.layout-grid--on::before {
+      width: 100%;
+      background-image: repeating-linear-gradient(to left, transparent 0, transparent 2rem, rgba(200, 128, 255, 0.2) 2rem, rgba(200, 128, 255, 0.2) 8.33333%);
+      background-size: calc(100% + 2rem); } }
 
 body.layout-grid--on::after {
   content: '';
@@ -230,6 +236,9 @@ body.layout-grid--on::after {
     body.layout-grid--on::after {
       background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }
   @media screen and (min-width: 76rem) {
+    body.layout-grid--on::after {
+      background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }
+  @media screen and (min-width: 80rem) {
     body.layout-grid--on::after {
       background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }
 

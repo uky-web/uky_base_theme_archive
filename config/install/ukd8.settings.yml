@@ -6,5 +6,7 @@ call_to_action_schema: default
 pullquote_schema: default
 social_media_schema: default
 statistic_schema: default
+carousel_schema: default
 # other setttings
-divide_statistics: false
+divide_statistics: default
+carousel_center: default

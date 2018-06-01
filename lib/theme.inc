@@ -35,6 +35,7 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
     'pullquote_schema' => 'Pullquote',
     'social_media_schema' => 'Social media links panel',
     'statistic_schema' => 'Statistic block',
+    'carousel_schema' => 'Carousel slab',
   ];
   
   $theme_settings =  \Drupal::config('ukd8.settings');
@@ -63,6 +64,12 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
     '#type' => 'checkbox',
     '#title' => t('Divide statistic collections'),
     '#default_value' => $theme_settings->get('divide_statistics'),
+  ];
+
+  $form['ukd8_settings']['layout']['center_carousel'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Use centered carousel style'),
+    '#default_value' => $theme_settings->get('center_carousel'),
   ];
 }
 

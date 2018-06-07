@@ -1,0 +1,25 @@
+{% extends 'node.html.twig' %}
+
+{# hide the contact image if it's used in the page header #}
+{% set hide_image = node.field_large_image|length > 0 %}
+
+{% block content %}
+  {% embed 'molecules-slab' %}
+    {% block slab_content %}
+      {% include 'components-contact-info' with {
+        contact_info_variant : "contact-info--sheet", 
+        hide_image: hide_image,
+        headline: false,
+        photo: content.field_media,
+        info: [
+          content.field_categories,
+          content.field_location_text,
+          content.field_phone,
+          content.field_email,
+        ]
+      } %}
+      
+      {{ content.body }}
+    {% endblock %}
+  {% endembed %}
+{% endblock %}

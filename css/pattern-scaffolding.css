@@ -87,7 +87,7 @@ body {
         .sg-colors {
           grid-gap: 1rem;
           grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-      @media screen and (min-width: 48rem) {
+      @media screen and (min-width: 58rem) {
         .sg-colors {
           grid-template-columns: repeat(4, minmax(0, 1fr)); } }
       @media screen and (min-width: 76rem) {
@@ -197,7 +197,7 @@ body.layout-grid--on::before {
       width: calc(100% - (2 * 2rem));
       background-image: repeating-linear-gradient(to left, transparent 0, transparent 1rem, rgba(255, 200, 200, 0.2) 1rem, rgba(255, 200, 200, 0.2) 12.5%);
       background-size: calc(100% + 1rem); } }
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 58rem) {
     body.layout-grid--on::before {
       width: calc(100% - (2 * 2rem));
       background-image: repeating-linear-gradient(to left, transparent 0, transparent 1rem, rgba(128, 255, 200, 0.2) 1rem, rgba(128, 255, 200, 0.2) 8.33333%);
@@ -232,7 +232,7 @@ body.layout-grid--on::after {
   @media screen and (min-width: 35rem) {
     body.layout-grid--on::after {
       background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }
-  @media screen and (min-width: 48rem) {
+  @media screen and (min-width: 58rem) {
     body.layout-grid--on::after {
       background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }
   @media screen and (min-width: 76rem) {

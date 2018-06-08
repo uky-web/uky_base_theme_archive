@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.editorial {
+  overflow-y: hidden;
+}
+
 html.paragraphs-previewer-popup-html .slab {
   background-color: white;
 }

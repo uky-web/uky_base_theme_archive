@@ -9,10 +9,13 @@
 	{% endblock %}
 
 	{% block main_content %}
-		{% if page.sidebar|trim %}
+		{% set sidebar %}
+			{{ page.sidebar }}
+		{% endset %}
+		{% if sidebar|striptags|trim %}
 			{% include 'molecules-slab-1x2' with {
 				main: page.content,
-				aside: page.sidebar
+				aside: sidebar
 			} %}
 		{% else %}
 			{{ page.content }}

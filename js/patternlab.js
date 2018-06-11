@@ -21,5 +21,6 @@ $(document).ready(function () {
     ambient_video();
     carousel();
     modals();
+    togglebutton();
 });
 //# sourceMappingURL=patternlab.js.map

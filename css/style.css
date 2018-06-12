@@ -5,7 +5,7 @@
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
-@import url("https://cloud.typography.com/7932236/6521992/css/fonts.css");
+@import url("https://cloud.typography.com/7932236/6118192/css/fonts.css");
 :root {
   /* Base Breakpoint */
   font-size: 1rem;
@@ -77,8 +77,8 @@ body {
 */
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-156928503.eot");
-  src: url("../fonts/icons-156928503.eot?#iefix") format("eot"), url("../fonts/icons-156928503.woff2") format("woff2"), url("../fonts/icons-156928503.woff") format("woff"), url("../fonts/icons-156928503.ttf") format("truetype"), url("../fonts/icons-156928503.svg#icons-156928503") format("svg");
+  src: url("../fonts/icons-773659927.eot");
+  src: url("../fonts/icons-773659927.eot?#iefix") format("eot"), url("../fonts/icons-773659927.woff2") format("woff2"), url("../fonts/icons-773659927.woff") format("woff"), url("../fonts/icons-773659927.ttf") format("truetype"), url("../fonts/icons-773659927.svg#icons-773659927") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -5138,6 +5138,11 @@ figure {
     color: #0033a0; }
   .universal-header a:hover, .universal-header a:active {
     text-decoration: underline; }
+  .universal-header sub {
+    font-size: inherit;
+    position: relative;
+    top: .1875rem;
+    left: -.1875rem; }
   .universal-header img {
     max-height: 1em;
     width: auto; }
@@ -6977,6 +6982,89 @@ figure {
             flex-direction: row; }
     .micro-teaser .cta-group a {
       margin-bottom: 0; } }
+
+.people-list {
+  width: 100%; }
+  .people-list .contact-info--sheet {
+    background-color: transparent;
+    margin-left: 0;
+    margin-right: 0; }
+  .people-list dl {
+    margin: 0; }
+  .people-list caption {
+    position: absolute;
+    left: -999999em; }
+  .people-list img {
+    max-width: 39vw;
+    display: block; }
+  .people-list .contact-info {
+    margin-bottom: 0; }
+    .people-list .contact-info dd {
+      /* Base Breakpoint */
+      font-size: 1rem;
+      line-height: 1.5rem;
+      /* End base breakpoint */ }
+      @media screen and (min-width: 76rem) {
+        .people-list .contact-info dd {
+          font-size: 1rem;
+          line-height: 1.5rem; } }
+      .people-list .contact-info dd .link--fancy {
+        /* Base Breakpoint */
+        font-size: 1rem;
+        line-height: 1.5rem;
+        /* End base breakpoint */ }
+        @media screen and (min-width: 76rem) {
+          .people-list .contact-info dd .link--fancy {
+            font-size: 1rem;
+            line-height: 1.5rem; } }
+  .people-list .people-list--name {
+    /* Base Breakpoint */
+    font-size: 1.25rem;
+    line-height: 2rem;
+    /* End base breakpoint */
+    font-family: "Mercury Display A", "Mercury Display B", serif;
+    font-weight: 600; }
+    @media screen and (min-width: 76rem) {
+      .people-list .people-list--name {
+        font-size: 1.25rem;
+        line-height: 2rem; } }
+  .people-list thead {
+    position: absolute;
+    left: -99999999em; }
+  .people-list tbody tr:nth-child(even) {
+    background-color: #ebebeb; }
+  .people-list tbody td {
+    /* Base Breakpoint */
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* End base breakpoint */
+    padding: 1rem; }
+    @media screen and (min-width: 76rem) {
+      .people-list tbody td {
+        font-size: 1rem;
+        line-height: 1.5rem; } }
+  @media screen and (min-width: 35rem) {
+    .people-list {
+      width: 100%;
+      border-spacing: 0; }
+      .people-list img {
+        min-width: 15vw;
+        max-width: 20vw;
+        margin: 0; } }
+  @media screen and (min-width: 58rem) {
+    .people-list img {
+      max-width: 12rem; } }
+  @media all and (max-width: 35em) {
+    .people-list table, .people-list tr, .people-list td {
+      display: block;
+      width: auto; }
+    .people-list thead {
+      display: none; }
+    .people-list td {
+      padding: 0.5rem 1rem; }
+    .people-list td:nth-child(2) {
+      padding-top: 0;
+      padding-bottom: 0; } }
 
 .grid--divided .statistic {
   padding: 2rem; }

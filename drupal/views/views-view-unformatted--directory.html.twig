@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% set label = view.getTitle()|clean_id ~ "-table" %}
+<div role="region" aria-labeledby="{{ label }}">
+  <table class="people-list">
+    <!-- 
+        Caption required to label the table for the region; this should either
+        be CMS-configurable or a sensible value hard-codeded.
+    -->
+    <caption id="{{ label }}">{{ view.getTitle() }}</caption>
+    <thead>
+        <tr>
+            <th scope="col">Photo</th>
+            <th scope="col">Name and Title</th>
+            <th scope="col">Contact Information</th>
+        </tr>
+    </thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>{{- row.content -}}</tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -12,7 +12,7 @@
 		{% set sidebar %}
 			{{ page.sidebar }}
 		{% endset %}
-		{% if sidebar|striptags|trim %}
+		{% if sidebar|trim %}
 			{% include 'molecules-slab-1x2' with {
 				main: page.content,
 				aside: sidebar

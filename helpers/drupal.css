@@ -21,3 +21,10 @@ html.paragraphs-previewer-popup-html .slab {
 .contextual-links[hidden] {
   display: none !important;
 }
+
+/* override the styleguide for image width */
+@media screen and (min-width: 58rem) {
+  .people-list img {
+    max-width: 100%;
+  }
+}

@@ -1,11 +1,11 @@
 {% set name = (node.field_preferred_name|length)? content.field_preferred_name : content.field_name %}
 {# Link image to profile page #}
 <td>
-  <a href="{{ url }}">{{ content.field_media }}</a>
+  <a href="{{ url }}">{{ content.field_media|children[0] }}</a>
 </td>
 <td>
-    <span class="people-list--name"><a class="underline-link" href="{{ url }}">{{ name }}</a></span><br />
-    <span class="people-list--title">{{ content.field_job_title }}</span>
+    <span class="people-list--name"><a class="underline-link" href="{{ url }}">{{ name|children[0] }}</a></span><br />
+    <span class="people-list--title">{{ content.field_job_title|children[0] }}</span>
 </td>
 <td>{% include 'components-contact-info' with { 
   hide_image: true, 

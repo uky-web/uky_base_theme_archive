@@ -10,7 +10,7 @@
 
 	{% block main_content %}
 		{% set sidebar %}
-			{{ page.sidebar }}
+			{{ page.sidebar|children }}
 		{% endset %}
 		{% if sidebar|trim %}
 			{% include 'molecules-slab-1x2' with {

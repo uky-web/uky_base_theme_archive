@@ -18,7 +18,9 @@
 				aside: sidebar
 			} %}
 		{% else %}
-			{{ page.content }}
+			{% block content_column %}
+				{{ page.content }}
+			{% endblock %}
 		{% endif %}
 	{% endblock %}
 

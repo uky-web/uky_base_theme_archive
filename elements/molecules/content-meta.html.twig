@@ -11,8 +11,7 @@
         {% if content_date %}
             {% spaceless %}
             <span class="date">
-                {{ content_date|date(content_date_format|default("M d, Y - g:i a")) }}
-                {% if content_date_end and content_date_end != content_date %} to {{ content_date_end|date(content_date_format|default("M d, Y - g:i a")) }}{% endif %}
+                {{ ranger(content_date, content_date_end|default(''), 'medium', all_day? 'none':'short') }}
             </span>
             {% endspaceless %}
         {% endif %}

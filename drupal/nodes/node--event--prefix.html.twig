@@ -30,6 +30,7 @@
       content_location: location,
       content_date: node.field_dates.value,
       content_date_end: node.field_dates.end_value,
+      all_day: node.field_all_day.value,
       content_taxonomy: content.field_categories|children,
     } %}
   {% endblock %}

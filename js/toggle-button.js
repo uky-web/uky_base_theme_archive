@@ -1,6 +1,7 @@
 'use strict';
 
 var togglebutton = function togglebutton() {
+    console.log("Hello");
     $('.toggle-button').each(function (i, e) {
         if ($(e).data('toggle-viz') == true) {
             var $button = $(e);
@@ -15,7 +16,8 @@ var togglebutton = function togglebutton() {
         }
     });
     $('.toggle-button').on('click', function (e) {
-        var $button = $(e.target);
+        var $button = $(e.currentTarget);
+        console.log(e);
         var toggleclass = $button.data('toggle-class');
         var toggleviz = $button.data('toggle-viz') == true;
         var $toggle = $($button.data('toggle'));
@@ -25,6 +27,7 @@ var togglebutton = function togglebutton() {
         var original_label = $button.data('toggle-label');
         var original_icon = $button.data('toggle-icon');
         var newpressed = pressed ? 'false' : 'true';
+        console.log("Hello2");
         if (toggled_label) {
             var nextLabel = newpressed == 'true' ? toggled_label : original_label;
             $button.find('.label').text(nextLabel);

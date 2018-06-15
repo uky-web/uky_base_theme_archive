@@ -1,4 +1,16 @@
-<button {% if disabled %}disabled="true"{% endif %} class="{{ button_variant }}">
-	{% block content_button_button %}
+{% spaceless %}
+<button 
+	{% if disabled %}disabled="true"{% endif %}
+	class="{{ button_variant }}"
+	{% for key,value in data_obj %}
+		data-{{ key|replace({'_':'-'}) }}="{{ value }}"
+	{% endfor %}
+	{% for attr,value in attr_obj %}
+		{{ attr|replace({'_':'-'}) }}="{{ value }}"
+	{% endfor %}
+>
+	{% block button_content %}
+		{{ label }}
 	{% endblock %}
 </button>
+{% endspaceless %}

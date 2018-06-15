@@ -1,4 +1,4 @@
-<div class="slab {{ slab_variant }}">
+<div class="slab {{ slab_variant }}" {{ props|join(' ') }} {{ attrs|attr_list }}>
     {% block slab_outer %}
         <div class="slab__wrapper">
             {% block slab_content %}

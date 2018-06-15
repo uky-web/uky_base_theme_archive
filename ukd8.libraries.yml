@@ -10,6 +10,8 @@ global:
   dependencies:
     - core/drupal
     - core/jquery
+    - ukd8/toggle
+    - ukd8/tabs
 
 imagesloaded:
   version: VERSION
@@ -88,8 +90,18 @@ modals:
   dependencies:
     - ukd8/magnific
 
+toggle:
+  version: VERSION
+  js:
+    js/toggle-button.js: {}
+    helpers/toggle.js: {}
 
-# accordion:
-#   version: VERSION
-#   js:
-#     js/accordion.js: {}
+tabs:
+  version: VERSION
+  js:
+    js/lib/jquery-accessible-tabs-aria.js: {}
+
+accordion:
+  version: VERSION
+  js:
+    js/lib/jquery-accessible-accordion.js: {}

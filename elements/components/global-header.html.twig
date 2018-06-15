@@ -7,20 +7,26 @@
             {% else %}
                 {% include 'atoms-uky-logo-main' %}
             {% endif %}
-            {{ page.utility_nav }}
+            {{ page.utility_nav|injectclass('utility-nav') }}
             {% set toggle_config = {
                 toggle: '#MobileNav',
                 toggle_viz: true,
                 toggle_toggled_label : 'Close',
                 toggle_toggled_icon : 'close'
             } %}
-            {% include 'molecules-toggle-button' with { icon_label_variant:'icon-label--stacked', toggle_button_variant: "button--transparent", label: 'Menu', icon: 'hamburger', data_obj : toggle_config } %}
+            {% include 'molecules-toggle-button' with { 
+                icon_label_variant:'icon-label--stacked', 
+                toggle_button_variant: "button--transparent", 
+                label: 'Menu', 
+                icon: 'hamburger', 
+                data_obj : toggle_config 
+            } %}
         </div>
     {% endblock %}
 {% endembed %}
 {% embed 'molecules-slab' with { slab_variant: bar_color|default('slab--dark-blue') ~ ' slab--thin global-nav-bar' } %}
     {% block slab_content %}
-        {{ page.top_nav }}
+        {{ page.top_nav|injectclass('global-nav') }}
     {% endblock %}
 {% endembed %}
 {% embed 'molecules-slab' with { slab_variant: 'slab--blue-gray mobile-nav', props: ['hidden'], attrs: { id : 'MobileNav' } } %}

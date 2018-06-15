@@ -1,3 +1,11 @@
+# site meta
+is_main: false
+lockup_wordmark_1: ''
+lockup_wordmark_2: ''
+uky_home_url: 'http://www.uky.edu/'
+college_url: ''
+college_title: ''
+
 # color scheme defaults
 full_width_hero_schema: default
 split_hero_schema: default
@@ -7,6 +15,7 @@ pullquote_schema: default
 social_media_schema: default
 statistic_schema: default
 carousel_schema: default
+
 # other setttings
 divide_statistics: default
 carousel_center: default

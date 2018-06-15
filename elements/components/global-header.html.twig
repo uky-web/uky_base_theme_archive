@@ -1,5 +1,31 @@
-{% embed 'molecules-slab' with { slab_variant: 'slab--wildcat-blue' } %}
+<header id="MainHeader" class="global-header">
+{% embed 'molecules-slab' with { slab_variant: banner_color|default('slab--wildcat-white') } %}
     {% block slab_content %}
-        {% include 'atoms-placeholder' with { title: "Site Header" } %}
+        <div class="global-header__banner">
+            {% if not theme_settings.is_main %}
+                {% include 'molecules-lockup' %}
+            {% else %}
+                {% include 'atoms-uky-logo-main' %}
+            {% endif %}
+            {% include 'molecules-utility-nav' %}
+            {% set toggle_config = {
+                toggle: '#MobileNav',
+                toggle_viz: true,
+                toggle_toggled_label : 'Close',
+                toggle_toggled_icon : 'close'
+            } %}
+            {% include 'molecules-toggle-button' with { icon_label_variant:'icon-label--stacked', toggle_button_variant: "button--transparent", label: 'Menu', icon: 'hamburger', data_obj : toggle_config } %}
+        </div>
     {% endblock %}
 {% endembed %}
+{% embed 'molecules-slab' with { slab_variant: bar_color|default('slab--dark-blue') ~ ' slab--thin global-nav-bar' } %}
+    {% block slab_content %}
+        {% include 'molecules-global-nav' %}
+    {% endblock %}
+{% endembed %}
+{% embed 'molecules-slab' with { slab_variant: 'slab--blue-gray mobile-nav', props: ['hidden'], attrs: { id : 'MobileNav' } } %}
+    {% block slab_content %}
+        {% include 'molecules-mobile-tab-nav' %}
+    {% endblock %}
+{% endembed %}
+</head>

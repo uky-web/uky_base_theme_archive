@@ -13,12 +13,41 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
     return;
   }
 
-  $form['tagline_superhead'] = array(
+  $form['is_main'] = ['#type' => 'checkbox',
+    '#title' => t('Is the main uky.edu site'),
+    '#default_value' => $theme_settings->get('is_main'),
+  ];
+
+  $form['lockup_wordmark_1'] = [
     '#type'          => 'textfield',
-    '#title'         => t('Tagline Superheading'),
-    '#default_value' => theme_get_setting('tagline_superhead'),
-    '#description'   => t("The superheading shown with the section tagline."),
-  );
+    '#title'         => t('Lockup wordmark line 1'),
+    '#default_value' => theme_get_setting('lockup_wordmark_1'),
+    '#description'   => t("Text shown as the first line of the wordmark in the header."),
+  ];
+  $form['lockup_wordmark_2'] = [
+    '#type'          => 'textfield',
+    '#title'         => t('Lockup wordmark line 2'),
+    '#default_value' => theme_get_setting('lockup_wordmark_2'),
+  ];
+
+  $form['uky_home_url'] = [
+    '#type'          => 'textfield',
+    '#title'         => t('UK Homepage URL'),
+    '#default_value' => theme_get_setting('uky_home_url'),
+    '#description'   => t("URL for UK home links."),
+  ];
+  $form['college_url'] = [
+    '#type'          => 'textfield',
+    '#title'         => t('Parent college URL'),
+    '#default_value' => theme_get_setting('college_url'),
+    '#description'   => t("URL for this site's parent college, if applicable."),
+  ];
+  $form['college_title'] = [
+    '#type'          => 'textfield',
+    '#title'         => t('Parent college title'),
+    '#default_value' => theme_get_setting('college_title'),
+    '#description'   => t("Link display name for this site's parent college."),
+  ];
 
   $scheme_opts = [
     'default' => 'Default',

@@ -21,3 +21,11 @@ html.paragraphs-previewer-popup-html .slab {
 .contextual-links[hidden] {
   display: none !important;
 }
+
+/* clean up space between prefix and first slab */
+.region-content-prefix + .slab {
+  padding-top: 0;
+}
+.node--type-news .node__content .slab:first-child {
+  padding-top: 0;
+}

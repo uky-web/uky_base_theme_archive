@@ -22,7 +22,9 @@
           {% for item in info %}
             {% if item|children|length %}
                 <dt>{{ item['#title'] }}</dt>
-                <dd>{{ item|children[0]|injectclass('link--fancy') }}</dd>
+                {% for link in item|children %}
+                <dd>{{ link|injectclass('link--fancy') }}</dd>
+                {% endfor %}
             {% endif %}
           {% endfor %}
         </dl>

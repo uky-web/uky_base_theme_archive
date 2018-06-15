@@ -11,7 +11,7 @@
         {% if content_date %}
             {% spaceless %}
             <span class="date">
-                {{ ranger(content_date, content_date_end|default(''), 'medium', all_day? 'none':'short') }}
+                {{ ranger(content_date|tz_adjust, content_date_end|default('')|tz_adjust, 'medium', all_day? 'none':'short') }}
             </span>
             {% endspaceless %}
         {% endif %}

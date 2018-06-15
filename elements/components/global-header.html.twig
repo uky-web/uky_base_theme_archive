@@ -7,7 +7,7 @@
             {% else %}
                 {% include 'atoms-uky-logo-main' %}
             {% endif %}
-            {% include 'molecules-utility-nav' %}
+            {{ page.utility_nav }}
             {% set toggle_config = {
                 toggle: '#MobileNav',
                 toggle_viz: true,
@@ -20,7 +20,7 @@
 {% endembed %}
 {% embed 'molecules-slab' with { slab_variant: bar_color|default('slab--dark-blue') ~ ' slab--thin global-nav-bar' } %}
     {% block slab_content %}
-        {% include 'molecules-global-nav' %}
+        {{ page.top_nav }}
     {% endblock %}
 {% endembed %}
 {% embed 'molecules-slab' with { slab_variant: 'slab--blue-gray mobile-nav', props: ['hidden'], attrs: { id : 'MobileNav' } } %}

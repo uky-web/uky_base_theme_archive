@@ -6,12 +6,12 @@
     {% block tabs_panels %}
         {% embed 'molecules-tab-panel' with { tab_panel_id : "mobile_mainmenu" } %}
             {% block tab_panel_content %}
-                {{ page.mobile_tab_1 }}
+                {{ page.mobile_tab_mainmenu }}
             {% endblock %}
         {% endembed %}
         {% embed 'molecules-tab-panel' with { tab_panel_id : "mobile_section" } %}
             {% block tab_panel_content %}
-                {{ page.mobile_tab_2 }}
+                {{ page.mobile_tab_section }}
             {% endblock %}
         {% endembed %}
     {% endblock %}

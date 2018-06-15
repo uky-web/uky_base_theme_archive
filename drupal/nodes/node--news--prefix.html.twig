@@ -20,7 +20,7 @@
     {% include 'molecules-content-meta' with {
       content_byline: content.field_byline,
       content_date: node.getCreatedTime(),
-      content_date_format: 'M d, Y',
+      all_day: true,
       content_taxonomy: content.field_categories|children,
     } %}
   {% endblock %}

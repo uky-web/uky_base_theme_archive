@@ -1,10 +1,10 @@
 # site meta
 is_main: false
-lockup_wordmark_1: ''
-lockup_wordmark_2: ''
+lockup_wordmark_1: 'Your parent'
+lockup_wordmark_2: 'college'
 uky_home_url: 'http://www.uky.edu/'
-college_url: ''
-college_title: ''
+college_url: 'https://insidenewcity.com'
+college_title: 'Department of Web Sites'
 
 # color scheme defaults
 full_width_hero_schema: default

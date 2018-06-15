@@ -15,7 +15,7 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
 
   $form['is_main'] = ['#type' => 'checkbox',
     '#title' => t('Is the main uky.edu site'),
-    '#default_value' => $theme_settings->get('is_main'),
+    '#default_value' => theme_get_setting('is_main'),
   ];
 
   $form['lockup_wordmark_1'] = [

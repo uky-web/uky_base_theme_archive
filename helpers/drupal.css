@@ -39,3 +39,28 @@ ul.menu {
   ul.menu li {
     display: inline-block
   }
+
+/* enforce embedded media widths */
+.editorial .editorial__aside.align-right,
+.editorial .editorial__aside.align-left
+{
+  width: 50%;
+}
+
+/* medium breakpoint */
+@media screen and (min-width: 35rem) {
+}
+
+/* large breakpoint */
+@media screen and (min-width: 58rem) {
+  /* enforce embedded media widths */
+  .editorial .editorial__aside.align-right,
+  .editorial .editorial__aside.align-left
+  {
+    width: 40%;
+  }
+}
+
+/* xl breakpoint */
+@media screen and (min-width: 76rem) {
+}

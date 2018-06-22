@@ -9,18 +9,23 @@
 	{% endblock %}
 
 	{% block main_content %}
+		{% set main_content %}
+			{{ page.content|children }}
+		{% endset %}
 		{% set sidebar %}
 			{{ page.sidebar|children }}
 		{% endset %}
-		{% if sidebar|trim %}
-			{% include 'molecules-slab-1x2' with {
-				main: page.content,
-				aside: sidebar
-			} %}
-		{% else %}
-			{% block content_column %}
-				{{ page.content }}
-			{% endblock %}
+		{% if main_content|trim %}
+			{% if sidebar|trim %}
+				{% include 'molecules-slab-1x2' with {
+					main: main_content,
+					aside: sidebar
+				} %}
+			{% else %}
+				{% block content_column %}
+					{{ page.content }}
+				{% endblock %}
+			{% endif %}
 		{% endif %}
 	{% endblock %}
 

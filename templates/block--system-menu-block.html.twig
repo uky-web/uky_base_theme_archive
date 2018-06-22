@@ -40,6 +40,10 @@
   ]
 %}
 {% set heading_id = attributes.id ~ '-' ~ configuration.label|clean_id %}
+{% set rendered_content %}
+  {{ content|render }}
+{% endset %}
+{% if rendered_content|nocomment|trim %}
 <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
@@ -51,6 +55,7 @@
 
   {# Menu. #}
   {% block content %}
-    {{ content }}
+    {{ rendered_content }}
   {% endblock %}
 </nav>
+{% endif %}

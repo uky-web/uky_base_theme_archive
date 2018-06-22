@@ -42,11 +42,16 @@ var carousel = function carousel() {
 
     var positionArrowsCentered = function positionArrowsCentered(slick) {
         var $currentSlide = $(slick.$slides[slick.currentSlide]);
-        var imgHeight = $currentSlide.find('img').height();
+        var $currentImage = $currentSlide.find('img');
+        var $currentTrack = slick.$slideTrack;
+        var imgHeight = $currentImage.height();
+        var imgNatHeight = $currentImage.prop('naturalHeight');
         if (imgHeight > 0) {
-            var buttonTop = imgHeight * .5;
+            var padding = (imgHeight - imgNatHeight) / 2;
+            var buttonTop = imgHeight * .5 + padding;
             var buttons = slick.$nextArrow.add(slick.$prevArrow);
             buttons.css({ top: buttonTop });
+            $currentTrack.css({ paddingTop: padding });
         }
     };
 

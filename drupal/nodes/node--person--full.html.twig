@@ -1,11 +1,33 @@
-{% extends 'node.html.twig' %}
+{% extends 'node--full.html.twig' %}
 
-{# hide the contact image if it's used in the page header #}
-{% set hide_image = node.field_large_image|length > 0 %}
+{% block prefix %}
+  {% set name = content.field_preferred_name|children|length? content.field_preferred_name : content.field_name %}
+  {% set headline %}
+    {% include 'atoms-headline-group' with {
+      head: name,
+      sub: content.field_job_title,
+      level: 1,
+    } %}
+  {% endset %}
+
+  {% if content.field_large_image|children|length %}
+    {% include 'components-hero-page-header' with {
+      headline: headline,
+      media: content.field_large_image,
+      secondary_image: content.field_media,
+    } %}
+  {% else %}
+    {% include 'components-text-page-header' with {
+      headline: headline
+    } %}
+  {% endif %}
+{% endblock %}
 
 {% block content %}
   {% embed 'molecules-slab' %}
     {% block slab_content %}
+      {# hide the contact image if it's used in the page header #}
+      {% set hide_image = node.field_large_image|length > 0 %}
       {% include 'components-contact-info' with {
         contact_info_variant : "contact-info--sheet", 
         hide_image: hide_image,
@@ -22,4 +44,7 @@
       {{ content.body }}
     {% endblock %}
   {% endembed %}
+{% endblock %}
+
+{% block suffix %}
 {% endblock %}

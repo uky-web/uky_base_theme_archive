@@ -94,10 +94,13 @@
   {% endblock %}
 
   {% block content %}
-  {% if content|children %}
+  {% set content_column %}
+    {{ content|without('field_page_header', 'field_prefix_paragraphs', 'field_suffix_paragraphs')|render }}
+  {% endset %}
+  {% if content_column|nocomment|trim %}
   {% embed 'molecules-slab-2x1' %}
       {% block slab_content %}
-        {{ content|without('field_page_header', 'field_prefix_paragraphs', 'field_suffix_paragraphs') }}
+        {{ content_column }}
       {% endblock %}
       {% block slab_sidebar %}
         {{ region.sidebar }}

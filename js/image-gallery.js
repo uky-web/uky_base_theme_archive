@@ -42,7 +42,7 @@ var image_gallery = function image_gallery() {
     });
 
     var $modals = $gallery.magnificPopup({
-        delegate: 'a',
+        delegate: '.image-gallery__popup-launcher',
         type: 'image',
         mainClass: 'mfp-fade',
         tLoading: 'Loading image #%curr%...',

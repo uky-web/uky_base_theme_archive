@@ -1,1 +1,1 @@
-{"version":3,"sources":["wysiwyg.scss"],"names":[],"mappings":"AAAA,+GAA+G;AAE/G;EACE,uBAAsB,EACvB","file":"wysiwyg.css","sourcesContent":["/* This scss file renders to wysiwyg.scss, and can be used by rich text editors to style text in the editor. */\n\nbody {\n  background-color: #ccc;\n}\n"]}
+{"version":3,"sources":["wysiwyg.scss"],"names":[],"mappings":"AAAA,+GAA+G","file":"wysiwyg.css","sourcesContent":["/* This scss file renders to wysiwyg.scss, and can be used by rich text editors to style text in the editor. */\n\n"]}

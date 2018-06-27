@@ -1,8 +1,13 @@
 <figure role="group" class="image-with-caption {{ classes }}">
   {{ media }}
-  {% if head or caption or citation %}
+  {% if heading or caption or citation %}
   <figcaption>
-    {{ head }}
+    {% include 'atoms-heading' with { 
+      headline: heading,
+      level: level|default(3),
+      linked: (url is not empty),
+      url: url,
+    } %}
     {{ caption }}
     {% if citation %}
     {% include 'molecules-cite-media' with { icon: icon, label: citation } %}

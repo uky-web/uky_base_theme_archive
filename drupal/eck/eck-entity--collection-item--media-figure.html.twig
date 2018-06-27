@@ -1,6 +1,7 @@
 {% include 'components-media-with-caption' with {
   media: content.field_media,
-  head: content.title,
+  heading: plain_title,
+  url: eck.field_link[0].url.toString(),
   caption: content.field_description,
   icon: 'camera',
   citation: eck.field_media.entity.field_attribution.value

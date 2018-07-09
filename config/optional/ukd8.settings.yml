@@ -6,16 +6,54 @@ uky_home_url: 'http://www.uky.edu/'
 college_url: 'https://insidenewcity.com'
 college_title: 'Department of Web Sites'
 
+# all the options available
+scheme_options:
+  light: 'Light blue'
+  dark: 'Dark blue'
+  wildcat: 'Wildcat'
+  white: 'White'
+  gray: 'Gray'
+
 # color scheme defaults
-full_width_hero_schema: default
-split_hero_schema: default
-text_only_schema: default
-call_to_action_schema: default
-pullquote_schema: default
-social_media_schema: default
-statistic_schema: default
-carousel_schema: default
+scheme_settings:
+  full_width_hero_schema: 
+    name: 'Full width hero page header'
+    value: light
+    disallowed: ['white', 'gray']
+  split_hero_schema: 
+    name: 'Split hero page header'
+    value: light
+    disallowed: ['white']
+  text_only_schema: 
+    name: 'Text-only page header'
+    value: white
+    disallowed: ['light']
+  call_to_action_schema: 
+    name: 'Call to Action block'
+    value: white
+    disallowed: ['gray']
+  pullquote_schema: 
+    name: 'Pullquote'
+    value: white
+    disallowed: ['gray']
+  social_media_schema: 
+    name: 'Social media links panel'
+    value: light
+    disallowed: ['white', 'gray', 'wildcat']
+  statistic_schema: 
+    name: 'Statistic block'
+    value: white
+    disallowed: ['light', 'gray', 'wildcat']
+  carousel_schema: 
+    name: 'Carousel slab'
+    value: white
+    disallowed: ['light']
 
 # other setttings
-divide_statistics: default
-carousel_center: default
+layout_boolean_settings:
+  divide_statistics: 
+    name: 'Divide statistic collections'
+    value: false
+  carousel_center: 
+    name: 'Use centered carousel style'
+    value: false

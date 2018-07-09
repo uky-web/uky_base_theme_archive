@@ -1,4 +1,4 @@
-{% set schema = eck.field_theme_color_scheme|length? eck.field_theme_color_scheme.value : theme_settings.pullquote_schema %}
+{% set schema = eck.field_theme_color_scheme|length? eck.field_theme_color_scheme.value : theme_settings.scheme_settings.pullquote_schema.value %}
 {% set brief = true %}
 {% include 'components-pullquote' with {
   quote: content.field_description|children,

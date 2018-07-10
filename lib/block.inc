@@ -46,7 +46,7 @@ function ukd8_preprocess_block(&$variables) {
       $link = array_pop($links);
 
       /** @var \Drupal\Core\Menu\MenuLinkInterface $parent */
-      if ($link->getParent() && $parent = $menu_link_manager->createInstance($link->getParent())) {
+      if ($link && $link->getParent() && $parent = $menu_link_manager->createInstance($link->getParent())) {
         $route = $parent->getUrlObject()->getRouteParameters();
         $variables['parent_link'] = [
           '#type' => 'link',

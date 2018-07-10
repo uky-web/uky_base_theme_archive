@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_preprocess_block()
@@ -28,6 +29,35 @@ function ukd8_preprocess_block(&$variables) {
     if (strpos($k, 'field_')===0) {
       if (isset($v['#items'])) {
         $variables['block'][$k] = $v['#items'];
+      }
+    }
+  }
+
+  // inject parent for section nav block
+  if ($variables['plugin_id'] == 'menu_block:main') {
+    if ($node = \Drupal::request()->attributes->get('node')) {
+      $node_id = $node->id();
+      
+      /** @var \Drupal\Core\Menu\MenuLinkManagerInterface $menu_link_manager */
+      $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
+      $links = $menu_link_manager->loadLinksByRoute('entity.node.canonical', ['node' => $node_id]);
+
+      /** @var \Drupal\Core\Menu\MenuLinkInterface $link */
+      $link = array_pop($links);
+
+      /** @var \Drupal\Core\Menu\MenuLinkInterface $parent */
+      if ($link->getParent() && $parent = $menu_link_manager->createInstance($link->getParent())) {
+        $route = $parent->getUrlObject()->getRouteParameters();
+        $variables['parent_link'] = [
+          '#type' => 'link',
+          '#title' => $parent->getTitle(),
+          '#url' => $parent->getUrlObject(),
+          '#attributes' => [
+            'class' => [
+              'link--fancy-reverse',
+            ],
+          ],
+        ];
       }
     }
   }

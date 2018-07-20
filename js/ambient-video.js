@@ -10,7 +10,7 @@ var ambient_video = function ambient_video() {
 
   var $sources = $av.find('source');
 
-  if (window.matchMedia("(min-width: 64rem)").matches) {
+  if (window.matchMedia('(min-width: 64rem)').matches) {
     $av.attr('autoplay', true);
     $av[0].play();
 

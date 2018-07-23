@@ -78,8 +78,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-076919954.eot");
-  src: url("../fonts/icons-076919954.eot?#iefix") format("eot"), url("../fonts/icons-076919954.woff2") format("woff2"), url("../fonts/icons-076919954.woff") format("woff"), url("../fonts/icons-076919954.ttf") format("truetype"), url("../fonts/icons-076919954.svg#icons-076919954") format("svg");
+  src: url("../fonts/icons-838056076.eot");
+  src: url("../fonts/icons-838056076.eot?#iefix") format("eot"), url("../fonts/icons-838056076.woff2") format("woff2"), url("../fonts/icons-838056076.woff") format("woff"), url("../fonts/icons-838056076.ttf") format("truetype"), url("../fonts/icons-838056076.svg#icons-838056076") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -14680,6 +14680,8 @@ form {
       form textarea {
         font-size: 1rem;
         line-height: 1.5rem; } }
+  form input, form textarea, form select {
+    max-width: 100%; }
   form .form-item {
     margin-bottom: 1rem; }
 

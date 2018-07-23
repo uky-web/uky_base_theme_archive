@@ -32,6 +32,10 @@ ul.menu {
     display: inline-block
   }
 
+.universal-nav .menu-item {
+  margin: 0;
+}
+
 /* enforce embedded media widths */
 .editorial .editorial__aside.align-right,
 .editorial .editorial__aside.align-left

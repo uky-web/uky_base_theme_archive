@@ -1,4 +1,4 @@
-{% set schema = eck.field_theme_color_scheme|length? eck.field_theme_color_scheme.value : theme_settings.scheme_settings.call_to_action_schema.value %}
+{% set schema = eck.field_theme_color_scheme|length? eck.field_theme_color_scheme.value : theme_settings.scheme_settings.collection_item__call_to_action.value %}
 {% include 'components-call-to-action' with {
   title: content.title,
   body: content.field_description,

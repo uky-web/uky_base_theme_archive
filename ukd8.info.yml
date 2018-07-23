@@ -25,6 +25,10 @@ regions:
   footer_address: 'Footer address'
   footer_bottom: 'Footer bottom'
 
+features:
+  - favicon
+  - logo
+
 component-libraries:
   atoms:
     paths:

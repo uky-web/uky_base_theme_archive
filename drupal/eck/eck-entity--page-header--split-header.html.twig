@@ -1,4 +1,4 @@
-{% set schema = eck.field_theme_color_scheme|length? eck.field_theme_color_scheme.value : theme_settings.scheme_settings.split_hero_schema.value %}
+{% set schema = eck.field_theme_color_scheme|length? eck.field_theme_color_scheme.value : theme_settings.scheme_settings.page_header__split_header.value %}
 {% include 'components-split-page-header' with {
   headline: content.field_headline_group,
   media: content.field_media,

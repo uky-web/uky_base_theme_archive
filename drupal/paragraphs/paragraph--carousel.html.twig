@@ -2,9 +2,9 @@
 {% if editorial_column %}
   {% set schema = '' %}
 {% else %}
-  {% set schema = paragraph.field_theme_color_scheme|length?  paragraph.field_theme_color_scheme.value : theme_settings.scheme_settings.carousel_schema.value %}
+  {% set schema = paragraph.field_theme_color_scheme|length?  paragraph.field_theme_color_scheme.value : theme_settings.scheme_settings.paragraph__carousel.value %}
 {% endif %}
-{% set center = (paragraph.field_theme_carousel_centered|length and paragraph.field_theme_carousel_centered.value)? paragraph.field_theme_carousel_centered.value : theme_settings.layout_boolean_settings.center_carousel.value %}
+{% set center = (paragraph.field_theme_carousel_centered|length and paragraph.field_theme_carousel_centered.value)? paragraph.field_theme_carousel_centered.value : theme_settings.layout_boolean_settings.paragraph__carousel__center.value %}
 {% include 'components-carousel-slab' with {
   headline: content.field_headline_group,
   body: content.field_body,

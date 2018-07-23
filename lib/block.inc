@@ -22,6 +22,8 @@ function ukd8_preprocess_block(&$variables) {
   // Add a unique class for each block for styling.
   if (isset($variables['attributes']['id'])) {
     $variables['attributes']['class'][] = $variables['attributes']['id'];
+    // also save it for later
+    $variables['content']['#attributes']['block_id'] = $variables['attributes']['id'];
   }
 
   // helper variable

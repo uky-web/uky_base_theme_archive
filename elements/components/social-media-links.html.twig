@@ -1,7 +1,9 @@
 <div class="social-media-links {{ social_media_links_variant }}">
-    {{ head }}
+    {% block headline %}
+        {{ head }}
+    {% endblock %}
     <div class="social-media-links__linkset">
-        {% spaceless %}    
+        {% spaceless %}
             {% for link in links %}
                 {% set icon = link.uri|matchsocial %}
                 {% if social_icons_block %}{% set icon = icon ~ '-block' %}{% endif %}

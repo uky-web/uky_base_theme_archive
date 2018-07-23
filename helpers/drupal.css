@@ -36,6 +36,10 @@ ul.menu {
   margin: 0;
 }
 
+.global-footer ul.menu li {
+  display: block;
+}
+
 /* enforce embedded media widths */
 .editorial .editorial__aside.align-right,
 .editorial .editorial__aside.align-left

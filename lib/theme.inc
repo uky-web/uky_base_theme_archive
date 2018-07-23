@@ -38,15 +38,15 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
   ];
   $form['college_url'] = [
     '#type'          => 'textfield',
-    '#title'         => t('Parent college URL'),
+    '#title'         => t('Parent unit URL'),
     '#default_value' => theme_get_setting('college_url'),
-    '#description'   => t("URL for this site's parent college, if applicable."),
+    '#description'   => t("URL for this site's parent unit (e.g., college), if applicable."),
   ];
   $form['college_title'] = [
     '#type'          => 'textfield',
-    '#title'         => t('Parent college title'),
+    '#title'         => t('Parent unit title'),
     '#default_value' => theme_get_setting('college_title'),
-    '#description'   => t("Link display name for this site's parent college."),
+    '#description'   => t("Link display name for this site's parent unit."),
   ];
   
   $theme_settings =  \Drupal::config('ukd8.settings');
@@ -57,9 +57,9 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
     '#description' => t('Set base theme styles for components. Editors with appropriate permissions may override these on individual components.'),
   ];
 
-  $scheme_opts = $theme_settings['scheme_options'];
+  $scheme_opts = $theme_settings->get('scheme_options');
 
-  foreach ($theme_settings['scheme_settings'] as $k => $v) {
+  foreach ($theme_settings->get('scheme_settings') as $k => $v) {
     $form['ukd8_settings']['color_schemes'][$k] = [
       '#type' => 'select',
       '#title' => $v['name'],
@@ -76,7 +76,7 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
     '#type' => 'fieldset',
   ];
 
-  foreach ($theme_settings['layout_boolean_settings'] as $k => $v) {
+  foreach ($theme_settings->get('layout_boolean_settings') as $k => $v) {
     $form['ukd8_settings']['layout'][$k] = [
       '#type' => 'checkbox',
       '#title' => $v['name'],

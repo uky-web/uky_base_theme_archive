@@ -1,1 +1,4 @@
-{% include 'components-statistic' with { headline: content.field_headline_group, description: content.field_description } %}
+{% include 'components-statistic' with { 
+  headline: content.field_headline_group, 
+  description: content.field_description|injectclass('editorial'),
+} %}

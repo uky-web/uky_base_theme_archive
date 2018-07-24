@@ -51,6 +51,11 @@ ul.menu {
   width: 50%;
 }
 
+.embedded-entity img {
+  max-width: 100%;
+  width: auto;
+}
+
 /* medium breakpoint */
 @media screen and (min-width: 35rem) {
 }

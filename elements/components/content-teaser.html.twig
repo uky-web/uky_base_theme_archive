@@ -75,7 +75,9 @@
 } %}
   
   {% block teaser_media %}
-    {{ content.field_media }}
+    <a href="{{ url }}">
+      {{ content.field_media }}
+    </a>
   {% endblock %}
 
   {% block teaser_content %}

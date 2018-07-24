@@ -30,12 +30,6 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
     '#default_value' => theme_get_setting('lockup_wordmark_2'),
   ];
 
-  $form['uky_home_url'] = [
-    '#type'          => 'textfield',
-    '#title'         => t('UK Homepage URL'),
-    '#default_value' => theme_get_setting('uky_home_url'),
-    '#description'   => t("URL for UK home links."),
-  ];
   $form['college_url'] = [
     '#type'          => 'textfield',
     '#title'         => t('Parent unit URL'),

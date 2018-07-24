@@ -14,6 +14,10 @@ html.paragraphs-previewer-popup-html .slab {
   display: none !important;
 }
 
+.pullquote__meta .contextual-region {
+  position: static;
+}
+
 /* clean up space between prefix and first slab */
 .region-content-prefix + .slab {
   padding-top: 0;

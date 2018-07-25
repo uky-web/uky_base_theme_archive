@@ -14,9 +14,12 @@
     } %}
   {% else %}
     {% include 'components-text-page-header' with {
+      slab_skin: 'slab--wildcat-white',
       headline: content.field_headline_group
     } %}
   {% endif %}
+
+  {{ region.breadcrumb }}
 
   {% embed 'molecules-slab' %}
     {% block slab_content %}

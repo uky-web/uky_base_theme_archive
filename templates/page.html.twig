@@ -4,10 +4,12 @@
 {% include 'components-global-header' %}
 <main class="main">
 	{% block main %}
-		{{ page.breadcrumb }}
-
 		{% block content_prefix %}
 			{{ page.content_prefix }}
+		{% endblock %}
+
+		{% block breadcrumb %}
+			{{ page.breadcrumb }}
 		{% endblock %}
 
 		{% block main_content %}

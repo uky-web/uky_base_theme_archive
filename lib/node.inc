@@ -20,7 +20,7 @@ function ukd8_preprocess_node(array &$variables) {
     $allowed_view_modes = ['full']; 
     if (in_array($current_view_mode, $allowed_view_modes)) {
         // Allowed regions (for performance so as to not execute for unneeded region)
-        $allowed_regions = ['sidebar'];
+        $allowed_regions = ['sidebar', 'breadcrumb'];
         _ukd8_add_regions_to_node($allowed_regions, $variables);
     }
 }

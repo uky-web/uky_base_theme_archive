@@ -18,6 +18,8 @@
     } %}
   {% endif %}
 
+  {{ region.breadcrumb }}
+
   {% set location = false %}
   {% if node.field_location|length %}
     {% set location = {

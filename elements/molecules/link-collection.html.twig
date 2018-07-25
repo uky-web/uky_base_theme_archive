@@ -6,7 +6,10 @@
         </div>
     </div>
     <div class="link-collection__content">
-        {{ links }}
+        {% include 'molecules-described-links' with {
+            links: links,
+            brief: false
+        } %}
         {{ button }}
     </div>
 </div>

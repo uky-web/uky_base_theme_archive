@@ -89,6 +89,7 @@ modals:
     helpers/modals.js: {}
   dependencies:
     - ukd8/magnific
+    - core/jquery
 
 toggle:
   version: VERSION

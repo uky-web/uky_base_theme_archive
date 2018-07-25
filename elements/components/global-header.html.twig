@@ -1,6 +1,6 @@
 {% set clamp_variant = (is_main) ? 'clamp--main' %}
 <header id="MainHeader" class="global-header {{ clamp_variant }}">
-{% embed 'molecules-slab' with { slab_variant: banner_color|default('slab--wildcat-white') } %}
+{% embed 'molecules-slab' with { slab_variant: 'global-header__masthead'} %}
     {% block slab_content %}
         <div class="global-header__banner">
             {% if not theme_settings.is_main %}

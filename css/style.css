@@ -78,8 +78,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-410866141.eot");
-  src: url("../fonts/icons-410866141.eot?#iefix") format("eot"), url("../fonts/icons-410866141.woff2") format("woff2"), url("../fonts/icons-410866141.woff") format("woff"), url("../fonts/icons-410866141.ttf") format("truetype"), url("../fonts/icons-410866141.svg#icons-410866141") format("svg");
+  src: url("../fonts/icons-873637128.eot");
+  src: url("../fonts/icons-873637128.eot?#iefix") format("eot"), url("../fonts/icons-873637128.woff2") format("woff2"), url("../fonts/icons-873637128.woff") format("woff"), url("../fonts/icons-873637128.ttf") format("truetype"), url("../fonts/icons-873637128.svg#icons-873637128") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -3316,26 +3316,20 @@ dl.invisible-labels dd {
 .content-meta {
   margin-bottom: 0.5rem; }
   .content-meta .byline,
-  .content-meta .location {
-    /* Base Breakpoint */
-    font-size: 1.1667rem;
-    line-height: 2rem;
-    /* End base breakpoint */
-    font-weight: 500; }
-    @media screen and (min-width: 76rem) {
-      .content-meta .byline,
-      .content-meta .location {
-        font-size: 1.1667rem;
-        line-height: 2rem; } }
+  .content-meta .location,
   .content-meta .date {
     /* Base Breakpoint */
     font-size: 1.1667rem;
     line-height: 2rem;
     /* End base breakpoint */ }
     @media screen and (min-width: 76rem) {
+      .content-meta .byline,
+      .content-meta .location,
       .content-meta .date {
         font-size: 1.1667rem;
         line-height: 2rem; } }
+  .content-meta .byline,
+  .content-meta .date,
   .content-meta .who-when {
     font-weight: 500; }
   .content-meta .taxonomy-list {

@@ -78,8 +78,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-356713203.eot");
-  src: url("../fonts/icons-356713203.eot?#iefix") format("eot"), url("../fonts/icons-356713203.woff2") format("woff2"), url("../fonts/icons-356713203.woff") format("woff"), url("../fonts/icons-356713203.ttf") format("truetype"), url("../fonts/icons-356713203.svg#icons-356713203") format("svg");
+  src: url("../fonts/icons-031832304.eot");
+  src: url("../fonts/icons-031832304.eot?#iefix") format("eot"), url("../fonts/icons-031832304.woff2") format("woff2"), url("../fonts/icons-031832304.woff") format("woff"), url("../fonts/icons-031832304.ttf") format("truetype"), url("../fonts/icons-031832304.svg#icons-031832304") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -12025,7 +12025,10 @@ figure {
       line-height: 2rem; } }
 
 .image-with-caption figcaption {
-  margin-top: 2rem; }
+  margin-top: 1.25rem;
+  font-size: .875rem; }
+  .image-with-caption figcaption p {
+    font-size: .875rem; }
 
 .layout-grid--on .image-with-caption h2,
 .layout-grid--on .image-with-caption h3,

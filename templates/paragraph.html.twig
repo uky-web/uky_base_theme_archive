@@ -1,9 +1,10 @@
 {# default implementation is a grid #}
 {% if paragraph.field_collection_items|length %}
+  {% set ncol = max((editorial_column? 2:3), grid_columns|length) %}
   {% include 'molecules-grid' with {
     head: content.field_headline_group,
     grid_columns: content.field_collection_items|children,
-    grid_type: editorial_column? 'grid--2-up' : 'grid--3-up',
+    grid_type: 'grid--' ~ ncol ~ '-up',
   } %}
 {% else %}
   {% if editorial_column %}

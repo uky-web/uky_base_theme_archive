@@ -8,6 +8,7 @@
 			<span class="lockup__wordmark__row">{{ theme_settings.lockup_wordmark_2 }}</span>
 		</div>
 	</div>
-	<!-- This is the longest college name so far -->
+	{% if theme_settings.show_college_under_lockup %}
 	<div class="lockup__unit">{{ theme_settings.college_title }}</div>
+	{% endif %}
 </a>

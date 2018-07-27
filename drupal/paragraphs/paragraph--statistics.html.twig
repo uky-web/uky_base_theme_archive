@@ -8,6 +8,6 @@
   head : content.field_headline_group,
   grid_type: "grid--" ~ n ~ "-up",
   grid_columns: content.field_collection_items|children,
-  slab_variant: {'white': 'slab--wildcat-white', 'dark': 'slab--dark-blue'}[schema],
-  grid_style: divided? 'grid--divided',
+  slab_variant: 'slab--wildcat-white',
+  grid_style: (divided? 'grid--divided ') ~ ((schema == 'wildcat')? 'grid--two-tone'),
 } %}

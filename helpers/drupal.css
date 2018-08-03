@@ -46,9 +46,19 @@ ul.menu {
 
 /* enforce embedded media widths */
 .editorial .editorial__aside.align-right,
-.editorial .editorial__aside.align-left
+.editorial .editorial__aside.align-left,
+.editorial .embedded-entity.align-left,
+.editorial .embedded-entity.align-right
 {
   width: 50%;
+}
+
+.editorial .embedded-entity.align-left {
+  margin-right: rr-gridbase(4);
+  margin-left: -2vw;
+}
+.editorial .embedded-entity.align-right {
+  margin-left: rr-gridbase(4);
 }
 
 .embedded-entity img {

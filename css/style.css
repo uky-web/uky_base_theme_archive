@@ -78,8 +78,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-543033613.eot");
-  src: url("../fonts/icons-543033613.eot?#iefix") format("eot"), url("../fonts/icons-543033613.woff2") format("woff2"), url("../fonts/icons-543033613.woff") format("woff"), url("../fonts/icons-543033613.ttf") format("truetype"), url("../fonts/icons-543033613.svg#icons-543033613") format("svg");
+  src: url("../fonts/icons-457262645.eot");
+  src: url("../fonts/icons-457262645.eot?#iefix") format("eot"), url("../fonts/icons-457262645.woff2") format("woff2"), url("../fonts/icons-457262645.woff") format("woff"), url("../fonts/icons-457262645.ttf") format("truetype"), url("../fonts/icons-457262645.svg#icons-457262645") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -14614,8 +14614,8 @@ form {
     font-size: 1.1667rem;
     line-height: 1.5rem;
     /* End base breakpoint */
-    font-weight: 500;
-    display: block; }
+    display: block;
+    font-weight: 500; }
     @media screen and (min-width: 76rem) {
       form label,
       form select {
@@ -14654,11 +14654,11 @@ form {
     font-size: 1rem;
     line-height: 1.5rem;
     /* End base breakpoint */
-    background-color: #fff;
     padding: calc(0.5rem - 1px) 0.5rem;
     border-width: 1px;
     border-style: solid;
-    border-radius: 0; }
+    border-radius: 0;
+    background-color: #fff; }
     @media screen and (min-width: 76rem) {
       form input[type='text'],
       form input[type='password'],

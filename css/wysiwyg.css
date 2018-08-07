@@ -76,8 +76,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-226492362.eot");
-  src: url("../fonts/icons-226492362.eot?#iefix") format("eot"), url("../fonts/icons-226492362.woff2") format("woff2"), url("../fonts/icons-226492362.woff") format("woff"), url("../fonts/icons-226492362.ttf") format("truetype"), url("../fonts/icons-226492362.svg#icons-226492362") format("svg");
+  src: url("../fonts/icons-110454455.eot");
+  src: url("../fonts/icons-110454455.eot?#iefix") format("eot"), url("../fonts/icons-110454455.woff2") format("woff2"), url("../fonts/icons-110454455.woff") format("woff"), url("../fonts/icons-110454455.ttf") format("truetype"), url("../fonts/icons-110454455.svg#icons-110454455") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1145,7 +1145,7 @@ body {
     body .slick-next::before {
       color: #fff; }
   body .slick-dots li button::before {
-    color: #c8c8c7; }
+    color: #1897d4; }
   body .slick-dots li.slick-active button::before {
     color: #2c2a29; }
   body .statistic .editorial::before {
@@ -1194,7 +1194,7 @@ body {
   body form input[type='search'],
   body form input[type='tel'],
   body form input[type='time'],
-  body form input[type='ur'],
+  body form input[type='url'],
   body form input[type='week'],
   body form textarea {
     border-color: #c8c8c7; }
@@ -1309,7 +1309,7 @@ body {
     .default-colors .slick-next::before {
       color: #fff; }
   .default-colors .slick-dots li button::before {
-    color: #c8c8c7; }
+    color: #1897d4; }
   .default-colors .slick-dots li.slick-active button::before {
     color: #2c2a29; }
   .default-colors .statistic .editorial::before {
@@ -1358,7 +1358,7 @@ body {
   .default-colors form input[type='search'],
   .default-colors form input[type='tel'],
   .default-colors form input[type='time'],
-  .default-colors form input[type='ur'],
+  .default-colors form input[type='url'],
   .default-colors form input[type='week'],
   .default-colors form textarea {
     border-color: #c8c8c7; }
@@ -1466,7 +1466,7 @@ body {
     .dark-colors .slick-next::before {
       color: #fff; }
   .dark-colors .slick-dots li button::before {
-    color: #c8c8c7; }
+    color: #1897d4; }
   .dark-colors .slick-dots li.slick-active button::before {
     color: #2c2a29; }
   .dark-colors .statistic .editorial::before {
@@ -1515,7 +1515,7 @@ body {
   .dark-colors form input[type='search'],
   .dark-colors form input[type='tel'],
   .dark-colors form input[type='time'],
-  .dark-colors form input[type='ur'],
+  .dark-colors form input[type='url'],
   .dark-colors form input[type='week'],
   .dark-colors form textarea {
     border-color: #c8c8c7; }
@@ -2140,7 +2140,7 @@ h6 {
   .formatted-text--dark form input[type='search'],
   .formatted-text--dark form input[type='tel'],
   .formatted-text--dark form input[type='time'],
-  .formatted-text--dark form input[type='ur'],
+  .formatted-text--dark form input[type='url'],
   .formatted-text--dark form input[type='week'],
   .formatted-text--dark form textarea {
     border-color: transparent; }

@@ -216,7 +216,7 @@ body.layout-grid--on::before {
   content: '';
   z-index: 1000;
   pointer-events: none;
-  mix-blend-mode: multiply;
+  mix-blend-mode: exclusion;
   width: calc(100% - (2 * 1rem));
   background-image: repeating-linear-gradient(to left, transparent 0, transparent 0.5rem, rgba(200, 200, 255, 0.2) 0.5rem, rgba(200, 200, 255, 0.2) 25%);
   background-size: calc(100% + 0.5rem); }
@@ -253,7 +253,7 @@ body.layout-grid--on::after {
   content: '';
   z-index: 1000;
   pointer-events: none;
-  mix-blend-mode: multiply;
+  mix-blend-mode: exclusion;
   background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; }
   @media screen and (min-width: 35rem) {
     body.layout-grid--on::after {

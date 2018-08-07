@@ -1,10 +1,8 @@
 @charset "UTF-8";
 @import url("https://cloud.typography.com/7932236/6118192/css/fonts.css");
 :root {
-  /* Base Breakpoint */
   font-size: 1rem;
   line-height: 1rem;
-  /* End base breakpoint */
   position: relative; }
   @media screen and (min-width: 76rem) {
     :root {
@@ -78,8 +76,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-395298084.eot");
-  src: url("../fonts/icons-395298084.eot?#iefix") format("eot"), url("../fonts/icons-395298084.woff2") format("woff2"), url("../fonts/icons-395298084.woff") format("woff"), url("../fonts/icons-395298084.ttf") format("truetype"), url("../fonts/icons-395298084.svg#icons-395298084") format("svg");
+  src: url("../fonts/icons-808765183.eot");
+  src: url("../fonts/icons-808765183.eot?#iefix") format("eot"), url("../fonts/icons-808765183.woff2") format("woff2"), url("../fonts/icons-808765183.woff") format("woff"), url("../fonts/icons-808765183.ttf") format("truetype"), url("../fonts/icons-808765183.svg#icons-808765183") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -457,10 +455,8 @@ body {
 
 .text-xs-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.75rem;
-  line-height: 0rem;
-  /* End base breakpoint */ }
+  line-height: 0rem; }
   @media screen and (min-width: 76rem) {
     .text-xs-hpc {
       font-size: 0.75rem;
@@ -468,10 +464,8 @@ body {
 
 .text-xs-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.75rem;
-  line-height: 0.5rem;
-  /* End base breakpoint */ }
+  line-height: 0.5rem; }
   @media screen and (min-width: 76rem) {
     .text-xs-squeeze {
       font-size: 0.75rem;
@@ -479,10 +473,8 @@ body {
 
 .text-xs-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.75rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .text-xs-tight {
       font-size: 0.75rem;
@@ -490,10 +482,8 @@ body {
 
 .text-xs-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.75rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-xs-medium {
       font-size: 0.75rem;
@@ -501,10 +491,8 @@ body {
 
 .text-xs-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.75rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-xs-wide {
       font-size: 0.75rem;
@@ -512,10 +500,8 @@ body {
 
 .text-xs-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.75rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-xs-huge {
       font-size: 0.75rem;
@@ -523,10 +509,8 @@ body {
 
 .text-xs-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.75rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-xs-redic {
       font-size: 0.75rem;
@@ -534,10 +518,8 @@ body {
 
 .text-s-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.875rem;
-  line-height: 0rem;
-  /* End base breakpoint */ }
+  line-height: 0rem; }
   @media screen and (min-width: 76rem) {
     .text-s-hpc {
       font-size: 0.875rem;
@@ -545,10 +527,8 @@ body {
 
 .text-s-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.875rem;
-  line-height: 0.5rem;
-  /* End base breakpoint */ }
+  line-height: 0.5rem; }
   @media screen and (min-width: 76rem) {
     .text-s-squeeze {
       font-size: 0.875rem;
@@ -556,10 +536,8 @@ body {
 
 .text-s-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.875rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .text-s-tight {
       font-size: 0.875rem;
@@ -567,10 +545,8 @@ body {
 
 .text-s-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.875rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-s-medium {
       font-size: 0.875rem;
@@ -578,10 +554,8 @@ body {
 
 .text-s-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.875rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-s-wide {
       font-size: 0.875rem;
@@ -589,10 +563,8 @@ body {
 
 .text-s-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.875rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-s-huge {
       font-size: 0.875rem;
@@ -600,10 +572,8 @@ body {
 
 .text-s-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 0.875rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-s-redic {
       font-size: 0.875rem;
@@ -611,10 +581,8 @@ body {
 
 .text-r-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1rem;
-  line-height: 0rem;
-  /* End base breakpoint */ }
+  line-height: 0rem; }
   @media screen and (min-width: 76rem) {
     .text-r-hpc {
       font-size: 1rem;
@@ -622,10 +590,8 @@ body {
 
 .text-r-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1rem;
-  line-height: 0.5rem;
-  /* End base breakpoint */ }
+  line-height: 0.5rem; }
   @media screen and (min-width: 76rem) {
     .text-r-squeeze {
       font-size: 1rem;
@@ -633,10 +599,8 @@ body {
 
 .text-r-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .text-r-tight {
       font-size: 1rem;
@@ -644,10 +608,8 @@ body {
 
 .text-r-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-r-medium {
       font-size: 1rem;
@@ -655,10 +617,8 @@ body {
 
 .text-r-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-r-wide {
       font-size: 1rem;
@@ -666,10 +626,8 @@ body {
 
 .text-r-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-r-huge {
       font-size: 1rem;
@@ -677,10 +635,8 @@ body {
 
 .text-r-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-r-redic {
       font-size: 1rem;
@@ -688,10 +644,8 @@ body {
 
 .text-l-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.1667rem;
-  line-height: 0.5rem;
-  /* End base breakpoint */ }
+  line-height: 0.5rem; }
   @media screen and (min-width: 76rem) {
     .text-l-hpc {
       font-size: 1.1667rem;
@@ -699,10 +653,8 @@ body {
 
 .text-l-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.1667rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .text-l-squeeze {
       font-size: 1.1667rem;
@@ -710,10 +662,8 @@ body {
 
 .text-l-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.1667rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-l-tight {
       font-size: 1.1667rem;
@@ -721,10 +671,8 @@ body {
 
 .text-l-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.1667rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-l-medium {
       font-size: 1.1667rem;
@@ -732,10 +680,8 @@ body {
 
 .text-l-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.1667rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-l-wide {
       font-size: 1.1667rem;
@@ -743,10 +689,8 @@ body {
 
 .text-l-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.1667rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-l-huge {
       font-size: 1.1667rem;
@@ -754,10 +698,8 @@ body {
 
 .text-l-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.1667rem;
-  line-height: 3.5rem;
-  /* End base breakpoint */ }
+  line-height: 3.5rem; }
   @media screen and (min-width: 76rem) {
     .text-l-redic {
       font-size: 1.1667rem;
@@ -765,10 +707,8 @@ body {
 
 .text-xl-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.25rem;
-  line-height: 0.5rem;
-  /* End base breakpoint */ }
+  line-height: 0.5rem; }
   @media screen and (min-width: 76rem) {
     .text-xl-hpc {
       font-size: 1.25rem;
@@ -776,10 +716,8 @@ body {
 
 .text-xl-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.25rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .text-xl-squeeze {
       font-size: 1.25rem;
@@ -787,10 +725,8 @@ body {
 
 .text-xl-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.25rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-xl-tight {
       font-size: 1.25rem;
@@ -798,10 +734,8 @@ body {
 
 .text-xl-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.25rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-xl-medium {
       font-size: 1.25rem;
@@ -809,10 +743,8 @@ body {
 
 .text-xl-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.25rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-xl-wide {
       font-size: 1.25rem;
@@ -820,10 +752,8 @@ body {
 
 .text-xl-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.25rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-xl-huge {
       font-size: 1.25rem;
@@ -831,10 +761,8 @@ body {
 
 .text-xl-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.25rem;
-  line-height: 3.5rem;
-  /* End base breakpoint */ }
+  line-height: 3.5rem; }
   @media screen and (min-width: 76rem) {
     .text-xl-redic {
       font-size: 1.25rem;
@@ -842,10 +770,8 @@ body {
 
 .text-2xl-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.5rem;
-  line-height: 0.5rem;
-  /* End base breakpoint */ }
+  line-height: 0.5rem; }
   @media screen and (min-width: 76rem) {
     .text-2xl-hpc {
       font-size: 1.5rem;
@@ -853,10 +779,8 @@ body {
 
 .text-2xl-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.5rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .text-2xl-squeeze {
       font-size: 1.5rem;
@@ -864,10 +788,8 @@ body {
 
 .text-2xl-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.5rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-2xl-tight {
       font-size: 1.5rem;
@@ -875,10 +797,8 @@ body {
 
 .text-2xl-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.5rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-2xl-medium {
       font-size: 1.5rem;
@@ -886,10 +806,8 @@ body {
 
 .text-2xl-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.5rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-2xl-wide {
       font-size: 1.5rem;
@@ -897,10 +815,8 @@ body {
 
 .text-2xl-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.5rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-2xl-huge {
       font-size: 1.5rem;
@@ -908,10 +824,8 @@ body {
 
 .text-2xl-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.5rem;
-  line-height: 3.5rem;
-  /* End base breakpoint */ }
+  line-height: 3.5rem; }
   @media screen and (min-width: 76rem) {
     .text-2xl-redic {
       font-size: 1.5rem;
@@ -919,10 +833,8 @@ body {
 
 .text-3xl-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.775rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .text-3xl-hpc {
       font-size: 1.875rem;
@@ -930,10 +842,8 @@ body {
 
 .text-3xl-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.775rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-3xl-squeeze {
       font-size: 1.875rem;
@@ -941,10 +851,8 @@ body {
 
 .text-3xl-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.775rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-3xl-tight {
       font-size: 1.875rem;
@@ -952,10 +860,8 @@ body {
 
 .text-3xl-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.775rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-3xl-medium {
       font-size: 1.875rem;
@@ -963,10 +869,8 @@ body {
 
 .text-3xl-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.775rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-3xl-wide {
       font-size: 1.875rem;
@@ -974,10 +878,8 @@ body {
 
 .text-3xl-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.775rem;
-  line-height: 3.5rem;
-  /* End base breakpoint */ }
+  line-height: 3.5rem; }
   @media screen and (min-width: 76rem) {
     .text-3xl-huge {
       font-size: 1.875rem;
@@ -985,10 +887,8 @@ body {
 
 .text-3xl-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 1.775rem;
-  line-height: 4rem;
-  /* End base breakpoint */ }
+  line-height: 4rem; }
   @media screen and (min-width: 76rem) {
     .text-3xl-redic {
       font-size: 1.875rem;
@@ -996,10 +896,8 @@ body {
 
 .text-4xl-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .text-4xl-hpc {
       font-size: 2.375rem;
@@ -1007,10 +905,8 @@ body {
 
 .text-4xl-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-4xl-squeeze {
       font-size: 2.375rem;
@@ -1018,10 +914,8 @@ body {
 
 .text-4xl-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-4xl-tight {
       font-size: 2.375rem;
@@ -1029,10 +923,8 @@ body {
 
 .text-4xl-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-4xl-medium {
       font-size: 2.375rem;
@@ -1040,10 +932,8 @@ body {
 
 .text-4xl-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-4xl-wide {
       font-size: 2.375rem;
@@ -1051,10 +941,8 @@ body {
 
 .text-4xl-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2rem;
-  line-height: 3.5rem;
-  /* End base breakpoint */ }
+  line-height: 3.5rem; }
   @media screen and (min-width: 76rem) {
     .text-4xl-huge {
       font-size: 2.375rem;
@@ -1062,10 +950,8 @@ body {
 
 .text-4xl-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2rem;
-  line-height: 4rem;
-  /* End base breakpoint */ }
+  line-height: 4rem; }
   @media screen and (min-width: 76rem) {
     .text-4xl-redic {
       font-size: 2.375rem;
@@ -1073,10 +959,8 @@ body {
 
 .text-5xl-hpc {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2.4286rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .text-5xl-hpc {
       font-size: 3.4286rem;
@@ -1084,10 +968,8 @@ body {
 
 .text-5xl-squeeze {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2.4286rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .text-5xl-squeeze {
       font-size: 3.4286rem;
@@ -1095,10 +977,8 @@ body {
 
 .text-5xl-tight {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2.4286rem;
-  line-height: 2.5rem;
-  /* End base breakpoint */ }
+  line-height: 2.5rem; }
   @media screen and (min-width: 76rem) {
     .text-5xl-tight {
       font-size: 3.4286rem;
@@ -1106,10 +986,8 @@ body {
 
 .text-5xl-medium {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2.4286rem;
-  line-height: 3rem;
-  /* End base breakpoint */ }
+  line-height: 3rem; }
   @media screen and (min-width: 76rem) {
     .text-5xl-medium {
       font-size: 3.4286rem;
@@ -1117,10 +995,8 @@ body {
 
 .text-5xl-wide {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2.4286rem;
-  line-height: 3.5rem;
-  /* End base breakpoint */ }
+  line-height: 3.5rem; }
   @media screen and (min-width: 76rem) {
     .text-5xl-wide {
       font-size: 3.4286rem;
@@ -1128,10 +1004,8 @@ body {
 
 .text-5xl-huge {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2.4286rem;
-  line-height: 4rem;
-  /* End base breakpoint */ }
+  line-height: 4rem; }
   @media screen and (min-width: 76rem) {
     .text-5xl-huge {
       font-size: 3.4286rem;
@@ -1139,10 +1013,8 @@ body {
 
 .text-5xl-redic {
   background-color: rgba(200, 255, 200, 0.3);
-  /* Base Breakpoint */
   font-size: 2.4286rem;
-  line-height: 4.5rem;
-  /* End base breakpoint */ }
+  line-height: 4.5rem; }
   @media screen and (min-width: 76rem) {
     .text-5xl-redic {
       font-size: 3.4286rem;
@@ -1157,10 +1029,8 @@ body {
   -webkit-box-shadow: #0033a0 0 0 0 6px inset;
           box-shadow: #0033a0 0 0 0 6px inset; }
   .nc-placeholder p {
-    /* Base Breakpoint */
     font-size: 1.1667rem;
-    line-height: 2.5rem;
-    /* End base breakpoint */ }
+    line-height: 2.5rem; }
     @media screen and (min-width: 76rem) {
       .nc-placeholder p {
         font-size: 1.1667rem;
@@ -1711,10 +1581,8 @@ button::-moz-focus-inner {
     line-height: 1rem; }
 
 .icon-label--big {
-  /* Base Breakpoint */
   font-size: 1.25rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1778,20 +1646,16 @@ a .icon-label .label {
   .icon-catalog .icon-label .label {
     margin-left: .5em; }
   .icon-catalog li {
-    /* Base Breakpoint */
     font-size: 1.25rem;
-    line-height: 2.5rem;
-    /* End base breakpoint */ }
+    line-height: 2.5rem; }
     @media screen and (min-width: 76rem) {
       .icon-catalog li {
         font-size: 1.25rem;
         line-height: 2.5rem; } }
 
 p {
-  /* Base Breakpoint */
   font-size: 1rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   margin-bottom: 1rem; }
   @media screen and (min-width: 76rem) {
     p {
@@ -1799,19 +1663,15 @@ p {
       line-height: 1.5rem; } }
 
 .intro {
-  /* Base Breakpoint */
   font-size: 1.25rem;
-  line-height: 2rem;
-  /* End base breakpoint */ }
+  line-height: 2rem; }
   @media screen and (min-width: 76rem) {
     .intro {
       font-size: 1.25rem;
       line-height: 2rem; } }
   .intro p {
-    /* Base Breakpoint */
     font-size: 1.25rem;
-    line-height: 2rem;
-    /* End base breakpoint */ }
+    line-height: 2rem; }
     @media screen and (min-width: 76rem) {
       .intro p {
         font-size: 1.25rem;
@@ -1873,10 +1733,8 @@ a {
 .link--fancy-reverse,
 .editorial .link--fancy,
 .editorial .link--fancy-reverse {
-  /* Base Breakpoint */
   font-size: 1.25rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   display: inline-block;
   position: relative;
   padding-left: 1.5rem;
@@ -1940,10 +1798,8 @@ a {
 
 .editorial .link--fancy,
 .editorial .link--fancy-reverse {
-  /* Base Breakpoint */
   font-size: 1.1667rem;
-  line-height: 1.5rem;
-  /* End base breakpoint */ }
+  line-height: 1.5rem; }
   @media screen and (min-width: 76rem) {
     .editorial .link--fancy,
     .editorial .link--fancy-reverse {
@@ -1991,10 +1847,8 @@ h3,
 h4,
 h5,
 h6 {
-  /* Base Breakpoint */
   font-size: 1.1667rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   font-weight: normal; }
   @media screen and (min-width: 76rem) {
     h1,
@@ -2008,10 +1862,8 @@ h6 {
 
 .editorial h2,
 .editorial h2.headline-group .headline-group__head {
-  /* Base Breakpoint */
   font-size: 2rem;
   line-height: 2rem;
-  /* End base breakpoint */
   font-family: "Mercury Display A", "Mercury Display B", serif;
   font-weight: normal;
   margin-top: 0;
@@ -2027,10 +1879,8 @@ h6 {
 
 .editorial h3,
 .editorial h3.headline-group .headline-group__head {
-  /* Base Breakpoint */
   font-size: 1.775rem;
   line-height: 2rem;
-  /* End base breakpoint */
   font-family: sans-serif;
   font-weight: normal;
   margin-top: 0;
@@ -2046,10 +1896,8 @@ h6 {
 
 .editorial h4,
 .editorial h4.headline-group .headline-group__head {
-  /* Base Breakpoint */
   font-size: 1.25rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   font-family: sans-serif;
   font-weight: normal;
   margin-top: 0;
@@ -2065,10 +1913,8 @@ h6 {
 
 .editorial h5,
 .editorial h5.headline-group .headline-group__head {
-  /* Base Breakpoint */
   font-size: 1.25rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   font-family: sans-serif;
   font-weight: normal;
   font-style: italic;
@@ -2085,10 +1931,8 @@ h6 {
 
 .editorial h6,
 .editorial h6.headline-group .headline-group__head {
-  /* Base Breakpoint */
   font-size: 1.1667rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   font-family: sans-serif;
   font-weight: normal;
   margin-top: 0;
@@ -2103,10 +1947,8 @@ h6 {
   font-family: "AvenirNextLT", sans-serif; }
 
 .heading--display {
-  /* Base Breakpoint */
   font-size: 1.775rem;
   line-height: 2rem;
-  /* End base breakpoint */
   position: relative;
   margin-bottom: 2rem;
   font-family: "Mercury Display A", "Mercury Display B", serif; }
@@ -2306,10 +2148,8 @@ h6 {
 button,
 a.button,
 input.button {
-  /* Base Breakpoint */
   font-size: 1.1667rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   display: inline-block;
   margin: 0;
   padding-top: calc(1rem - 2px);
@@ -2345,10 +2185,8 @@ input.button {
   button.button--small,
   a.button.button--small,
   input.button.button--small {
-    /* Base Breakpoint */
     font-size: 0.875rem;
     line-height: 1rem;
-    /* End base breakpoint */
     padding-right: calc(1.625rem - 3px);
     padding-left: calc(1.625rem - 3px); }
     @media screen and (min-width: 76rem) {
@@ -2360,10 +2198,8 @@ input.button {
   button.button--large,
   a.button.button--large,
   input.button.button--large {
-    /* Base Breakpoint */
     font-size: 1.1667rem;
     line-height: 1.5rem;
-    /* End base breakpoint */
     padding-right: calc(2rem - 3px);
     padding-left: calc(2rem - 3px); }
     @media screen and (min-width: 76rem) {
@@ -2386,10 +2222,8 @@ button.video-button {
 
 ul li,
 ol li {
-  /* Base Breakpoint */
   font-size: 1rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   margin-bottom: 0.5rem; }
   @media screen and (min-width: 76rem) {
     ul li,
@@ -2411,10 +2245,8 @@ ol.no-decoration {
       display: none; }
 
 dl dt {
-  /* Base Breakpoint */
   font-size: 1.1667rem;
   line-height: 2rem;
-  /* End base breakpoint */
   margin-bottom: 0.5rem;
   font-weight: 500; }
   @media screen and (min-width: 76rem) {
@@ -2423,10 +2255,8 @@ dl dt {
       line-height: 2rem; } }
 
 dl dd {
-  /* Base Breakpoint */
   font-size: 1rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   margin-bottom: 1rem;
   margin-left: 0; }
   @media screen and (min-width: 76rem) {
@@ -2455,20 +2285,16 @@ dl.invisible-labels dd {
   .headline-group .headline-group__sub {
     display: block; }
   .headline-group .headline-group__super {
-    /* Base Breakpoint */
     font-size: 0.875rem;
     line-height: 1rem;
-    /* End base breakpoint */
     text-transform: uppercase; }
     @media screen and (min-width: 76rem) {
       .headline-group .headline-group__super {
         font-size: 0.875rem;
         line-height: 1rem; } }
   .headline-group .headline-group__sub {
-    /* Base Breakpoint */
     font-size: 1.1667rem;
     line-height: 1.5rem;
-    /* End base breakpoint */
     font-style: italic; }
     @media screen and (min-width: 76rem) {
       .headline-group .headline-group__sub {
@@ -2478,10 +2304,8 @@ dl.invisible-labels dd {
     .headline-group .headline-group__sub em {
       font-style: normal; }
   .headline-group .headline-group__head {
-    /* Base Breakpoint */
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       .headline-group .headline-group__head {
         font-size: 1.5rem;
@@ -2490,10 +2314,8 @@ dl.invisible-labels dd {
   .link-collection .headline-group .headline-group__super,
   .image-gallery-block .headline-group .headline-group__super,
   .editorial aside .headline-group .headline-group__super {
-    /* Base Breakpoint */
     font-size: 1rem;
     line-height: 1rem;
-    /* End base breakpoint */
     color: #515664;
     font-weight: 500; }
     @media screen and (min-width: 76rem) {
@@ -2507,10 +2329,8 @@ dl.invisible-labels dd {
   .link-collection .headline-group .headline-group__sub,
   .image-gallery-block .headline-group .headline-group__sub,
   .editorial aside .headline-group .headline-group__sub {
-    /* Base Breakpoint */
     font-size: 1.25rem;
     line-height: 1.5rem;
-    /* End base breakpoint */
     color: #515664;
     font-weight: 500; }
     @media screen and (min-width: 76rem) {
@@ -2525,10 +2345,8 @@ dl.invisible-labels dd {
   .image-gallery-block .headline-group .headline-group__head,
   .editorial aside .headline-group .headline-group__head {
     font-weight: 500;
-    /* Base Breakpoint */
     font-size: 1.775rem;
-    line-height: 2rem;
-    /* End base breakpoint */ }
+    line-height: 2rem; }
     @media screen and (min-width: 76rem) {
       .teaser .headline-group .headline-group__head,
       .link-collection .headline-group .headline-group__head,
@@ -2545,145 +2363,113 @@ dl.invisible-labels dd {
     .editorial aside .headline-group .headline-group__head .underline-link:visited {
       color: #1f2c5e; }
   h1.headline-group .headline-group__super {
-    /* Base Breakpoint */
     font-size: 1.25rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h1.headline-group .headline-group__super {
         font-size: 1.25rem;
         line-height: 1.5rem; } }
   h1.headline-group .headline-group__sub {
-    /* Base Breakpoint */
     font-size: 1.775rem;
-    line-height: 2rem;
-    /* End base breakpoint */ }
+    line-height: 2rem; }
     @media screen and (min-width: 76rem) {
       h1.headline-group .headline-group__sub {
         font-size: 1.875rem;
         line-height: 2rem; } }
   h1.headline-group .headline-group__head {
-    /* Base Breakpoint */
     font-size: 2rem;
-    line-height: 2rem;
-    /* End base breakpoint */ }
+    line-height: 2rem; }
     @media screen and (min-width: 76rem) {
       h1.headline-group .headline-group__head {
         font-size: 2.375rem;
         line-height: 2.5rem; } }
   h2.headline-group .headline-group__super {
-    /* Base Breakpoint */
     font-size: 1.1667rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h2.headline-group .headline-group__super {
         font-size: 1.1667rem;
         line-height: 1.5rem; } }
   h2.headline-group .headline-group__sub {
-    /* Base Breakpoint */
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h2.headline-group .headline-group__sub {
         font-size: 1.5rem;
         line-height: 1.5rem; } }
   h2.headline-group .headline-group__head {
-    /* Base Breakpoint */
     font-size: 1.775rem;
-    line-height: 2rem;
-    /* End base breakpoint */ }
+    line-height: 2rem; }
     @media screen and (min-width: 76rem) {
       h2.headline-group .headline-group__head {
         font-size: 1.875rem;
         line-height: 2rem; } }
   h3.headline-group .headline-group__sub {
-    /* Base Breakpoint */
     font-size: 1.25rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h3.headline-group .headline-group__sub {
         font-size: 1.25rem;
         line-height: 1.5rem; } }
   h3.headline-group .headline-group__head {
-    /* Base Breakpoint */
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h3.headline-group .headline-group__head {
         font-size: 1.5rem;
         line-height: 1.5rem; } }
   h4.headline-group .headline-group__sub {
-    /* Base Breakpoint */
     font-size: 1.25rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h4.headline-group .headline-group__sub {
         font-size: 1.25rem;
         line-height: 1.5rem; } }
   h4.headline-group .headline-group__head {
-    /* Base Breakpoint */
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h4.headline-group .headline-group__head {
         font-size: 1.5rem;
         line-height: 1.5rem; } }
   h5.headline-group .headline-group__super {
-    /* Base Breakpoint */
     font-size: 0.875rem;
-    line-height: 1rem;
-    /* End base breakpoint */ }
+    line-height: 1rem; }
     @media screen and (min-width: 76rem) {
       h5.headline-group .headline-group__super {
         font-size: 0.875rem;
         line-height: 1rem; } }
   h5.headline-group .headline-group__sub {
-    /* Base Breakpoint */
     font-size: 1.1667rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h5.headline-group .headline-group__sub {
         font-size: 1.1667rem;
         line-height: 1.5rem; } }
   h5.headline-group .headline-group__head {
-    /* Base Breakpoint */
     font-size: 1.25rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h5.headline-group .headline-group__head {
         font-size: 1.25rem;
         line-height: 1.5rem; } }
   h6.headline-group .headline-group__super {
-    /* Base Breakpoint */
     font-size: 0.875rem;
-    line-height: 1rem;
-    /* End base breakpoint */ }
+    line-height: 1rem; }
     @media screen and (min-width: 76rem) {
       h6.headline-group .headline-group__super {
         font-size: 0.875rem;
         line-height: 1rem; } }
   h6.headline-group .headline-group__sub {
-    /* Base Breakpoint */
     font-size: 1.1667rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h6.headline-group .headline-group__sub {
         font-size: 1.1667rem;
         line-height: 1.5rem; } }
   h6.headline-group .headline-group__head {
-    /* Base Breakpoint */
     font-size: 1.25rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       h6.headline-group .headline-group__head {
         font-size: 1.25rem;
@@ -2692,10 +2478,8 @@ dl.invisible-labels dd {
 .described-links {
   margin-bottom: 1.5rem; }
   .described-links .editorial p {
-    /* Base Breakpoint */
     font-size: 1rem;
-    line-height: 1.5rem;
-    /* End base breakpoint */ }
+    line-height: 1.5rem; }
     @media screen and (min-width: 76rem) {
       .described-links .editorial p {
         font-size: 1rem;
@@ -2704,10 +2488,8 @@ dl.invisible-labels dd {
     padding-left: 1rem; }
 
 .cite-media {
-  /* Base Breakpoint */
   font-size: 0.875rem;
   line-height: 1rem;
-  /* End base breakpoint */
   font-style: normal; }
   @media screen and (min-width: 76rem) {
     .cite-media {
@@ -2719,10 +2501,8 @@ dl.invisible-labels dd {
   .content-meta .byline,
   .content-meta .location,
   .content-meta .date {
-    /* Base Breakpoint */
     font-size: 1.1667rem;
-    line-height: 2rem;
-    /* End base breakpoint */ }
+    line-height: 2rem; }
     @media screen and (min-width: 76rem) {
       .content-meta .byline,
       .content-meta .location,
@@ -2789,10 +2569,8 @@ dl.invisible-labels dd {
   .lockup__wordmark__row {
     display: block; }
   .lockup__unit {
-    /* Base Breakpoint */
     font-size: 0.875rem;
     line-height: 1rem;
-    /* End base breakpoint */
     margin-top: .2rem;
     margin-left: 0;
     font-style: italic;
@@ -2857,10 +2635,8 @@ dl.invisible-labels dd {
     margin-bottom: 0; }
   .editorial ol li,
   .editorial ul li {
-    /* Base Breakpoint */
     font-size: 1rem;
     line-height: 1.5rem;
-    /* End base breakpoint */
     margin-bottom: 0.5rem; }
     @media screen and (min-width: 76rem) {
       .editorial ol li,

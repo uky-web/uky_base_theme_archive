@@ -5,9 +5,9 @@
             <div class="page-header__content">
                 {% include 'molecules-page-header-text' %}
             </div>
-            {% if secondary_image|children|length %}
+            {% if secondary_image_url %}
                 <div class="page-header__secondary-img">
-                    {{ secondary_image }}
+                    <img src="{{ secondary_image_url }}" alt="{{ secondary_image_alt }}">
                 </div>
             {% endif %}
         </div>

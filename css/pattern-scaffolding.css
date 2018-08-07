@@ -77,26 +77,24 @@ body {
 
 .sg-colors {
   margin-left: 0;
-  list-style: none;
-  /* Base Breakpoint */
-  /* End base breakpoint */ }
+  list-style: none; }
   .sg-colors .sg-colors__column {
+    margin-bottom: 1rem;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-bottom: 1rem; }
+            box-sizing: border-box; }
   @media screen and (min-width: 35rem) {
     .sg-colors {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
               align-items: stretch;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
       .sg-colors .sg-colors__column {
         -webkit-box-flex: 0;
             -ms-flex: 0 1 auto;
@@ -114,16 +112,14 @@ body {
     .sg-colors {
       display: grid;
       grid-auto-rows: auto;
-      /* Base Breakpoint */
       grid-gap: 0.5rem;
-      /* End base breakpoint */
       grid-auto-rows: auto;
       grid-auto-rows: auto;
       grid-auto-rows: auto;
       grid-auto-rows: auto; }
       .sg-colors .sg-colors__column {
-        margin: 0;
-        width: auto; }
+        width: auto;
+        margin: 0; }
       @media screen and (min-width: 35rem) {
         .sg-colors {
           grid-gap: 1rem;
@@ -140,10 +136,8 @@ body {
   border: 2px solid #c8c8c7;
   border-radius: 8px;
   overflow: hidden;
-  /* Base Breakpoint */
   font-size: 1rem;
-  line-height: 1rem;
-  /* End base breakpoint */ }
+  line-height: 1rem; }
   @media screen and (min-width: 76rem) {
     .sg-colors__column {
       font-size: 1rem;
@@ -153,10 +147,8 @@ body {
     bottom: 1rem; }
 
 .sg-colors pre {
-  /* Base Breakpoint */
   font-size: 0.75rem;
   line-height: 1rem;
-  /* End base breakpoint */
   margin-bottom: 0.5rem; }
   @media screen and (min-width: 76rem) {
     .sg-colors pre {
@@ -177,10 +169,8 @@ body {
   margin-bottom: 2rem; }
 
 .sg-pattern-head {
-  /* Base Breakpoint */
   font-size: 1rem;
   line-height: 1.5rem;
-  /* End base breakpoint */
   padding: 0.5rem; }
   @media screen and (min-width: 76rem) {
     .sg-pattern-head {
@@ -214,24 +204,22 @@ body {
       margin-left: 1rem; } }
 
 body.layout-grid--on::before {
-  content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-right: auto;
-  margin-left: auto;
   max-width: 72rem;
   min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  content: '';
   z-index: 1000;
   pointer-events: none;
   mix-blend-mode: multiply;
-  /* Base Breakpoint */
   width: calc(100% - (2 * 1rem));
   background-image: repeating-linear-gradient(to left, transparent 0, transparent 0.5rem, rgba(200, 200, 255, 0.2) 0.5rem, rgba(200, 200, 255, 0.2) 25%);
-  background-size: calc(100% + 0.5rem);
-  /* End base breakpoint */ }
+  background-size: calc(100% + 0.5rem); }
   @media screen and (min-width: 35rem) {
     body.layout-grid--on::before {
       width: calc(100% - (2 * 2rem));
@@ -254,21 +242,19 @@ body.layout-grid--on::before {
       background-size: calc(100% + 2rem); } }
 
 body.layout-grid--on::after {
-  content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
-  min-height: 100vh;
+  content: '';
   z-index: 1000;
   pointer-events: none;
   mix-blend-mode: multiply;
-  /* Base Breakpoint */
-  background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem;
-  /* End base breakpoint */ }
+  background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; }
   @media screen and (min-width: 35rem) {
     body.layout-grid--on::after {
       background: transparent linear-gradient(to top, rgba(128, 128, 200, 0.2) 0, rgba(128, 128, 200, 0.2) 1px, transparent 1px, transparent 100%) scroll repeat left top/100% 0.5rem; } }

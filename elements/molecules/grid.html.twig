@@ -1,10 +1,6 @@
 {% embed 'molecules-slab' with { slab_variant: slab_variant } %}
     {% block slab_outer %}
-        {% if head|children %}
-        <div class="slab__wrapper">
-            {{ head }}
-        </div>
-        {% endif %}
+        {{ head }}
         <div class="grid {{ grid_type }} {{ grid_style }}">          
             {% for col in grid_columns %}
             <div class="grid__column">

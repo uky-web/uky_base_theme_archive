@@ -64,6 +64,11 @@ ul.menu {
   width: auto;
 }
 
+.global-nav .menu li {
+  margin-bottom: 0;
+  line-height: inherit;
+}
+
 /* medium breakpoint */
 @media screen and (min-width: 35rem) {
 }

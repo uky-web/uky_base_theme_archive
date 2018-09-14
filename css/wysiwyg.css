@@ -76,8 +76,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-375678847.eot");
-  src: url("../fonts/icons-375678847.eot?#iefix") format("eot"), url("../fonts/icons-375678847.woff2") format("woff2"), url("../fonts/icons-375678847.woff") format("woff"), url("../fonts/icons-375678847.ttf") format("truetype"), url("../fonts/icons-375678847.svg#icons-375678847") format("svg");
+  src: url("../fonts/icons-030432964.eot");
+  src: url("../fonts/icons-030432964.eot?#iefix") format("eot"), url("../fonts/icons-030432964.woff2") format("woff2"), url("../fonts/icons-030432964.woff") format("woff"), url("../fonts/icons-030432964.ttf") format("truetype"), url("../fonts/icons-030432964.svg#icons-030432964") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1043,7 +1043,9 @@ html {
 body {
   color: #2c2a29;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   body .cite-media .icon-label {
     color: #515664; }
   body .image-with-caption__media {
@@ -1054,6 +1056,29 @@ body {
     color: #2c2a29; }
   body a:hover, body a:active {
     color: #2b3a82; }
+  body .carousel figcaption a {
+    background-attachment: scroll;
+    background-image: linear-gradient(to top, rgba(43, 58, 130, 0.6) 0, rgba(43, 58, 130, 0.6) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(44, 42, 41, 0.6) 0, rgba(44, 42, 41, 0.6) 1px, transparent 1px, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: 0 .5em, 0 0;
+    position: relative;
+    -webkit-transition: .2s background-position ease-out;
+    transition: .2s background-position ease-out;
+    font-weight: 500;
+    text-decoration: none;
+    z-index: 1; }
+    body .carousel figcaption a:link, body .carousel figcaption a:visited {
+      color: #2c2a29; }
+    body .carousel figcaption a:hover, body .carousel figcaption a:active {
+      color: #0033a0; }
+    body .carousel figcaption a.link--fancy {
+      background-image: none; }
+    body .carousel figcaption a:active, body .carousel figcaption a:hover {
+      background-position: 0 0, 1000px 1px; }
+    body .carousel figcaption a:link, body .carousel figcaption a:visited {
+      color: #2c2a29; }
+    body .carousel figcaption a:hover, body .carousel figcaption a:active {
+      color: #2c2a29; }
   body button,
   body a.button,
   body input.button {
@@ -1135,17 +1160,20 @@ body {
   body .slick-prev,
   body .slick-next {
     background-color: #515664;
-    color: transparent; }
+    color: #fff; }
     body .slick-prev:hover, body .slick-prev:focus,
     body .slick-next:hover,
     body .slick-next:focus {
       background-color: #515664;
-      color: transparent; }
+      color: #fff; }
     body .slick-prev::before,
     body .slick-next::before {
       color: #fff; }
-  body .slick-dots li button::before {
-    color: #1897d4; }
+  body .slick-dots li button {
+    background-color: transparent;
+    color: #2c2a29; }
+    body .slick-dots li button::before {
+      color: #1897d4; }
   body .slick-dots li.slick-active button::before {
     color: #2c2a29; }
   body .statistic .editorial::before {
@@ -1218,6 +1246,29 @@ body {
     color: #2c2a29; }
   .default-colors a:hover, .default-colors a:active {
     color: #2b3a82; }
+  .default-colors .carousel figcaption a {
+    background-attachment: scroll;
+    background-image: linear-gradient(to top, rgba(43, 58, 130, 0.6) 0, rgba(43, 58, 130, 0.6) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(44, 42, 41, 0.6) 0, rgba(44, 42, 41, 0.6) 1px, transparent 1px, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: 0 .5em, 0 0;
+    position: relative;
+    -webkit-transition: .2s background-position ease-out;
+    transition: .2s background-position ease-out;
+    font-weight: 500;
+    text-decoration: none;
+    z-index: 1; }
+    .default-colors .carousel figcaption a:link, .default-colors .carousel figcaption a:visited {
+      color: #2c2a29; }
+    .default-colors .carousel figcaption a:hover, .default-colors .carousel figcaption a:active {
+      color: #0033a0; }
+    .default-colors .carousel figcaption a.link--fancy {
+      background-image: none; }
+    .default-colors .carousel figcaption a:active, .default-colors .carousel figcaption a:hover {
+      background-position: 0 0, 1000px 1px; }
+    .default-colors .carousel figcaption a:link, .default-colors .carousel figcaption a:visited {
+      color: #2c2a29; }
+    .default-colors .carousel figcaption a:hover, .default-colors .carousel figcaption a:active {
+      color: #2c2a29; }
   .default-colors button,
   .default-colors a.button,
   .default-colors input.button {
@@ -1299,17 +1350,20 @@ body {
   .default-colors .slick-prev,
   .default-colors .slick-next {
     background-color: #515664;
-    color: transparent; }
+    color: #fff; }
     .default-colors .slick-prev:hover, .default-colors .slick-prev:focus,
     .default-colors .slick-next:hover,
     .default-colors .slick-next:focus {
       background-color: #515664;
-      color: transparent; }
+      color: #fff; }
     .default-colors .slick-prev::before,
     .default-colors .slick-next::before {
       color: #fff; }
-  .default-colors .slick-dots li button::before {
-    color: #1897d4; }
+  .default-colors .slick-dots li button {
+    background-color: transparent;
+    color: #2c2a29; }
+    .default-colors .slick-dots li button::before {
+      color: #1897d4; }
   .default-colors .slick-dots li.slick-active button::before {
     color: #2c2a29; }
   .default-colors .statistic .editorial::before {
@@ -1375,6 +1429,29 @@ body {
     color: #2c2a29; }
   .dark-colors a:hover, .dark-colors a:active {
     color: #2b3a82; }
+  .dark-colors .carousel figcaption a {
+    background-attachment: scroll;
+    background-image: linear-gradient(to top, rgba(43, 58, 130, 0.6) 0, rgba(43, 58, 130, 0.6) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(44, 42, 41, 0.6) 0, rgba(44, 42, 41, 0.6) 1px, transparent 1px, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: 0 .5em, 0 0;
+    position: relative;
+    -webkit-transition: .2s background-position ease-out;
+    transition: .2s background-position ease-out;
+    font-weight: 500;
+    text-decoration: none;
+    z-index: 1; }
+    .dark-colors .carousel figcaption a:link, .dark-colors .carousel figcaption a:visited {
+      color: #2c2a29; }
+    .dark-colors .carousel figcaption a:hover, .dark-colors .carousel figcaption a:active {
+      color: #0033a0; }
+    .dark-colors .carousel figcaption a.link--fancy {
+      background-image: none; }
+    .dark-colors .carousel figcaption a:active, .dark-colors .carousel figcaption a:hover {
+      background-position: 0 0, 1000px 1px; }
+    .dark-colors .carousel figcaption a:link, .dark-colors .carousel figcaption a:visited {
+      color: #2c2a29; }
+    .dark-colors .carousel figcaption a:hover, .dark-colors .carousel figcaption a:active {
+      color: #2c2a29; }
   .dark-colors button,
   .dark-colors a.button,
   .dark-colors input.button {
@@ -1456,17 +1533,20 @@ body {
   .dark-colors .slick-prev,
   .dark-colors .slick-next {
     background-color: #515664;
-    color: transparent; }
+    color: #fff; }
     .dark-colors .slick-prev:hover, .dark-colors .slick-prev:focus,
     .dark-colors .slick-next:hover,
     .dark-colors .slick-next:focus {
       background-color: #515664;
-      color: transparent; }
+      color: #fff; }
     .dark-colors .slick-prev::before,
     .dark-colors .slick-next::before {
       color: #fff; }
-  .dark-colors .slick-dots li button::before {
-    color: #1897d4; }
+  .dark-colors .slick-dots li button {
+    background-color: transparent;
+    color: #2c2a29; }
+    .dark-colors .slick-dots li button::before {
+      color: #1897d4; }
   .dark-colors .slick-dots li.slick-active button::before {
     color: #2c2a29; }
   .dark-colors .statistic .editorial::before {
@@ -1606,8 +1686,8 @@ button::-moz-focus-inner {
 
 a .icon-label .label {
   background-attachment: scroll;
-  background-image: linear-gradient(to top, rgba(161, 211, 237, 0.4) 0, rgba(161, 211, 237, 0.4) 0.5em, transparent 0.5em, transparent 100%), linear-gradient(to top, rgba(0, 51, 160, 0.4) 0, rgba(0, 51, 160, 0.4) 2px, transparent 2px, transparent 100%);
-  background-repeat: repeat-x;
+  background-image: linear-gradient(to top, rgba(161, 211, 237, 0.4) 0, rgba(161, 211, 237, 0.4) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(0, 51, 160, 0.4) 0, rgba(0, 51, 160, 0.4) 2px, transparent 2px, transparent 100%);
+  background-repeat: no-repeat;
   background-position: 0 .5em, 0 0;
   position: relative;
   -webkit-transition: .2s background-position ease-out;
@@ -1703,8 +1783,8 @@ a {
 .underline-link,
 .editorial a {
   background-attachment: scroll;
-  background-image: linear-gradient(to top, rgba(161, 211, 237, 0.4) 0, rgba(161, 211, 237, 0.4) 0.5em, transparent 0.5em, transparent 100%), linear-gradient(to top, rgba(0, 51, 160, 0.4) 0, rgba(0, 51, 160, 0.4) 2px, transparent 2px, transparent 100%);
-  background-repeat: repeat-x;
+  background-image: linear-gradient(to top, rgba(161, 211, 237, 0.4) 0, rgba(161, 211, 237, 0.4) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(0, 51, 160, 0.4) 0, rgba(0, 51, 160, 0.4) 2px, transparent 2px, transparent 100%);
+  background-repeat: no-repeat;
   background-position: 0 .5em, 0 0;
   position: relative;
   -webkit-transition: .2s background-position ease-out;
@@ -2000,6 +2080,29 @@ h6 {
     color: #fff; }
   .formatted-text--dark a:hover, .formatted-text--dark a:active {
     color: #a1d3ed; }
+  .formatted-text--dark .carousel figcaption a {
+    background-attachment: scroll;
+    background-image: linear-gradient(to top, rgba(161, 211, 237, 0.6) 0, rgba(161, 211, 237, 0.6) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 1px, transparent 1px, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: 0 .5em, 0 0;
+    position: relative;
+    -webkit-transition: .2s background-position ease-out;
+    transition: .2s background-position ease-out;
+    font-weight: 500;
+    text-decoration: none;
+    z-index: 1; }
+    .formatted-text--dark .carousel figcaption a:link, .formatted-text--dark .carousel figcaption a:visited {
+      color: #2c2a29; }
+    .formatted-text--dark .carousel figcaption a:hover, .formatted-text--dark .carousel figcaption a:active {
+      color: #0033a0; }
+    .formatted-text--dark .carousel figcaption a.link--fancy {
+      background-image: none; }
+    .formatted-text--dark .carousel figcaption a:active, .formatted-text--dark .carousel figcaption a:hover {
+      background-position: 0 0, 1000px 1px; }
+    .formatted-text--dark .carousel figcaption a:link, .formatted-text--dark .carousel figcaption a:visited {
+      color: #fff; }
+    .formatted-text--dark .carousel figcaption a:hover, .formatted-text--dark .carousel figcaption a:active {
+      color: #fff; }
   .formatted-text--dark button,
   .formatted-text--dark a.button,
   .formatted-text--dark input.button {
@@ -2081,17 +2184,20 @@ h6 {
   .formatted-text--dark .slick-prev,
   .formatted-text--dark .slick-next {
     background-color: #515664;
-    color: transparent; }
+    color: #fff; }
     .formatted-text--dark .slick-prev:hover, .formatted-text--dark .slick-prev:focus,
     .formatted-text--dark .slick-next:hover,
     .formatted-text--dark .slick-next:focus {
       background-color: #515664;
-      color: transparent; }
+      color: #fff; }
     .formatted-text--dark .slick-prev::before,
     .formatted-text--dark .slick-next::before {
       color: #fff; }
-  .formatted-text--dark .slick-dots li button::before {
-    color: #ebebeb; }
+  .formatted-text--dark .slick-dots li button {
+    background-color: transparent;
+    color: #2c2a29; }
+    .formatted-text--dark .slick-dots li button::before {
+      color: #ebebeb; }
   .formatted-text--dark .slick-dots li.slick-active button::before {
     color: #a1d3ed; }
   .formatted-text--dark .statistic .editorial::before {
@@ -2514,12 +2620,18 @@ dl.invisible-labels dd {
   .content-meta .who-when {
     font-weight: 500; }
   .content-meta .taxonomy-list {
+    font-size: 1rem;
+    line-height: 1.5rem;
     display: block;
     font-style: italic; }
+    @media screen and (min-width: 76rem) {
+      .content-meta .taxonomy-list {
+        font-size: 1rem;
+        line-height: 1.5rem; } }
   .content-meta a {
     background-attachment: scroll;
-    background-image: linear-gradient(to top, rgba(161, 211, 237, 0.4) 0, rgba(161, 211, 237, 0.4) 0.5em, transparent 0.5em, transparent 100%), linear-gradient(to top, rgba(0, 51, 160, 0.4) 0, rgba(0, 51, 160, 0.4) 2px, transparent 2px, transparent 100%);
-    background-repeat: repeat-x;
+    background-image: linear-gradient(to top, rgba(161, 211, 237, 0.4) 0, rgba(161, 211, 237, 0.4) 0.5em, transparent 0.5em, transparent 110%), linear-gradient(to top, rgba(0, 51, 160, 0.4) 0, rgba(0, 51, 160, 0.4) 2px, transparent 2px, transparent 100%);
+    background-repeat: no-repeat;
     background-position: 0 .5em, 0 0;
     position: relative;
     -webkit-transition: .2s background-position ease-out;
@@ -2646,6 +2758,8 @@ dl.invisible-labels dd {
   .editorial a.button,
   .editorial button {
     background-image: none; }
+  .editorial + .editorial {
+    margin-top: 2rem; }
   @media screen and (min-width: 35rem) {
     .editorial .editorial__aside.align-left {
       max-width: 50%;
@@ -2661,7 +2775,9 @@ dl.invisible-labels dd {
       margin: 0 1.5rem 1.5rem 0; }
     .editorial .editorial__aside.align-right {
       max-width: 40%;
-      margin: 0 0 1.5rem 1.5rem; } }
+      margin: 0 0 1.5rem 1.5rem; }
+    .editorial + .editorial {
+      margin-top: 4rem; } }
   @media screen and (min-width: 76rem) {
     .editorial .editorial__aside.align-left {
       max-width: 40%;

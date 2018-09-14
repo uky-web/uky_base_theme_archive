@@ -48,11 +48,6 @@ addtoany:
     js/addtoany.js: {}
     'https://static.addtoany.com/menu/page.js': {'type': 'external', 'minified': true, 'async': 'async'}
 
-# sticky:
-#   version: VERSION
-#   js:
-#     js/sticky.js: {}
-
 image-gallery:
   version: VERSION
   js:

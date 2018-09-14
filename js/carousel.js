@@ -35,7 +35,10 @@ var carousel = function carousel() {
   if ($carousels.length < 1) return;
 
   var positionArrowsSingle = function positionArrowsSingle(slick) {
-    var buttonTop = slick.slideWidth * .4;
+    var $currentSlide = $(slick.$slides[slick.currentSlide]);
+    var $currentImage = $currentSlide.find('img');
+    var imgHeight = $currentImage.height();
+    var buttonTop = imgHeight / 2;
     var buttons = slick.$nextArrow.add(slick.$prevArrow);
     buttons.css({
       top: buttonTop
@@ -43,14 +46,16 @@ var carousel = function carousel() {
   };
 
   var positionArrowsCentered = function positionArrowsCentered(slick) {
+    console.log("PosArrowCenter");
     var $currentSlide = $(slick.$slides[slick.currentSlide]);
     var $currentImage = $currentSlide.find('img');
     var $currentTrack = slick.$slideTrack;
     var imgHeight = $currentImage.height();
-    var imgNatHeight = $currentImage.prop('naturalHeight');
+    var containerHeight = imgHeight * 1.105; // magic number matches the scale factor from the scss
+
     if (imgHeight > 0) {
-      var padding = (imgHeight - imgNatHeight) / 2;
-      var buttonTop = imgHeight * .5 + padding;
+      var padding = (containerHeight - imgHeight) / 2;
+      var buttonTop = containerHeight * .5;
       var buttons = slick.$nextArrow.add(slick.$prevArrow);
       buttons.css({
         top: buttonTop
@@ -62,16 +67,15 @@ var carousel = function carousel() {
   };
 
   $carousels.on('init setPosition afterChange', function (e, slick) {
-    if ($(e.currentTarget).has('.carousel--single')) {
+    var cl = e.currentTarget.classList;
+    if (cl.contains('carousel--single')) {
       positionArrowsSingle(slick);
-    }
-    if ($(e.currentTarget).has('.carousel--center')) {
+    } else if (cl.contains('carousel--center')) {
       positionArrowsCentered(slick);
     }
   });
 
   $carousels.map(function (index, elem) {
-    // override configuration based on class name
     if (elem.classList.contains('carousel--center')) {
       config = carousel_center;
     } else {

@@ -76,8 +76,8 @@ body {
 
 @font-face {
   font-family: "iconfont";
-  src: url("../fonts/icons-221759222.eot");
-  src: url("../fonts/icons-221759222.eot?#iefix") format("eot"), url("../fonts/icons-221759222.woff2") format("woff2"), url("../fonts/icons-221759222.woff") format("woff"), url("../fonts/icons-221759222.ttf") format("truetype"), url("../fonts/icons-221759222.svg#icons-221759222") format("svg");
+  src: url("../fonts/icons-405448280.eot");
+  src: url("../fonts/icons-405448280.eot?#iefix") format("eot"), url("../fonts/icons-405448280.woff2") format("woff2"), url("../fonts/icons-405448280.woff") format("woff"), url("../fonts/icons-405448280.ttf") format("truetype"), url("../fonts/icons-405448280.svg#icons-405448280") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2733,6 +2733,10 @@ dl.invisible-labels dd {
   margin-bottom: 1rem; }
   .editorial:last-child {
     margin-bottom: 0; }
+  .editorial::after {
+    display: block;
+    clear: both;
+    content: ''; }
   .editorial .editorial__aside {
     max-width: 100%;
     margin: 0 auto 1rem;

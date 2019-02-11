@@ -1,8 +1,8 @@
 {
-    "name": "uk-d8/ukd8",
+    "name": "uky-web/ukd8",
     "description": "Base theme.",
     "type": "drupal-theme",
     "require": {
-        "uk-d8/ukd8_customizations": "dev-master"
+        "uky-web/ukd8_customizations": "dev-master"
     }
 }

@@ -33,7 +33,7 @@ features:
 component-libraries:
   atoms:
     paths:
-      - elements/atoms
+      - node_modules/patternlabelements/atoms
   molecules:
     paths:
       - elements/molecules

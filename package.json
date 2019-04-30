@@ -1,0 +1,7 @@
+{
+"name":"ukd8-base-theme",
+"dependencies":
+    {
+        "patternlab":"https://gitlab.com/uky-web/university-web-platform/web-design-system/patternlab-artifact.git#master"
+    }
+}

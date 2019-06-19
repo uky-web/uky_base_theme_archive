@@ -2,11 +2,12 @@
 
 function ukd8_preprocess_eck_entity(&$variables) {
 
+// Commenting out.  This breaks the theme loading
   // Helpful $content variable for templates.
-  $variables += ['content' => []];
-  foreach (\Drupal\Core\Render\Element::children($variables['entity']) as $key) {
-    $variables['content'][$key] = $variables['entity'][$key];
-  }
+//  $variables += ['content' => []];
+//  foreach (\Drupal\Core\Render\Element::children($variables['entity']) as $key) {
+//    $variables['content'][$key] = $variables['entity'][$key];
+//  }
 
   // inspired by Paragraphs, injecting:
   //  eck: raw content

@@ -4,6 +4,6 @@
     "type": "drupal-theme",
     "require": {
         "drupal/components": "^1.0",
-        "uky-web/ukd8_customizations": "^0.0.1"
+        "uky-web/ukd8_customizations": "^0.1.0"
     }
 }

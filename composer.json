@@ -1,7 +1,7 @@
 {
     "name": "uky-web/ukd8",
     "description": "Base theme.",
-    "type": "drupal-theme",
+    "type": "drupal-custom-theme",
     "require": {
         "drupal/components": "^1.0",
         "uky-web/ukd8_customizations": "^0.1.0"

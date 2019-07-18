@@ -3,7 +3,7 @@
     "description": "Base theme.",
     "type": "drupal-theme",
     "require": {
-        "uky-web/ukd8_customizations": "dev-master"
+        "uky-web/ukd8_customizations": "^0.1"
     },
 
   "repositories": [

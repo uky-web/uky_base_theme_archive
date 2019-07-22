@@ -5,5 +5,29 @@
     "require": {
         "drupal/components": "^1.0",
         "uky-web/ukd8_customizations": "^0.1.0"
+    },
+
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://satis.uky.dev/"
+    },
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+
+  "scripts": {
+      "post-update-cmd": [
+        "npm install"
+      ],
+      "post-install-cmd": [
+        "npm install"
+      ]
     }
 }

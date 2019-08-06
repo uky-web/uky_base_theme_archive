@@ -8,10 +8,6 @@ function ukd8_preprocess_eck_entity(&$variables) {
 //  foreach (\Drupal\Core\Render\Element::children($variables['entity']) as $key) {
 //    $variables['content'][$key] = $variables['entity'][$key];
 //  }
-<<<<<<< HEAD
-=======
-
->>>>>>> 10-patternlab-npm-dep
 
   // inspired by Paragraphs, injecting:
   //  eck: raw content

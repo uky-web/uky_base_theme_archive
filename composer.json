@@ -1,6 +1,7 @@
 {
     "name": "uky-web/ukd8",
     "description": "Base theme.",
+    "license": "MIT"
     "type": "drupal-custom-theme",
     "require": {
         "drupal/components": "^1.0",

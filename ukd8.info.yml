@@ -1,7 +1,7 @@
 name: UK D8 Base Theme
 type: theme
-description: UK D8 by NewCity
-package: NewCity
+description: Base Theme using Limestone
+package: University of Kentucky
 core: 8.x
 libraries:
   - ukd8/global

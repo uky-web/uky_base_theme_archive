@@ -18,3 +18,15 @@ function ukd8_theme_suggestions_menu_alter(array &$suggestions, array $variables
     }
   }
 }
+
+/**
+ * Implements HOOK_preprocess_menu().
+ */
+function ukd8_preprocess_menu(&$variables) {
+  try {
+    $variables['is_home'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    $variables['is_home'] = FALSE;
+  }
+}

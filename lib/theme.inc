@@ -49,6 +49,13 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
     '#default_value' => theme_get_setting('show_college_under_lockup'),
     '#description'   => t("Parent unit is shown in the universal header. Check if the name should also appear below the lockup."),
   ];
+
+  $form['show_site_identity'] = [
+    '#type'          => 'checkbox',
+    '#title'         => t('Show site identity instead of lockup'),
+    '#default_value' => theme_get_setting('show_site_identity'),
+    '#description'   => t("Site identity is shown in place of the lockup.  Parent Unit is shown in the universal header"),
+    ];
   
   $theme_settings =  \Drupal::config('ukd8.settings');
 

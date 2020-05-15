@@ -1,18 +1,53 @@
-{% embed 'molecules-tabs' with { tabs_variant: 'mobile-tab-nav'} %}
+{# If there's no section, we can spit out the same panel component but with only one tab #}
+{% set show_section_tab = not is_home %}
+{% set tabs_variant = [
+        'mobile-tab-nav',
+        (is_main) ? 'mobile-tab-nav--wildcat' : ''
+    ] %}
+
+{% set show_section_tab = page.mobile_tab_section |render|striptags|trim is not empty %}
+
+{% embed 'molecules-tabs' with { tabs_variant: tabs_variant|join(' ') } %}
     {% block tabs_tabs %}
         {% include 'molecules-tab-tab' with { tab_target : "mobile_mainmenu", tab_label : "Main Menu / Search" } %}
-        {% include 'molecules-tab-tab' with { tab_target : "mobile_section", tab_label : "In This Section" } %}
+        {% if show_section_tab %}
+            {% include 'molecules-tab-tab' with { tab_target : "mobile_section", tab_label : "In This Section" } %}
+        {% endif %}
     {% endblock %}
     {% block tabs_panels %}
-        {% embed 'molecules-tab-panel' with { tab_panel_id : "mobile_mainmenu" } %}
+        {% embed 'molecules-tab-panel' with { tab_panel_variant: 'mobile-tab-nav__main-menu-panel', tab_panel_id : "mobile_mainmenu" } %}
+        
             {% block tab_panel_content %}
-                {{ page.mobile_tab_mainmenu }}
+                <div class="mobile-tab-nav__menus">
+                    {{ page.mobile_tab_mainmenu }}
+                <hr/>
+                     {{ page.utility_nav|injectclass('utility-nav') }}
+                </div>
+                <div class="mobile-tab-nav__universal">
+                    {# {% if not is_main %}
+                        {% include 'molecules-universal-breadcrumb' %}
+                    {% else %}
+                        <hr>
+                    {% endif %} #}
+                    {% include 'molecules-universal-nav' with { extra_links: ['#UKY4Y','Resources'] } %}
+                </div>
             {% endblock %}
+           
         {% endembed %}
-        {% embed 'molecules-tab-panel' with { tab_panel_id : "mobile_section" } %}
+        {% if show_section_tab %}
+            {% embed 'molecules-tab-panel' with { tab_panel_id : "mobile_section" } %}
+                {% block tab_panel_content %}
+                    {{ page.mobile_tab_section }}
+                {% endblock %}
+            {% endembed %}
+        {% endif %}
+
+       
+    {% endblock %}
+{% endembed %}
+
+ {# {% embed 'molecules-tab-panel' with { tab_panel_id : "mobile_section" } %}
             {% block tab_panel_content %}
                 {{ page.mobile_tab_section }}
             {% endblock %}
-        {% endembed %}
-    {% endblock %}
-{% endembed %}
+        {% endembed %} #}

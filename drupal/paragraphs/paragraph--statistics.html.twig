@@ -1,4 +1,4 @@
-{% set n = paragraph.field_collection_items|length %}
+{% set n = min(6, paragraph.field_collection_items|length) %}
 {% if editorial_column %}
   {% set n = min(2, n) %}
 {% endif %}

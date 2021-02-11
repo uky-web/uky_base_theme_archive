@@ -15,6 +15,7 @@ regions:
   top_nav: 'Top nav'
   mobile_tab_mainmenu: 'Mobile main nav tab'
   mobile_tab_section: 'Mobile section nav tab'
+  mobile_utility_nav: 'Mobile utility nav'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
   content_prefix: 'Content prefix'

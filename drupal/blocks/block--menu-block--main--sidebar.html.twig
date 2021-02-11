@@ -45,7 +45,8 @@
 {% endset %}
 {% if rendered_content|nocomment|trim %}
 <div class="section-nav section-nav--blue-gray">
-  <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
+  <nav role="navigation" aria-labelledby="main_{{ heading_id }}"{{ attributes.addClass(classes)|without('role',
+    'aria-labelledby') }}>
     {# Label. If not displayed, we still provide it for screen readers. #}
     {{ title_prefix }}
       <h2 id="{{ heading_id }}">

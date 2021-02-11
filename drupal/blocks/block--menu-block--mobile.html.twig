@@ -45,7 +45,8 @@
 {% endset %}
 {% if rendered_content|nocomment|trim %}
 
-  <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
+  <nav role="navigation" aria-labelledby="mobile_{{ heading_id }}"{{ attributes.addClass(classes)|without('role',
+    'aria-labelledby') }}>
 
     <div class="show-for-sr" id="MainNavLabel5d88e64ca18ad">Main Navigation</div>
     <a href="{{ url('<front>') }}" class="ic ic--home"><span class="show-for-sr">Return to Home Page</span></a>

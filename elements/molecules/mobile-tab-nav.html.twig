@@ -21,7 +21,7 @@
                 <div class="mobile-tab-nav__menus">
                     {{ page.mobile_tab_mainmenu }}
                 <hr/>
-                     {{ page.utility_nav|injectclass('mobile_utility-nav') }}
+                     {{ page.utility_nav|injectclass('utility-nav') }}
                 </div>
                 <div class="mobile-tab-nav__universal">
                     {# {% if not is_main %}
@@ -39,7 +39,7 @@
                 {% block tab_panel_content %}
                     {{ page.mobile_tab_section }}
                   <hr/>
-                  {{ page.utility_nav|injectclass('mobile_utility-nav') }}
+                  {{ page.mobile_utility_nav|injectclass('mobile_utility-nav') }}
                 {% endblock %}
             {% endembed %}
         {% endif %}

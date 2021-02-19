@@ -16,12 +16,12 @@
     {% endblock %}
     {% block tabs_panels %}
         {% embed 'molecules-tab-panel' with { tab_panel_variant: 'mobile-tab-nav__main-menu-panel', tab_panel_id : "mobile_mainmenu" } %}
-        
+
             {% block tab_panel_content %}
                 <div class="mobile-tab-nav__menus">
                     {{ page.mobile_tab_mainmenu }}
                 <hr/>
-                     {{ page.utility_nav|injectclass('utility-nav') }}
+                     {{ page.mobile_tab_utility_nav|injectclass('mobile-tab-utility-nav') }}
                 </div>
                 <div class="mobile-tab-nav__universal">
                     {# {% if not is_main %}
@@ -32,17 +32,19 @@
                     {% include 'molecules-universal-nav' with { extra_links: ['#UKY4Y','Resources'] } %}
                 </div>
             {% endblock %}
-           
+
         {% endembed %}
         {% if show_section_tab %}
             {% embed 'molecules-tab-panel' with { tab_panel_id : "mobile_section" } %}
                 {% block tab_panel_content %}
                     {{ page.mobile_tab_section }}
+                  <hr/>
+                  {{ page.mobile_utility_nav|injectclass('mobile_utility-nav') }}
                 {% endblock %}
             {% endembed %}
         {% endif %}
 
-       
+
     {% endblock %}
 {% endembed %}
 

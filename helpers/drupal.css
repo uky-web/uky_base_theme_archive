@@ -2,9 +2,11 @@ html.paragraphs-previewer-popup-html .slab {
   background-color: white;
 }
 
+/* Commenting out because it breaks the administration menu child menus
 #toolbar-administration ul {
   margin: 0;
 }
+*/
 
 .content-meta .field {
   display: inline;

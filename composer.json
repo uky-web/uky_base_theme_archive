@@ -28,6 +28,7 @@
         "npm install"
       ],
       "post-install-cmd": [
+        "rm -R node_modules/patternlab",
         "npm install"
       ]
     }

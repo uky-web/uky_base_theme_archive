@@ -5,7 +5,7 @@
     "type": "drupal-custom-theme",
     "require": {
         "drupal/components": "^2.0",
-        "uky-web/ukd8_customizations": "^0.1.0"
+        "uky-web/ukd8_customizations": "^1.0.0"
     },
 
   "repositories": [

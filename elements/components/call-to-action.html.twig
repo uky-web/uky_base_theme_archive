@@ -1,4 +1,4 @@
-{% set button_variant = (cta_variant is sameas('cta--dark'))? 'button--ghost':'' %}
+{% set button_variant = (cta_variant is same as('cta--dark'))? 'button--ghost':'' %}
 <div class="cta {{ cta_variant }}">
     {{ title }}
     {{ body }}

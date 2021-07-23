@@ -4,7 +4,7 @@
 {% set mfp_type = "mfp-" ~ content_type|default('inline') %}
 
 {# include an inline modal wrapper for inline modals only #}
-{% if mfp_type is sameas("mfp-inline") %}
+{% if mfp_type is same as("mfp-inline") %}
     {# for inline modals, the src value is the fragment identifier #}
     {% set id = "modal_popup_"|uniqid %}
     {% set src = "#" ~ id %}

@@ -87,7 +87,8 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
 }
 
 function _ukd8_add_theme_settings(array &$variables) {
-  $theme_settings = \Drupal::config('ukd8.settings');
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  $theme_settings = \Drupal::config($theme . '.settings');
   // Add cachability metadata.
   CacheableMetadata::createFromRenderArray($variables)
     ->addCacheableDependency($theme_settings)

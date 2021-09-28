@@ -37,7 +37,9 @@
         {% if show_section_tab %}
             {% embed 'molecules-tab-panel' with { tab_panel_id : "mobile_section" } %}
                 {% block tab_panel_content %}
+                  <div class="mobile-tab-nav__menus">
                     {{ page.mobile_tab_section }}
+                  </div>
                   <hr/>
                   {{ page.mobile_utility_nav|injectclass('mobile_utility-nav') }}
                 {% endblock %}

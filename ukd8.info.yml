@@ -31,18 +31,15 @@ features:
   - favicon
   - logo
 
-component-libraries:
-  atoms:
-    paths:
+components:
+  namespaces:
+    atoms:
       - elements/atoms
-  molecules:
-    paths:
+    molecules:
       - elements/molecules
-  components:
-    paths:
+    components:
       - elements/components
-  macros:
-    paths:
+    macros:
       - macros
 
 ckeditor_stylesheets:

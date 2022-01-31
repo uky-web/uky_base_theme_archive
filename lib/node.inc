@@ -23,6 +23,23 @@ function ukd8_preprocess_node(array &$variables) {
         $allowed_regions = ['sidebar', 'breadcrumb'];
         _ukd8_add_regions_to_node($allowed_regions, $variables);
     }
+
+    $themeName = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+    // Add global modification that works for all node type
+    $function = $themeName . '__preprocess_node__'. $variables['node']->getType();
+
+    //viewmodes
+    $viewmodeFunction = $function . '__' . $variables['view_mode'];
+
+    // Each node type can have its own specific function
+    if (function_exists($function)) {
+        $function($variables, $hook);
+    } 
+
+    if (function_exists($viewmodeFunction)) {
+        $viewmodeFunction($variables, $hook);
+    } 
+
 }
 
 function _ukd8_add_regions_to_node($allowed_regions, &$variables) {

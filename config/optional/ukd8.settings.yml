@@ -3,8 +3,8 @@ is_main: false
 lockup_wordmark_1: 'Your department'
 lockup_wordmark_2: 'name'
 uky_home_url: 'https://www.uky.edu/'
-college_url: 'https://www.uky.edu/'
-college_title: 'Parent unit'
+college_url: ''
+college_title: ''
 show_college_under_lockup: false
 
 # all the options available

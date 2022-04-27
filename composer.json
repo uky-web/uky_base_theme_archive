@@ -3,6 +3,12 @@
     "description": "Base theme.",
     "license": "MIT",
     "type": "drupal-custom-theme",
+    "authors": [
+      {
+          "name": "University of Kentucky Webcom",
+          "email": "universitywebservices@l.uky.edu"
+      }
+    ],
     "require": {
         "drupal/components": "^2.0",
         "uky-web/ukd8_customizations": "^2.0"
@@ -11,7 +17,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "https://satis.uky.dev/"
+      "url": "https://composer.uky.dev/"
     },
     {
       "type": "composer",

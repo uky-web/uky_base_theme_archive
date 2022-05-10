@@ -49,6 +49,16 @@
         {% else %}
           {{ link(item.title, item.url) }}
         {% endif %}
+        {% if item.is_expanded and item.in_active_trail  %}
+          <h3 class="show-for-sr">Child Pages:</h3>
+            <ol>
+              {% for subitem in item.below %}
+                  <li>
+                    {{ link(subitem.title, subitem.url) }}
+                  </li>
+              {% endfor %}
+            </ol>
+        {% endif %}
       </li>
     {% endfor %}
     </ol>

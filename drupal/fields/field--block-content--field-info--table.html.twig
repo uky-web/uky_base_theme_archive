@@ -5,7 +5,7 @@
   {% set row = item.content['#collection_item'] %}
     <tr>
       <th scope="row">{{ row.title.value }}</th>
-      <td>{{ row.field_description.value }}</td>
+      <td>{{ row.field_description.value|raw }}</td>
     </tr>
 {% endfor %}
   </tbody>

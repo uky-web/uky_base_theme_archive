@@ -1,6 +1,9 @@
 <figure role="group" class="image-with-caption {{ classes }}">
   {{ media }}
-  {% if heading or caption or citation %}
+
+
+  {% if heading or caption.0 or citation %}
+  {{devel_breakpoint(caption.0)}}
   <figcaption>
     {% if heading %}
     {% include 'atoms-heading' with { 

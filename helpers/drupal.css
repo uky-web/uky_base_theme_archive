@@ -88,3 +88,33 @@ ul.menu {
 /* xl breakpoint */
 @media screen and (min-width: 76rem) {
 }
+
+
+// This adds styling to the field labels for inline and above.
+.field--label-inline > .field__label, .field--label-above > .field__label {
+    font-weight: bold;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.field--label-inline > .field__item, .field--label-above > .field__item {
+	margin: 0 0 10px 0;
+}
+
+// Setting list styles for nested <ol>
+
+ol {
+	list-style: decimal;
+}
+
+ol ol {
+	list-style: lower-alpha;
+}
+
+ol ol ol {
+	list-style: lower-roman;
+}
+
+ol ol ol ol {
+	list-style: decimal;
+}

@@ -118,3 +118,10 @@ ol ol ol {
 ol ol ol ol {
 	list-style: decimal;
 }
+
+// Changing a link color in table header from black to white so it is visible
+
+th a:link, th a:visited {
+	color: #ffffff !important;
+}
+

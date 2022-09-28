@@ -90,8 +90,14 @@ ul.menu {
 }
 
 
-// This adds styling to the field labels for inline and above.
-.field--label-inline > .field__label, .field--label-above > .field__label {
+/* This adds styling to the field labels for inline and above. */
+
+.field--label-above > .field__label {
+    font-weight: bold;
+    margin: 0 10px 10px 0;
+}
+
+.field--label-inline > .field__label {
     font-weight: bold;
     margin: 0 10px 10px 0;
     float: left;
@@ -101,7 +107,7 @@ ul.menu {
 	margin: 0 0 10px 0;
 }
 
-// Setting list styles for nested <ol>
+/* Setting list styles for nested <ol> */
 
 ol {
 	list-style: decimal;
@@ -119,7 +125,7 @@ ol ol ol ol {
 	list-style: decimal;
 }
 
-// Changing a link color in table header from black to white so it is visible
+/* Changing a link color in table header from black to white so it is visible */
 
 th a:link, th a:visited {
 	color: #ffffff !important;

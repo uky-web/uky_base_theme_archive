@@ -9,10 +9,10 @@
 
 {% embed 'molecules-tabs' with { tabs_variant: tabs_variant|join(' ') } %}
     {% block tabs_tabs %}
-        {% include 'molecules-tab-tab' with { tab_target : "mobile_mainmenu", tab_label : "Main Menu / Search" } %}
         {% if show_section_tab %}
             {% include 'molecules-tab-tab' with { tab_target : "mobile_section", tab_label : "In This Section" } %}
         {% endif %}
+        {% include 'molecules-tab-tab' with { tab_target : "mobile_mainmenu", tab_label : "Main Menu / Search" } %}
     {% endblock %}
     {% block tabs_panels %}
         {% embed 'molecules-tab-panel' with { tab_panel_variant: 'mobile-tab-nav__main-menu-panel', tab_panel_id : "mobile_mainmenu" } %}

@@ -2,7 +2,7 @@ name: UK D8 Base Theme
 type: theme
 description: Base Theme using Limestone
 package: University of Kentucky
-core_version_requirement: ^9.4 || ^10
+core_version_requirement: ^9.5 || ^10
 libraries:
   - ukd8/global
 

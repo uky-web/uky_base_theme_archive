@@ -10,7 +10,6 @@
       }
     ],
     "require": {
-        "drupal/components": "^2.0",
         "uky-web/ukd8_customizations": "^2.0"
     },
 

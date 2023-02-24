@@ -43,5 +43,5 @@ components:
       - macros
 
 ckeditor_stylesheets:
-  - css/wysiwyg.css
+  - css/style.css
 

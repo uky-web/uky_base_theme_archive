@@ -1921,25 +1921,6 @@ a {
     background-image: url("../../images/campus-map-texture.jpg");
     background-size: cover; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.1667rem;
-  line-height: 1.5rem;
-  font-weight: normal; }
-  @media screen and (min-width: 76rem) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: 1.1667rem;
-      line-height: 1.5rem; } }
-
 .editorial h2,
 .editorial h2.headline-group .headline-group__head {
   font-size: 2rem;

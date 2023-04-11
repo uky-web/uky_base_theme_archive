@@ -38,6 +38,9 @@ ul.menu {
   ul.menu li {
     display: inline-block
   }
+  .link-group > ul.menu {
+    display: block;
+  }
 
 .universal-nav .menu-item {
   margin: 0;

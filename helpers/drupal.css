@@ -135,3 +135,8 @@ th a:link, th a:visited {
 	color: #ffffff !important;
 }
 
+/* Simple override for the button a:visited being black issue */
+.editorial a.button,
+.editorial button {
+  background-image: none;
+  color: #FFF; }

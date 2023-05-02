@@ -3,10 +3,12 @@
 {% embed 'molecules-slab' with { slab_variant: 'global-header__masthead'} %}
     {% block slab_content %}
         <div class="global-header__banner">
-            {% if not theme_settings.is_main %}
-                {% include 'molecules-lockup' %}
-            {% else %}
+              {% if theme_settings.logo_option == 'unit_logo' %}
+                {% include 'molecules-logopath' %}
+            {% elseif theme_settings.logo_option == 'uky_logo' %}
                 {% include 'atoms-uky-logo-main' %}
+            {% else %}
+                {% include 'molecules-site-identity' %}
             {% endif %}
             {{ page.utility_nav|injectclass('utility-nav') }}
             {% set toggle_config = {

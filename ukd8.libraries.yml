@@ -3,6 +3,7 @@ global:
   css:
     base:
       helpers/drupal.css: {}
+      css/style.css: {}
   js:
     helpers/jquery.js: {}
     js/activate-current-links.js: {}

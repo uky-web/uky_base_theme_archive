@@ -1,4 +1,6 @@
-<a href="{{ path('<front>') }}" class="lockup">
+{# This molecule was deprecated 04/2023 with switch to new molecule/site-identity to comply with University font subscriptions #}
+
+{# <a href="{{ path('<front>') }}" class="lockup">
 	<div class="lockup__main">
 		<div class="lockup__logo">
 			{% include 'atoms-uk-logo' %}
@@ -11,4 +13,6 @@
 	{% if theme_settings.show_college_under_lockup %}
 	<div class="lockup__unit">{{ theme_settings.college_title }}</div>
 	{% endif %}
-</a>
+</a>  #}
+
+{% include 'molecules-site-identity' %}

@@ -18,9 +18,6 @@ function ukd8_post_update_9001(&$sandbox = NULL) {
         // Delete is_main field setting from the active configuration.
         $theme_settings->clear('is_main');
 
-        // Delete is_main field from configuration
-        //$theme_settings->delete('is_main');
-
         // Save the changes to the active configuration.
         $theme_settings->save();
 
@@ -29,16 +26,12 @@ function ukd8_post_update_9001(&$sandbox = NULL) {
         // Delete is_main field from the active configuration.
         $theme_settings->clear('is_main');
 
-        // Delete is_main field from configuration
-        //$theme_settings->delete('is_main');
-
         // Save the changes to the active configuration.
         $theme_settings->save();
     
     }
 
     // Delete show_college_under_lockup from configuration
-    //$theme_settings->delete('show_college_under_lockup');
     $theme_settings->clear('show_college_under_lockup');
 
     // Save the changes to the active configuration.

@@ -29,9 +29,9 @@ function ukd8_form_system_theme_settings_alter(&$form, FormStateInterface &$form
     '#type' => 'select',
     '#title' => t('Logo source'),
     '#options' => [
+      'wordmark' => t('Use text fields'),
       'uky_logo' => t('Use the University lockup image'),
       'unit_logo' => t('Upload a logo'),
-      'wordmark' => t('Use text fields'),
     ],
     '#description'   => t("Select the site identity to be displayed in the site header. This can be the university lockup, a different uploaded graphic, or a title generated from text entered below."),
     '#default_value' => theme_get_setting('logo_option'),

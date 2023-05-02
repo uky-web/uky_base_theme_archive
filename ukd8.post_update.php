@@ -11,7 +11,7 @@ function ukd8_post_update_9001(&$sandbox = NULL) {
     $is_main_value = $theme_settings->get('is_main');
 
     // Check if is_main field is set.
-    if ($is_main_value == '0') {
+    if ($is_main_value == '1') {
         // Set the value of the logo_option field to a use the uky_logo.
         $theme_settings->set('logo_option', 'uky_logo');
 

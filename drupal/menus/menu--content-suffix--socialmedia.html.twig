@@ -9,11 +9,11 @@
 {% embed 'molecules-slab' with { slab_variant: 'slab--warm-neutral-60' } %}
     {% block slab_content %}
         {% embed 'components-social-media-links' with { 
-        social_media_links_variant : "social-media-links--row",
+        social_media_links_variant : "social-media-links--flex",
         links: links,
         } %}
             {% block headline %}
-            <h2 class="headline-group show-for-sr">
+            <h2 class="headline-group">
                 <span class="headline-group__head">Follow us on social media</span>
             </h2>
             {% endblock %}

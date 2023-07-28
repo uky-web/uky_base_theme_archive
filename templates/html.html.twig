@@ -54,8 +54,7 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRBK72"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    {{ page_top }}
+    {% include 'molecules-skip-nav' %}
     {{ page }}
     {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token }}">

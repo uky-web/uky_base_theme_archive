@@ -140,3 +140,16 @@ th a:link, th a:visited {
 .editorial button {
   background-image: none;
   color: #FFF; }
+
+/* Adding styling for people content reference in a grid */
+.field--name-field-media-image {
+    margin-bottom: 1rem;
+  }
+  
+.people-list--name {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "bodoni-pt-variable", serif;
+    font-weight: 600;
+  }
+

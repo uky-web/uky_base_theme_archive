@@ -10,7 +10,7 @@
       }
     ],
     "require": {
-        "drupal/components": "^3.0.0",
+        "drupal/components": "^3.0@beta",
         "uky-web/ukd8_customizations": "^2.0.4"
     },
 

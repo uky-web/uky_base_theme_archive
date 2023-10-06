@@ -3,12 +3,12 @@
         {{ head }}
     {% endblock %}
     <div class="social-media-links__linkset">
-        {% spaceless %}
+        {% apply spaceless %}
             {% for link in links %}
                 {% set icon = link.uri|matchsocial %}
                 {% if social_icons_block %}{% set icon = icon ~ '-block' %}{% endif %}
                 <a href="{{ link.uri }}">{% include 'atoms-icon-label' with { hide_label: true, icon: icon, label: link.title } %}</a>
             {% endfor %}
-        {% endspaceless %}
+        {% endapply %}
     </div>
 </div>

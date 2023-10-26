@@ -1,4 +1,4 @@
-{% spaceless %}
+{% apply spaceless %}
 <button 
 	{% if disabled %}disabled="true"{% endif %}
 	class="{{ button_variant }}"
@@ -13,4 +13,4 @@
 		{{ label }}
 	{% endblock %}
 </button>
-{% endspaceless %}
+{% endapply %}

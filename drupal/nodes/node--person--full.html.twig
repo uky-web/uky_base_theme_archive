@@ -44,17 +44,6 @@
         } %}
       {% endblock %}
       {% block slab_sidebar %}
-        <div class="section-nav section-nav--blue-gray">
-          <nav aria-labelledby="sectionNavigationLabel">
-          <h2 id="sectionNavigationLabel">
-            <span class="show-for-sr">Section Navigation: </span>
-            {% include 'atoms-link' with { 
-              link_variant: 'link--fancy-reverse', 
-              label: 'Back to Directory', 
-              url: '/people' 
-            } %}
-          </h2>
-        </div>
         {{ region.sidebar }}
       {% endblock %}
   {% endembed %}

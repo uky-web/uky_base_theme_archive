@@ -8,7 +8,7 @@ function ukd8_preprocess_eck_entity(&$variables) {
   // Backwards compatibility.
   $variables['eck'] = $entity;
   $variables['plain_title'] = isset($variables['eck']->title) ?
-      strip_tags($variables['eck']->title[0]->value) :
+      strip_tags((string)$variables['eck']->title[0]->value) :
       '';
 
   // Load up the theme settings; see theme.inc.
